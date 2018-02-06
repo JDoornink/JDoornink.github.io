@@ -18,6 +18,13 @@ h6 {
   text-align: justify;
 }
 
+.leftAlign {
+  text-align: left;
+}
+
+.centerAlign{
+  text-align: center;
+}
 
 .leftTop {
   text-align:left; 
