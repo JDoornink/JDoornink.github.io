@@ -1,11 +1,11 @@
-**Languages**
+**Programming**
 
-C#5.0, 6.0; CSS; HTML5; .NET 4.0, 4.5, 4.6; T-SQL; Selenium; JavaScript; TypeScript; Java; jQuery; Visual Basic
+Kubernetes, Helm, C#, Azure, .NET Core, Docker, F#, CSS, HTML, .NET Framework, T-SQL, JavaScript, TypeScript, jQuery, Swagger, GIT, YAML, Fluent Bit
 
 **Programs**
 
-Visual Studio 2008, 2010, 2013, 2015, 2017; SSMS 2012, 2016; Visual Studio Code; XCode; Xamarin; Photoshop; Office
+Visual Studio, VSCode, XCode, Xamarin, Photoshop, Office, G Suite
 
 **Tools**
 
-Agile Methodology; GitHub; PowerShell; Web Forms; Fiddler; MVVC; MVC; Authorize.NET; WordPress; LeanKit; node.js; NPM; Angular; LabView; Evernote; Slack; Bootstrap; Pluralsight; Katana
+Agile Methodology Scrum Methodology, Kubectl, GitHub, GitHub Actions, Azure DevOps, Bash, PowerShell, Web Forms, Fiddler, MVVC, MVC, Authorize.NET, Chocolatey, VIM, WordPress, LeanKit, node.js, NPM, Angular LabView, Evernote, Slack, Bootstrap, Pluralsight, Katana, Object Oriented programming, IAAS, SAAS
