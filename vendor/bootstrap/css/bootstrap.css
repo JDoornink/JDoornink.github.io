@@ -491,6 +491,14 @@ mark,
   height: auto;
 }
 
+.img-thumbnail-badge {
+  padding: 0.25rem;
+  height: 50px;
+  width: 50%;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
 .figure {
   display: inline-block;
 }
