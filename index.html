@@ -50,16 +50,32 @@
   </head>
 
   <body id="page-top">
-
-    <!-- Navigation -->
+    <!-- Navigation -->  
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" style="font-size: 1.35em" href="#portfolio">PORTFOLIO</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Josef Doornink</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu <i class="fa fa-bars"></i>
+        </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"  href="/Resume/resume7_1-page.pdf">RESUME 1-Page (PDF)</a>
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"  href="/Resume/resume8-Full.pdf">RESUME-FULL</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio-skills">Skills</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1 dropdown">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="resumeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Resume
+              </a>
+              <div class="dropdown-menu bg-secondary" aria-labelledby="resumeDropdown">
+                <a class="dropdown-item text-white" href="Resume/resume9-1page.md" target="_blank">1-PAGE</a>
+                <a class="dropdown-item text-white" href="Resume/resume9-Full.md" target="_blank">FULL</a>
+              </div>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://github.com/JDoornink">GitHub</a>
             </li>
           </ul>
         </div>
@@ -70,89 +86,216 @@
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto" width="400" height="500"src="img/Trees-frontal-bright.jpg" alt="">
-        <h1 class="text-uppercase mb-0">Josef Doornink</h1>
+        <h1 class="text-uppercase mb-3" style="color: #2C3E50;">Josef Doornink</h1>
+        <h2 class="font-weight-light mb-4" style="font-size:1.75rem; color: #2C3E50;">Machine Learning Systems Engineer</h2>
         <br>
-        <img class="img-thumbnail-badge" src="img/certificates/badge/CKS-New-small.png" alt="Skills">
-        <img class="img-thumbnail-badge" src="img/certificates/badge/CKA.png" alt="Skills">
-        <img class="img-thumbnail-badge" src="img/certificates/badge/AzureDevAssociate.png" alt="Skills">
-        <img class="img-thumbnail-badge" src="img/certificates/badge/Terraform.png" alt="Skills">
-        <img class="img-thumbnail-badge" src="img/certificates/badge/MachineLearning-Stanford.png" alt="Skills">
+        <img class="img-thumbnail-badge" src="img/certificates/badge/MachineLearning-Stanford.png" alt="Machine Learning" style="padding: 0; background-color: transparent; object-fit: cover; object-position: center;">
+        <img class="img-thumbnail-badge" src="img/certificates/badge/CKS-New-small.png" alt="CKS">
+        <img class="img-thumbnail-badge" src="img/certificates/badge/CKA.png" alt="CKA">
+        <img class="img-thumbnail-badge" src="img/certificates/badge/AzureDevAssociate.png" alt="Azure">
+        <img class="img-thumbnail-badge" src="img/certificates/badge/Terraform.png" alt="Terraform">
         <br>
         <br>
-        <ul style ="list-style-type: square; text-align: left;">
-        <h2 class="font-weight-light mb-0" style="font-size:1.25rem">
-          <li>Enthusiastic SRE with over 7 years experience architecting reliable distributed-system.</li>
-          <li>Knowledge, enthusiasm and experience transforming operational overhead into self-healing systems usign IAC and custom tooling.<br/>
-          <li>CKS, CKA certified engineer with a strong interest in learning and working with AI. <br/>
-          <li>Learn more about me by viewing my portfolio below and feel free to contact me through my <a href="https://www.linkedin.com/in/josefdoornink/">LinkedIn</a> page.</li>
-        </h2>
+        <div style="max-width: 850px; margin: 0 auto; padding: 30px;">
+          <p style="font-size: 1.3rem; line-height: 1.8; margin-bottom: 30px; text-align: center; color: #1a1a1a; font-weight: 500;">
+            <strong style="color: #1a1a1a;">10+ years</strong> building high-performance distributed systems • <strong style="color: #1a1a1a;">Focusing on MLOps</strong> infrastructure and large-scale Kubernetes environments
+          </p>
+          <div style="text-align: left; font-size: 1.15rem; line-height: 1.5; color: #2C3E50;">
+            <p style="margin-bottom: 12px; padding-left: 2em; text-indent: -1em;">— <strong>MLOps Engineer</strong> — Building production ML infrastructure for model training, serving, and monitoring at scale</p>
+            <p style="margin-bottom: 12px; padding-left: 2em; text-indent: -1em;">— <strong>Performance Optimization</strong> — Profiling distributed systems, eliminating bottlenecks, and improving throughput</p>
+            <p style="margin-bottom: 12px; padding-left: 2em; text-indent: -1em;">— <strong>Developer Tools</strong> — Creating automation tools that dramatically improve team productivity</p>
+            <p style="margin-bottom: 12px; padding-left: 2em; text-indent: -1em;">— <strong>Cloud Architecture</strong> — CKS/CKA certified with deep expertise in Kubernetes, Azure, and Infrastructure as Code</p>
+            <p style="margin-bottom: 12px; padding-left: 2em; text-indent: -1em;">— <strong>Passionate about AI</strong> — Committed to building reliable, scalable systems that enable breakthrough ML research</p>
+          </div>
+        </div>
       </div>
     </header>
+
+    <!-- Key ML Projects Section -->
+    <section class="bg-dark text-light py-5" id="ml-projects">
+      <div class="container">
+        <h2 class="text-center text-uppercase mb-0" style="color: #7FA9AE;">Key Projects</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100 bg-dark border-secondary" style="background-color: #2d2d2d !important;">
+              <div class="card-body">
+                <h4 class="card-title text-light"><i class="fa fa-rocket" style="color: #007bff;"></i> Distributed Training Pipeline Optimization</h4>
+                <p class="card-text"><strong>Reason Benefit AI | 2025</strong></p>
+                <ul class="text-left" style="font-size: 0.95rem;">
+                  <li>Profiled reinforcement learning training pipeline to identify critical performance bottlenecks</li>
+                  <li>Implemented microservice architecture to deliver UI focused MLOps services</li>
+                  <li>Built automated test environment for continuous pipeline health validation</li>
+                  <li>Significantly reduced training time through systematic performance optimization</li>
+                </ul>
+                <span class="badge badge-primary">Python</span>
+                <span class="badge badge-primary">RL</span>
+                <span class="badge badge-primary">Profiling</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100 bg-dark border-secondary" style="background-color: #2d2d2d !important;">
+              <div class="card-body">
+                <h4 class="card-title text-light"><i class="fa fa-shield text-success"></i> Kubernetes Security Hardening Initiative</h4>
+                <p class="card-text"><strong>Trimble/Viewpoint | 2024</strong></p>
+                <ul class="text-left" style="font-size: 0.95rem;">
+                  <li>Implemented CKS best practices across production Kubernetes clusters</li>
+                  <li>Achieved SOC2 compliance through systematic security improvements</li>
+                  <li>Designed automated security scanning and remediation workflows</li>
+                  <li>Significantly reduced vulnerabilities through continuous monitoring</li>
+                </ul>
+                <span class="badge badge-success">Kubernetes</span>
+                <span class="badge badge-success">Security</span>
+                <span class="badge badge-success">Python</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100 bg-dark border-secondary" style="background-color: #2d2d2d !important;">
+              <div class="card-body">
+                <h4 class="card-title text-light"><i class="fa fa-cogs text-info"></i> High-Performance CLI Tooling</h4>
+                <p class="card-text"><strong>Trimble/Viewpoint | 2023</strong></p>
+                <ul class="text-left" style="font-size: 0.95rem;">
+                  <li>Created production-grade CLI tools in Go using Cobra framework</li>
+                  <li>Implemented features for service discovery, log aggregation, and deployment automation</li>
+                  <li>Tools adopted by 50+ engineers across the organization</li>
+                  <li>Significantly improved operational efficiency and developer experience</li>
+                </ul>
+                <span class="badge badge-info">Go</span>
+                <span class="badge badge-info">CLI</span>
+                <span class="badge badge-info">DevOps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Portfolio Grid Section -->
     <section class="portfolio" id="portfolio">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <h2 class="text-center text-uppercase mb-0" style="color: #7FA9AE;">Portfolio</h2>
         <hr class="star-dark mb-5">
         <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-skills">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-skills" style="text-decoration: none;">
+              <div style="background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%); 
+                          border: 2px solid #333; 
+                          border-radius: 8px; 
+                          padding: 60px 20px; 
+                          text-align: center; 
+                          transition: all 0.3s ease;
+                          min-height: 250px;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                          align-items: center;"
+                   onmouseover="this.style.borderColor='#7FA9AE'; this.style.transform='translateY(-5px)'; this.querySelector('i').style.transform='scale(1.1)';"
+                   onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'; this.querySelector('i').style.transform='scale(1)';">
+                <i class="fa fa-code" style="font-size: 5rem; color: #7FA9AE; margin-bottom: 20px; transition: transform 0.3s ease;"></i>
+                <h3 style="color: #f0f0f0; font-weight: 600; margin: 0; font-family: 'Montserrat', sans-serif;">SKILLS</h3>
               </div>
-              <img class="img-fluid" src="img/portfolio/skills2.jpg" alt="Skills">
             </a>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-resume">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-resume" style="text-decoration: none;">
+              <div style="background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%); 
+                          border: 2px solid #333; 
+                          border-radius: 8px; 
+                          padding: 60px 20px; 
+                          text-align: center; 
+                          transition: all 0.3s ease;
+                          min-height: 250px;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                          align-items: center;"
+                   onmouseover="this.style.borderColor='#7FA9AE'; this.style.transform='translateY(-5px)'; this.querySelector('i').style.transform='scale(1.1)';"
+                   onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'; this.querySelector('i').style.transform='scale(1)';">
+                <i class="fa fa-file-text" style="font-size: 5rem; color: #7FA9AE; margin-bottom: 20px; transition: transform 0.3s ease;"></i>
+                <h3 style="color: #f0f0f0; font-weight: 600; margin: 0; font-family: 'Montserrat', sans-serif;">RESUME</h3>
               </div>
-              <img class="img-fluid" src="img/portfolio/Resume.jpg" alt="">
             </a>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a href="https://github.com/JDoornink">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <a href="https://github.com/JDoornink" style="text-decoration: none;">
+              <div style="background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%); 
+                          border: 2px solid #333; 
+                          border-radius: 8px; 
+                          padding: 60px 20px; 
+                          text-align: center; 
+                          transition: all 0.3s ease;
+                          min-height: 250px;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                          align-items: center;"
+                   onmouseover="this.style.borderColor='#7FA9AE'; this.style.transform='translateY(-5px)'; this.querySelector('i').style.transform='scale(1.1)';"
+                   onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'; this.querySelector('i').style.transform='scale(1)';">
+                <i class="fa fa-github" style="font-size: 5rem; color: #7FA9AE; margin-bottom: 20px; transition: transform 0.3s ease;"></i>
+                <h3 style="color: #f0f0f0; font-weight: 600; margin: 0; font-family: 'Montserrat', sans-serif;">GITHUB</h3>
               </div>
-              <img class="img-fluid" src="img/portfolio/repositories.jpg" alt="GitHub Repo">
             </a>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-patents-and-awards"">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-patents-and-awards" style="text-decoration: none;">
+              <div style="background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%); 
+                          border: 2px solid #333; 
+                          border-radius: 8px; 
+                          padding: 60px 20px; 
+                          text-align: center; 
+                          transition: all 0.3s ease;
+                          min-height: 250px;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                          align-items: center;"
+                   onmouseover="this.style.borderColor='#7FA9AE'; this.style.transform='translateY(-5px)'; this.querySelector('i').style.transform='scale(1.1)';"
+                   onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'; this.querySelector('i').style.transform='scale(1)';">
+                <i class="fa fa-trophy" style="font-size: 5rem; color: #7FA9AE; margin-bottom: 20px; transition: transform 0.3s ease;"></i>
+                <h3 style="color: #f0f0f0; font-weight: 600; margin: 0; font-family: 'Montserrat', sans-serif;">PATENTS & AWARDS</h3>
               </div>
-              <img class="img-fluid" src="img/portfolio/patentsandawards.jpg" alt="">
             </a>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-publications">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-publications" style="text-decoration: none;">
+              <div style="background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%); 
+                          border: 2px solid #333; 
+                          border-radius: 8px; 
+                          padding: 60px 20px; 
+                          text-align: center; 
+                          transition: all 0.3s ease;
+                          min-height: 250px;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                          align-items: center;"
+                   onmouseover="this.style.borderColor='#7FA9AE'; this.style.transform='translateY(-5px)'; this.querySelector('i').style.transform='scale(1.1)';"
+                   onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'; this.querySelector('i').style.transform='scale(1)';">
+                <i class="fa fa-book" style="font-size: 5rem; color: #7FA9AE; margin-bottom: 20px; transition: transform 0.3s ease;"></i>
+                <h3 style="color: #f0f0f0; font-weight: 600; margin: 0; font-family: 'Montserrat', sans-serif;">PUBLICATIONS</h3>
               </div>
-              <img class="img-fluid" src="img/portfolio/publications.jpg" alt="">
             </a>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-certifications">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-certifications" style="text-decoration: none;">
+              <div style="background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%); 
+                          border: 2px solid #333; 
+                          border-radius: 8px; 
+                          padding: 60px 20px; 
+                          text-align: center; 
+                          transition: all 0.3s ease;
+                          min-height: 250px;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                          align-items: center;"
+                   onmouseover="this.style.borderColor='#7FA9AE'; this.style.transform='translateY(-5px)'; this.querySelector('i').style.transform='scale(1.1)';"
+                   onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'; this.querySelector('i').style.transform='scale(1)';">
+                <i class="fa fa-certificate" style="font-size: 5rem; color: #7FA9AE; margin-bottom: 20px; transition: transform 0.3s ease;"></i>
+                <h3 style="color: #f0f0f0; font-weight: 600; margin: 0; font-family: 'Montserrat', sans-serif;">CERTIFICATIONS</h3>
               </div>
-              <img class="img-fluid" src="img/portfolio/Certifications.jpg" alt="">
             </a>
           </div>
         </div>

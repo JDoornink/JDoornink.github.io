@@ -1,0 +1,175 @@
+# JOSEF DOORNINK
+
+**Machine Learning Systems Engineer | Distributed Systems Architect**
+
+Portland, OR | jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josefdoornink/) | [GitHub](https://github.com/JDoornink) | [Portfolio](https://jdoornink.github.io/)
+
+---
+
+## PROFESSIONAL SUMMARY
+
+Machine Learning Systems Engineer with 12+ years of software engineering experience specializing in high-performance distributed systems, MLOps infrastructure, and large-scale Kubernetes environments. Expert in Python and Go with proven track record building tools and systems that dramatically improve team productivity. Deep experience in performance optimization, profiling, and maintaining critical infrastructure for ML model training and serving. Passionate about enabling machine learning research through robust, scalable, and reliable systems. CKS/CKA certified with strong background in SRE practices, observability, and automation.
+
+---
+
+## TECHNICAL SKILLS
+
+**Core Competencies:** Large-Scale Distributed Systems | High-Performance Computing | MLOps Infrastructure | Performance Optimization | Profiling & Instrumentation | Systems Engineering | Team Productivity Tools
+
+**Languages:** Python | Go/Golang | Bash | PowerShell | C# | SQL
+
+**ML/AI Infrastructure:** LLM Model Serving | ML Pipeline Development | Model Training Infrastructure | Azure Machine Learning | Distributed Training Systems | RLHF Infrastructure | Model Finetuning Systems
+
+**Distributed Systems & Orchestration:** Kubernetes (AKS, Production-Scale) | Docker | Helm | Kafka | Redis | Memcache | ElasticSearch | SQL Databases | Service Mesh
+
+**Cloud & Infrastructure:** Azure (Expert) | AWS | Terraform (IaC) | Infrastructure as Code | Configuration as Code | ARM Templates
+
+**DevOps & SRE:** GitHub Actions | Azure DevOps | CI/CD Pipelines | Monitoring (Prometheus, New Relic, Azure Monitor) | Logging (ELK) | Alerting | Incident Response
+
+**Systems & Tools:** Linux | Git | kubectl | Nginx | Performance Profiling | Distributed Tracing | Load Testing
+
+---
+
+## PROFESSIONAL EXPERIENCE
+
+### Lead MLOps Engineer
+**REASON BENEFIT AI CORPORATION** | Remote | October 2025 - Present
+
+- Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale
+- Build Python-based automation tools for ML pipeline orchestration, reducing manual overhead by 70% and accelerating model deployment velocity
+- Integrate with observability frameworks for model performance tracking, latency monitoring, and resource utilization across distributed training systems
+- Optimize model serving infrastructure through performance profiling and system-level optimizations, improving inference throughput by 40%
+- Collaborate with research teams to translate experimental model architectures into production-ready systems with focus on reliability and scalability
+- Implement automated testing frameworks for ML pipelines to quickly detect regressions and ensure model quality in production
+
+### Lead Site Reliability Engineer (SRE)
+**Trimble/Viewpoint** | Portland, OR | January 2022 - October 2025
+
+- Architected and maintained large-scale Azure Kubernetes Service (AKS) production environments handling 10M+ requests/day across 30+ microservices with 99.9% uptime SLA
+- Developed high-performance automation tools using **Python** and **Go** that eliminated 80+ hours/month of operational toil, accelerating deployment velocity by 3x across engineering teams
+- Led performance optimization initiatives through systematic profiling and instrumentation, reducing P99 latency by 45% and improving throughput by 60% for distributed systems
+- Built custom CLI tooling in **Go (Cobra framework)** to streamline workflows for 50+ engineers, dramatically improving team productivity through better developer experience
+- Designed and implemented comprehensive observability stack (Prometheus, Grafana, Azure Monitor) with distributed tracing for debugging performance bottlenecks in distributed microservices
+- Led capacity planning and performance optimization for Kubernetes clusters and backend databases, implementing auto-scaling strategies supporting 200% traffic growth
+- Created sophisticated CI/CD pipelines using **GitHub Actions** and Azure DevOps with automated testing, canary deployments, and rollback mechanisms
+- Implemented Infrastructure as Code using **Terraform** managing 500+ cloud resources, enabling consistent and repeatable infrastructure provisioning
+- Participated in on-call rotation providing critical incident response, root cause analysis, and post-mortem documentation for production systems
+- Mentored software developers on distributed systems reliability, SRE principles, and performance optimization techniques
+- Championed pair programming culture and led technical design reviews for architecture proposals
+
+### Software Developer I
+**Viewpoint** | Portland, OR | April 2018 - November 2019
+
+- Developed cloud-based SaaS applications using .NET and Angular, migrating on-premise software solutions to Azure cloud platform
+- Built RESTful APIs for multi-tenant applications serving thousands of users with focus on performance and scalability
+- Implemented front-end features using Angular integrated with .NET backend services
+- Collaborated with cross-functional teams to deliver high-quality software solutions on time
+
+### Software Developer I
+**Onfulfillment** | Portland, OR | March 2014 - March 2018
+
+- Engineered multi-tenant e-commerce platform using Microsoft Stack (.NET, C#, SQL Server) integrated with third-party SaaS APIs
+- Led "uplift" initiative migrating legacy codebase to modern greenfield platform, improving response times by 40% measured through New Relic APM
+- Developed automated testing frameworks and implemented performance monitoring to identify and resolve bottlenecks
+- Created project plans for large-scale refactoring initiatives and communicated technical progress to stakeholders
+
+---
+
+## KEY TECHNICAL PROJECTS
+
+### Kubernetes Security Hardening Initiative (2024)
+**Trimble/Viewpoint**
+
+- Implemented CKS best practices across production Kubernetes clusters achieving SOC2 compliance
+- Designed automated security scanning and remediation workflows using Python and Kubernetes operators
+- Reduced security vulnerabilities by 85% through systematic hardening and continuous monitoring
+
+### Distributed Training Pipeline Optimization (2025)
+**Reason Benefit AI Corporation**
+
+- Profiled reinforcement learning training pipeline identifying critical performance bottlenecks
+- Eliminated Python GIL contention in training code through careful refactoring and multi-processing optimizations
+- Built automated test environment for continuous validation of training pipeline health
+- Reduced training time by 35% through systematic performance optimizations
+
+### High-Performance CLI Tooling (2023)
+**Trimble/Viewpoint**
+
+- Created production-grade CLI tools in Go (Cobra framework) for infrastructure management and operations
+- Implemented features for service discovery, log aggregation, and deployment automation
+- Tools adopted by 50+ engineers significantly improving operational efficiency and developer experience
+
+---
+
+## CERTIFICATIONS
+
+- **CNCF Certified Kubernetes Security Specialist (CKS)** | March 2024 | LF-ghgugl1a0s
+- **CNCF Certified Kubernetes Administrator (CKA)** | June 2021 | LF-w50bpv1lpd
+- **Machine Learning Specialization** | Stanford/Coursera | September 2025
+- **Microsoft Certified Azure Developer Associate** | August 2019 | H210-5692
+- **HashiCorp Certified Terraform Associate** | July 2022 | HCTAO-002
+
+---
+
+## EDUCATION
+
+**Master of Science**, University of California, Davis | 2006
+
+**Bachelor of Science**, Mechanical Engineering | California State University, Chico | 2003
+
+---
+
+## PUBLICATIONS (Subset of 11)
+
+- **Doornink J**, Fitzpatrick DC, Madey SM, Bottlang M. *Far Cortical Locking Enables Flexible Fixation with Periarticular Locking Plates in the Distal Femur.* Journal of Orthopaedic Trauma, 2011 Feb; 25 Suppl 1: S29-34
+- **Doornink J**, Fitzpatrick DC, Boldhaus S, Madey SM, Bottlang M. *Effects of Hybrid Plating With Locked and Nonlocked Screws on the Strength of Locked Plating Constructs in the Osteoporotic Diaphysis.* Journal of Trauma-Injury Infection & Critical Care, August 2010, Vol 69, Issue 2
+- Bottlang M, Fitzpatrick DC, Lujan TJ, **Doornink J**, Madey SM. *Biomechanics and Use of Far Cortical Locking in Orthopaedic Trauma.* Orthopaedic Knowledge Online Journal, August 2012
+
+---
+
+## PATENTS & AWARDS
+
+**Patents:**
+- Bottlang M, Keith M, **Doornink J**, Koser AL. *Bone Screw with Multiple Thread Profiles for Far Cortical Locking and Flexible Engagement to a Bone.* US Patent No. US9314286 B2 and US8740955 B2
+
+**Awards:**
+- *Scientific Exhibit Award of Excellence*, American Academy of Orthopaedic Surgeons (AAOS), 2010
+
+**FDA-Approved Medical Devices:**
+- Led engineering team that created 4 FDA-approved orthopaedic implants currently used in national and international trauma centers (K101696, K123918, K130810)
+
+---
+
+## ADDITIONAL EXPERIENCE
+
+**Biomechanical Research Engineer II** | Legacy Biomechanics Research Lab | Portland, OR | 2007-2013
+
+- Lead test and development engineer for NIH-funded multimillion-dollar research project focused on bone fixation solutions
+- Managed successful implant creation, delivery, and test methodology producing multiple US FDA-approved implants
+- Developed automated testing protocols and data collection systems using MTS software
+
+**Honorary Fellow** | BG Unfallklinik | Murnau, Germany | 2008
+
+- Established mechanical analysis protocols for orthopaedic research measuring torsional strength and stiffness of bone specimens
+- Documented test protocols for process automation and results collection
+
+**Quality Assurance Associate** | Google | Mountain View, CA | 2006-2007
+
+- Evaluated accuracy of Google search engine results and web layout effectiveness
+- Collaborated remotely with interdisciplinary web development teams
+
+---
+
+## WHY ANTHROPIC
+
+I am deeply passionate about building the systems that enable breakthrough AI research. Throughout my career, I've focused on creating tools and infrastructure that make teams more productive—whether that's custom CLI tools for 50+ engineers, ML pipelines that reduce deployment time by 70%, or performance optimizations that improve throughput by 60%.
+
+The RL Engineering team's mission resonates strongly with me. I'm energized by the challenge of building reliable, high-performance systems at scale, and I thrive in environments where I can obsessively optimize for speed, robustness, and usability. My experience profiling distributed systems, eliminating Python GIL contention, and building instrumentation for performance monitoring directly aligns with the representative projects described.
+
+What excites me most about Anthropic is the opportunity to work on systems that train models like Claude—AI systems that will have profound societal impact. I deeply care about AI safety and want my work to contribute to building beneficial, reliable, and steerable AI systems. The collaborative, research-focused culture and commitment to big science aligns perfectly with how I believe transformative work happens.
+
+I'm eager to bring my expertise in distributed systems, Python/Go development, and SRE practices to support Anthropic's researchers in pushing the boundaries of what's possible with AI.
+
+---
+
+**REFERENCES:** Available upon request
