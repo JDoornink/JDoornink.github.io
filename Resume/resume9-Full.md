@@ -160,16 +160,4 @@ Machine Learning Systems Engineer with 12+ years of software engineering experie
 
 ---
 
-## WHY ANTHROPIC
-
-I am deeply passionate about building the systems that enable breakthrough AI research. Throughout my career, I've focused on creating tools and infrastructure that make teams more productive—whether that's custom CLI tools for 50+ engineers, ML pipelines that reduce deployment time by 70%, or performance optimizations that improve throughput by 60%.
-
-The RL Engineering team's mission resonates strongly with me. I'm energized by the challenge of building reliable, high-performance systems at scale, and I thrive in environments where I can obsessively optimize for speed, robustness, and usability. My experience profiling distributed systems, eliminating Python GIL contention, and building instrumentation for performance monitoring directly aligns with the representative projects described.
-
-What excites me most about Anthropic is the opportunity to work on systems that train models like Claude—AI systems that will have profound societal impact. I deeply care about AI safety and want my work to contribute to building beneficial, reliable, and steerable AI systems. The collaborative, research-focused culture and commitment to big science aligns perfectly with how I believe transformative work happens.
-
-I'm eager to bring my expertise in distributed systems, Python/Go development, and SRE practices to support Anthropic's researchers in pushing the boundaries of what's possible with AI.
-
----
-
 **REFERENCES:** Available upon request
