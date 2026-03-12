@@ -20,11 +20,11 @@ Machine Learning Systems Engineer with 12+ years of software engineering experie
 
 **ML/AI Infrastructure:** LLM Model Serving | ML Pipeline Development | Model Training Infrastructure | Azure Machine Learning | Distributed Training Systems | RLHF Infrastructure | Model Finetuning Systems
 
-**Distributed Systems & Orchestration:** Kubernetes (AKS, Production-Scale) | Docker | Helm | Kafka | Redis | Memcache | ElasticSearch | SQL Databases | Service Mesh
+**Distributed Systems & Orchestration:** Kubernetes (AKS, Production-Scale) | Docker | Helm | Kafka | Redis | ElasticSearch | SQL Databases | Service Mesh
 
 **Cloud & Infrastructure:** Azure (Expert) | AWS | Terraform (IaC) | Infrastructure as Code | Configuration as Code | ARM Templates
 
-**DevOps & SRE:** GitHub Actions | Azure DevOps | CI/CD Pipelines | Monitoring (Prometheus, New Relic, Azure Monitor) | Logging (ELK) | Alerting | Incident Response
+**DevOps & SRE:** GitHub Actions | Azure DevOps | CI/CD Pipelines | Monitoring (Prometheus, New Relic, Azure Monitor) | Logging | Alerting | Incident Response
 
 **Systems & Tools:** Linux | Git | kubectl | Nginx | Performance Profiling | Distributed Tracing | Load Testing
 
