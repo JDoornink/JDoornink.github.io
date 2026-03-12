@@ -33,7 +33,7 @@ ML Systems Engineer with 12+ years of software engineering experience specializi
 - Optimize model serving infrastructure through performance profiling, improving inference throughput
 - Implement automated testing frameworks for ML pipelines ensuring model quality in production
 
-### Lead Site Reliability Engineer (SRE) | Trimble/Viewpoint | Portland, OR | Jan 2022 - Present
+### Lead Site Reliability Engineer (SRE) | Trimble/Viewpoint | Portland, OR | Jan 2019 - Present
 
 - Architected AKS production environments handling 10M+ requests/day across 30+ microservices with 99.9% uptime
 - Developed automation tools using Python and Go that eliminated 80+ hours/month operational toil
@@ -42,7 +42,7 @@ ML Systems Engineer with 12+ years of software engineering experience specializi
 - Implemented Infrastructure as Code using Terraform managing 500+ cloud resources
 - Created CI/CD pipelines with automated testing, canary deployments, and rollback mechanisms
 
-### Software Developer I | Viewpoint | Portland, OR | Apr 2018 - Nov 2019
+### Software Developer | Viewpoint | Portland, OR | Mar 2018 - Jan 2019
 
 - Developed cloud-based SaaS applications using .NET and Angular on Azure platform
 - Built RESTful APIs for multi-tenant applications serving thousands of users

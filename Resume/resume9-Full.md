@@ -42,8 +42,8 @@ Machine Learning Systems Engineer with 12+ years of software engineering experie
 - Collaborate with research teams to translate experimental model architectures into production-ready systems with focus on reliability and scalability
 - Implement automated testing frameworks for ML pipelines to quickly detect regressions and ensure model quality in production
 
-### Lead Site Reliability Engineer (SRE)
-**Trimble/Viewpoint** | Portland, OR | January 2022 - October 2025
+### Lead Site Reliability Engineer (SRE) I -> II -> III
+**Trimble/Viewpoint** | Portland, OR | January 2019 - Present
 
 - Architected and maintained large-scale Azure Kubernetes Service (AKS) production environments handling 10M+ requests/day across 30+ microservices with 99.9% uptime SLA
 - Developed high-performance automation tools using **Python** and **Go** that eliminated 80+ hours/month of operational toil, accelerating deployment velocity by 3x across engineering teams
@@ -57,8 +57,8 @@ Machine Learning Systems Engineer with 12+ years of software engineering experie
 - Mentored software developers on distributed systems reliability, SRE principles, and performance optimization techniques
 - Championed pair programming culture and led technical design reviews for architecture proposals
 
-### Software Developer I
-**Viewpoint** | Portland, OR | April 2018 - November 2019
+### Software Developer
+**Viewpoint** | Portland, OR | March 2018 - January 2019
 
 - Developed cloud-based SaaS applications using .NET and Angular, migrating on-premise software solutions to Azure cloud platform
 - Built RESTful APIs for multi-tenant applications serving thousands of users with focus on performance and scalability
@@ -77,13 +77,6 @@ Machine Learning Systems Engineer with 12+ years of software engineering experie
 
 ## KEY TECHNICAL PROJECTS
 
-### Kubernetes Security Hardening Initiative (2024)
-**Trimble/Viewpoint**
-
-- Implemented CKS best practices across production Kubernetes clusters achieving SOC2 compliance
-- Designed automated security scanning and remediation workflows using Python and Kubernetes operators
-- Reduced security vulnerabilities by 85% through systematic hardening and continuous monitoring
-
 ### Distributed Training Pipeline Optimization (2025)
 **Reason Benefit AI Corporation**
 
@@ -91,6 +84,13 @@ Machine Learning Systems Engineer with 12+ years of software engineering experie
 - Eliminated Python GIL contention in training code through careful refactoring and multi-processing optimizations
 - Built automated test environment for continuous validation of training pipeline health
 - Reduced training time by 35% through systematic performance optimizations
+
+### Kubernetes Security Hardening Initiative (2024)
+**Trimble/Viewpoint**
+
+- Implemented CKS best practices across production Kubernetes clusters achieving SOC2 compliance
+- Designed automated security scanning and remediation workflows using Python and Kubernetes operators
+- Reduced security vulnerabilities by 85% through systematic hardening and continuous monitoring
 
 ### High-Performance CLI Tooling (2023)
 **Trimble/Viewpoint**
