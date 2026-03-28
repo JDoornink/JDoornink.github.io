@@ -1,6 +1,6 @@
 # JOSEF DOORNINK
 
-**Machine Learning Systems Engineer | Distributed Systems Architect**
+**Site Reliability Engineer | AI Infrastructure & MLOps**
 
 Portland, OR | jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josefdoornink/) | [GitHub](https://github.com/JDoornink) | [Portfolio](https://jdoornink.github.io/)
 
@@ -8,17 +8,17 @@ Portland, OR | jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josef
 
 ## PROFESSIONAL SUMMARY
 
-Machine Learning Systems Engineer with 12+ years of software engineering experience specializing in high-performance distributed systems, MLOps infrastructure, and large-scale Kubernetes environments. Expert in Python and Go with proven track record building tools and systems that dramatically improve team productivity. Deep experience in performance optimization, profiling, and maintaining critical infrastructure for ML model training and serving. Passionate about enabling machine learning research through robust, scalable, and reliable systems. CKS/CKA certified with strong background in SRE practices, observability, and automation.
+Site Reliability Engineer with 12+ years of software engineering experience specializing in reliable distributed systems, cloud infrastructure, and large-scale Kubernetes environments. Expert in Python and Go with a strong track record building tooling and platforms that improve engineering productivity. Currently applying SRE principles to AI engineering and MLOps systems, with hands-on work in model training and serving infrastructure. CKS/CKA certified with deep experience in observability, performance optimization, and automation.
 
 ---
 
 ## TECHNICAL SKILLS
 
-**Core Competencies:** Large-Scale Distributed Systems | High-Performance Computing | MLOps Infrastructure | Performance Optimization | Profiling & Instrumentation | Systems Engineering | Team Productivity Tools
+**Core Competencies:** Site Reliability Engineering | Large-Scale Distributed Systems | AI Platform Engineering | Performance Optimization | Profiling & Instrumentation | Systems Engineering | Team Productivity Tools
 
 **Languages:** Python | Go/Golang | Bash | PowerShell | C# | SQL
 
-**ML/AI Infrastructure:** LLM Model Serving | ML Pipeline Development | Model Training Infrastructure | Azure Machine Learning | Distributed Training Systems | RLHF Infrastructure | Model Finetuning Systems
+**ML/AI Engineering:** LLM Model Serving | ML Pipeline Development | Model Training Infrastructure | Azure Machine Learning | Distributed Training Systems | RLHF Infrastructure | Model Finetuning Systems
 
 **Distributed Systems & Orchestration:** Kubernetes (AKS, Production-Scale) | Docker | Helm | Kafka | Redis | ElasticSearch | SQL Databases | Service Mesh
 
@@ -80,24 +80,23 @@ Machine Learning Systems Engineer with 12+ years of software engineering experie
 ### Distributed Training Pipeline Optimization (2025)
 **Reason Benefit AI Corporation**
 
-- Profiled reinforcement learning training pipeline identifying critical performance bottlenecks
-- Eliminated Python GIL contention in training code through careful refactoring and multi-processing optimizations
-- Built automated test environment for continuous validation of training pipeline health
-- Reduced training time by 35% through systematic performance optimizations
+- Reduced training time by 35% through systematic profiling and optimization of RL pipeline bottlenecks
+- Decreased Python runtime contention by refactoring GIL-constrained components with multiprocessing techniques
+- Improved delivery confidence by building automated validation for training pipeline health
 
 ### Kubernetes Security Hardening Initiative (2024)
 **Trimble/Viewpoint**
 
-- Implemented CKS best practices across production Kubernetes clusters achieving SOC2 compliance
-- Designed automated security scanning and remediation workflows using Python and Kubernetes operators
-- Reduced security vulnerabilities by 85% through systematic hardening and continuous monitoring
+- Reduced security vulnerabilities by 85% through systematic Kubernetes hardening and continuous monitoring
+- Applied CKS best practices across production clusters to support SOC2 compliance requirements
+- Improved response speed by automating security scanning and remediation workflows
 
 ### High-Performance CLI Tooling (2023)
 **Trimble/Viewpoint**
 
-- Created production-grade CLI tools in Go (Cobra framework) for infrastructure management and operations
-- Implemented features for service discovery, log aggregation, and deployment automation
-- Tools adopted by 50+ engineers significantly improving operational efficiency and developer experience
+- Increased engineering productivity by delivering production-grade Go CLI tools for infrastructure operations
+- Added service discovery, log aggregation, and deployment automation capabilities used in daily workflows
+- Drove adoption across 50+ engineers and improved operational efficiency through better developer UX
 
 ---
 

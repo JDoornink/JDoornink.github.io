@@ -1,0 +1,28 @@
+# Josef Doornink
+
+Personal portfolio for Josef Doornink.
+
+## Professional Summary
+- Site Reliability Engineer with 10+ years building reliable distributed systems.
+- Transitioning into AI engineering through platform work in MLOps and model-serving infrastructure.
+- Strong background in Kubernetes, Azure, Terraform, Python, and Go.
+
+## Target Roles
+- AI Platform Engineer
+- MLOps Engineer
+- Site Reliability Engineer (AI/ML)
+- Software Engineer, AI Infrastructure
+
+## Key Impact Signals
+- Operated production AKS systems at scale with high availability.
+- Reduced operational toil through automation and internal developer tooling.
+- Improved model training and serving workflows with performance and reliability improvements.
+
+## Canonical Links
+- Portfolio: https://jdoornink.github.io/
+- 1-page resume: https://jdoornink.github.io/Resume/resume9-1page.md
+- Full resume: https://jdoornink.github.io/Resume/resume9-Full.md
+- 1-page resume PDF: https://jdoornink.github.io/Resume/resume9-1page.pdf
+- Full resume PDF: https://jdoornink.github.io/Resume/resume9-Full.pdf
+- GitHub: https://github.com/JDoornink
+- LinkedIn: https://www.linkedin.com/in/josefdoornink/
