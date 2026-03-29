@@ -1,0 +1,7 @@
+We are looking for a Senior SRE to manage our global infrastructure at scale. 
+Requirements:
+- 7+ years of SRE experience
+- Terraform, Kubernetes, Docker
+- Managing 5 nines of availability 
+- Strong understanding of observability and logging systems like Prometheus.
+- (Bonus) Interest in supporting MLOps or AI workloads.

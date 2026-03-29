@@ -1,6 +1,6 @@
 # JOSEF DOORNINK
 
-**Machine Learning Systems Engineer | Distributed Systems Architect**
+**Site Reliability Engineer | AI Infrastructure & MLOps**
 
 Portland, OR | jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josefdoornink/) | [GitHub](https://github.com/JDoornink) | [Portfolio](https://jdoornink.github.io/)
 
@@ -8,7 +8,7 @@ Portland, OR | jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josef
 
 ## PROFESSIONAL SUMMARY
 
-ML Systems Engineer with 12+ years of software engineering experience specializing in high-performance distributed systems, MLOps infrastructure, and large-scale Kubernetes environments. Proven track record building tools that improve team productivity. CKS/CKA certified with strong background in SRE practices, performance optimization, and automation.
+Site Reliability Engineer with 12+ years of software engineering experience building reliable distributed systems and scalable cloud platforms. Currently focused on applying SRE fundamentals to AI engineering and MLOps infrastructure, with hands-on work in model training/serving environments. CKS/CKA certified with a strong track record in automation, performance optimization, and reducing operational toil.
 
 ---
 
@@ -16,7 +16,7 @@ ML Systems Engineer with 12+ years of software engineering experience specializi
 
 **Languages:** Python | Go/Golang | Bash | C# | SQL
 
-**ML/AI Infrastructure:** Model Serving | ML Pipeline Development | Distributed Training Systems | Model Training Infrastructure
+**ML/AI Engineering:** Model Serving | ML Pipeline Development | Distributed Training Systems | Model Training Infrastructure
 
 **Infrastructure:** Kubernetes (AKS) | Docker | Terraform | Azure | AWS | Kafka | Redis | ElasticSearch
 
@@ -28,19 +28,19 @@ ML Systems Engineer with 12+ years of software engineering experience specializi
 
 ### Lead MLOps Engineer | REASON BENEFIT AI CORPORATION | Remote | Oct 2025 - Present
 
-- Architect large-scale AKS production environment for ML model training and serving with distributed inference at scale
-- Build Python automation tools for ML pipeline orchestration, significantly reducing manual overhead
-- Optimize model serving infrastructure through performance profiling, improving inference throughput
-- Implement automated testing frameworks for ML pipelines ensuring model quality in production
+- Architecting AKS production environments for ML model training and serving with distributed inference
+- Building Python automation tools for ML pipeline orchestration, reducing manual operational overhead
+- Optimizing model serving infrastructure through performance profiling and capacity tuning
+- Implementing automated test frameworks for ML pipelines to improve production reliability
 
 ### Lead Site Reliability Engineer (SRE) | Trimble/Viewpoint | Portland, OR | Jan 2019 - Present
 
 - Architected AKS production environments handling 10M+ requests/day across 30+ microservices with 99.9% uptime
 - Developed automation tools using Python and Go that eliminated 80+ hours/month operational toil
-- Led performance optimization significantly reducing P99 latency and improving throughput for distributed systems
+- Led performance optimization efforts reducing P99 latency and improving throughput for distributed systems
 - Built custom CLI tooling in Go (Cobra) streamlining workflows for 50+ engineers
 - Implemented Infrastructure as Code using Terraform managing 500+ cloud resources
-- Created CI/CD pipelines with automated testing, canary deployments, and rollback mechanisms
+- Created CI/CD pipelines with automated testing,sophisticated deployment templates, and rollback mechanisms
 
 ### Software Developer | Viewpoint | Portland, OR | Mar 2018 - Jan 2019
 
@@ -56,9 +56,9 @@ ML Systems Engineer with 12+ years of software engineering experience specializi
 
 ## KEY TECHNICAL PROJECTS
 
-**Distributed Training Pipeline Optimization (2025)** - Profiled RL training pipeline, eliminated Python GIL contention, built automated test environment, significantly reduced training time
+**Distributed Training Pipeline Optimization (2025)** - Improved training cycle time by profiling RL pipeline bottlenecks, reducing Python GIL contention, and introducing automated pipeline validation
 
-**Kubernetes Security Hardening (2024)** - Implemented CKS best practices achieving SOC2 compliance, significantly reduced vulnerabilities
+**Kubernetes Security Hardening (2024)** - Reduced security risk by implementing CKS controls and automation that supported SOC2 compliance
 
 **High-Performance CLI Tooling (2023)** - Created production-grade CLI tools in Go for infrastructure management adopted by 50+ engineers
 
