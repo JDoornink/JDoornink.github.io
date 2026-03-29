@@ -51,7 +51,7 @@ Site Reliability Engineer with 12+ years of software engineering experience spec
 - Built custom CLI tooling in **Go (Cobra framework)** to streamline workflows for 50+ engineers, dramatically improving team productivity through better developer experience
 - Designed and implemented comprehensive observability stack (Prometheus, Grafana, Azure Monitor) with distributed tracing for debugging performance bottlenecks in distributed microservices
 - Led capacity planning and performance optimization for Kubernetes clusters and backend databases, implementing auto-scaling strategies supporting 200% traffic growth
-- Created sophisticated CI/CD pipelines using **GitHub Actions** and Azure DevOps with automated testing, canary deployments, and rollback mechanisms
+- Created sophisticated CI/CD pipelines using **GitHub Actions** and Azure DevOps with automated testing, sophisticated deployment templates, and rollback mechanisms
 - Implemented Infrastructure as Code using **Terraform** managing 500+ cloud resources, enabling consistent and repeatable infrastructure provisioning
 - Participated in on-call rotation providing critical incident response, root cause analysis, and post-mortem documentation for production systems
 - Mentored software developers on distributed systems reliability, SRE principles, and performance optimization techniques

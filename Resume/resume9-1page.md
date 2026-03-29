@@ -40,7 +40,7 @@ Site Reliability Engineer with 12+ years of software engineering experience buil
 - Led performance optimization efforts reducing P99 latency and improving throughput for distributed systems
 - Built custom CLI tooling in Go (Cobra) streamlining workflows for 50+ engineers
 - Implemented Infrastructure as Code using Terraform managing 500+ cloud resources
-- Created CI/CD pipelines with automated testing, canary deployments, and rollback mechanisms
+- Created CI/CD pipelines with automated testing,sophisticated deployment templates, and rollback mechanisms
 
 ### Software Developer | Viewpoint | Portland, OR | Mar 2018 - Jan 2019
 

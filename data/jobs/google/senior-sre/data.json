@@ -1,0 +1,81 @@
+{
+  "basics": {
+    "name": "Josef Doornink",
+    "label": "Senior Site Reliability Engineer & AI Systems Engineer",
+    "email": "jdoornink@example.com",
+    "phone": "(555) 555-5555",
+    "url": "https://jdoornink.github.io",
+    "summary": "Enthusiastic software engineer and Senior Site Reliability Engineer (SRE) transitioning to AI/ML operations (MLOps) and AI Software Engineering (AISE). With over 6 years of experience, my core philosophy is to build highly resilient infrastructure before implementing automated intelligence.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "josefdoornink",
+        "url": "https://www.linkedin.com/in/josefdoornink/"
+      },
+      {
+        "network": "GitHub",
+        "username": "jdoornink",
+        "url": "https://github.com/jdoornink"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Tech Corp (Example)",
+      "position": "Senior DevOps / SRE",
+      "startDate": "2020-01-01",
+      "endDate": "Present",
+      "summary": "Led infrastructure automation and high availability cluster management.",
+      "highlights": [
+        "Architected scalable infrastructure as code using Terraform.",
+        "Ensured 99.99% core infrastructure uptime via automated observability.",
+        "Deployed CI/CD pipelines for zero-downtime updates."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Site Reliability (SRE)",
+      "level": "Master",
+      "keywords": [
+        "Terraform",
+        "Kubernetes",
+        "Prometheus",
+        "Docker",
+        "Linux"
+      ]
+    },
+    {
+      "name": "AI/MLOps",
+      "level": "Proficient",
+      "keywords": [
+        "RAG Architecture",
+        "Vector Databases",
+        "Prompt Engineering",
+        "LLM Evals",
+        "Python"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Kubernetes Administrator (CKA)",
+      "issuer": "DevOps Institute",
+      "date": "2022-05-01"
+    }
+  ],
+  "patents": [
+    {
+      "title": "Method for Automated Infrastructure Fallback",
+      "date": "2023-11-20",
+      "description": "A novel approach to infrastructure failure detection."
+    }
+  ],
+  "telemetry": {
+    "generation_latency_ms": 2706,
+    "tokens_used": 3450,
+    "cost_usd": 0.043,
+    "strict_schema_eval_score": "100%",
+    "prompt_version": "v4-adversarial-defense"
+  }
+}

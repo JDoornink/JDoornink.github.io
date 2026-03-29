@@ -17,7 +17,6 @@ def clean_text(text):
         '—': '-',
         '–': '-',
         '→': '->',
-        '•': '-',
     }
     for src, dest in replacements.items():
         text = text.replace(src, dest)
@@ -160,7 +159,7 @@ def convert_md_to_pdf(md_file, pdf_file):
             continue
 
         if line.startswith('- '):
-            story.append(Paragraph(inline_markdown_to_html(f"• {line[2:]}"), bullet))
+            story.append(Paragraph(f"• {inline_markdown_to_html(line[2:])}", bullet))
             continue
 
         story.append(Paragraph(inline_markdown_to_html(line), normal))
@@ -169,17 +168,23 @@ def convert_md_to_pdf(md_file, pdf_file):
     print(f"Created: {pdf_file}")
 
 
-# Convert both resumes
-resume_dir = Path(__file__).parent / "Resume"
-
-convert_md_to_pdf(
-    resume_dir / "resume9-1page.md",
-    resume_dir / "resume9-1page.pdf"
-)
-
-convert_md_to_pdf(
-    resume_dir / "resume9-Full.md",
-    resume_dir / "resume9-Full.pdf"
-)
-
-print("\n✅ PDF conversion complete!")
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) == 3:
+        convert_md_to_pdf(Path(sys.argv[1]), Path(sys.argv[2]))
+        print(f"\n✅ Target PDF conversion fully complete: {sys.argv[2]}")
+    else:
+        # Convert both master resumes via offline fallback
+        resume_dir = Path(__file__).parent / "Resume"
+        
+        convert_md_to_pdf(
+            resume_dir / "resume9-1page.md",
+            resume_dir / "resume9-1page.pdf"
+        )
+        
+        convert_md_to_pdf(
+            resume_dir / "resume9-Full.md",
+            resume_dir / "resume9-Full.pdf"
+        )
+        
+        print("\n✅ Default Master PDF conversion complete!")

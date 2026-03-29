@@ -1,0 +1,37 @@
+Job Requisition ID
+JR2014369
+Job Category
+Engineering
+Time Type
+Full time
+NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team that is building AI platform for operating AI factories to make a lasting impact on resilient operations of AI clusters.
+
+What will you be doing:
+
+You will bring together and understand internal and external customer requirements to improve AI cluster resiliency and design AIOps-based solutions that address these needs.
+
+Develop automated workflows for issue detection and root cause analysis and closely collaborate with operators to debug sophisticated, full-stack AI cluster problems. We will bring to bear the findings for product improvements!
+
+Deliver compelling technical presentations and lead hands-on demos or training. You'll also handle evaluation deployments (POC/POV) and ensure smooth, reliable installations by staying engaged and encouraging throughout the customer journey.
+
+What we need to see:
+
+Bachelor of Science or equivalent experience
+
+8+ years of networking experience in enterprise or service provider environments, with strong hands-on expertise in routing and switching.
+
+Proficient in scripting and automation using Python or similar languages, with strong Linux expertise.
+
+Proven experience working directly with customers to resolve issues and ensure success in Systems Engineer or SRE roles.
+
+Exceptional oral, written, and presentation skills for clearly communicating complex technical topics.
+
+Demonstrated ability to collaborate effectively across teams, partnering with operations, engineering, and product development
+
+Ways to stand out from the crowd:
+
+Experience with data center infrastructure and cloud architectures
+
+Background in network performance monitoring or observability
+
+Previous experience working at a technological start-up
