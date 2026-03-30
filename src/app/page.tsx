@@ -42,8 +42,8 @@ export default function Home() {
           <div className="flex justify-between gap-2 pt-4 text-[13px] md:text-sm overflow-x-auto pb-2 whitespace-nowrap w-full no-scrollbar">
             <a href="https://github.com/JDoornink" target="_blank" rel="noreferrer" className="flex-1 text-center px-3 py-1.5 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded hover:bg-neutral-700 transition-colors">GitHub</a>
             <a href="https://www.linkedin.com/in/josefdoornink/" target="_blank" rel="noreferrer" className="flex-1 text-center px-3 py-1.5 bg-[#0a66c2]/20 border border-[#0a66c2]/50 text-blue-300 rounded hover:bg-[#0a66c2]/40 transition-colors">LinkedIn</a>
-            <a href="/Josef_Doornink_Resume.pdf" target="_blank" className="flex-1 text-center px-3 py-1.5 bg-blue-900/20 border border-blue-500/50 text-blue-300 rounded hover:bg-blue-900/40 transition-colors">Resume PDF</a>
             <ClientNav />
+            <a href="/Josef_Doornink_Resume.pdf" target="_blank" className="flex-1 text-center px-3 py-1.5 bg-blue-900/20 border border-blue-500/50 text-blue-300 rounded hover:bg-blue-900/40 transition-colors">Resume</a>
           </div>
         </header>
 
