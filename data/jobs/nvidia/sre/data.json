@@ -89,13 +89,17 @@
   "skills": [
     {
       "name": "Core Technologies",
-      "level": "Expert",
+      "level": "Advanced",
       "keywords": [
-        "Python",
-        "Go/Golang",
         "Kubernetes (AKS)",
         "Docker",
-        "Terraform"
+        "Terraform",
+        "Azure",
+        "GCP",
+        "Helm",
+        "YAML",
+        "Python",
+        "Go/Golang"
       ]
     },
     {
@@ -105,18 +109,24 @@
         "LLM Model Serving",
         "ML Pipelines",
         "Distributed Training Systems",
-        "RLHF Infrastructure"
+        "RLHF Infrastructure",
+        "Azure Machine Learning",
+        "Vertex AI",
+        "Model Finetuning Systems"
       ]
     },
     {
       "name": "Observability & SRE",
       "level": "Expert",
       "keywords": [
-        "Prometheus",
         "New Relic",
-        "Grafana",
         "Distributed Tracing",
-        "Incident Response"
+        "CI/CD Pipelines",
+        "GitHub Actions",
+        "Performance Profiling",
+        "Incident Response",
+        "Prometheus",
+        "Grafana"
       ]
     }
   ],

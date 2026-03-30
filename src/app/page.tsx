@@ -1,9 +1,11 @@
 import fs from 'fs';
 import path from 'path';
 import ClientNav from './ClientNav';
+import { Fragment } from 'react';
 
 export default function Home() {
   const dataPath = path.join(process.cwd(), 'data', 'master_resume.json');
+
   const rawData = fs.readFileSync(dataPath, 'utf-8');
   const data = JSON.parse(rawData);
 
@@ -111,23 +113,28 @@ export default function Home() {
         </section>
 
         <section className="space-y-6">
-          <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white">Professional Experience</h3>
+          <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white">Professional Experience - Startup</h3>
           {data.work.map((job: any, i: number) => (
-            <div key={i} className="bg-gray-900 border border-neutral-800 p-6 rounded-lg relative overflow-hidden group">
-              <div className="absolute top-0 left-0 w-1 h-full bg-emerald-500/50 group-hover:bg-emerald-400 transition-colors"></div>
-              <div className="flex flex-col md:flex-row justify-between md:items-start mb-4 gap-2">
-                <div>
-                  <h4 className="text-xl font-bold text-white">{job.company}</h4>
-                  <div className="text-emerald-400 font-semibold">{job.position}</div>
+            <Fragment key={i}>
+              {i === 1 && (
+                <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white pt-4">Professional Experience</h3>
+              )}
+              <div className="bg-gray-900 border border-neutral-800 p-6 rounded-lg relative overflow-hidden group">
+                <div className="absolute top-0 left-0 w-1 h-full bg-emerald-500/50 group-hover:bg-emerald-400 transition-colors"></div>
+                <div className="flex flex-col md:flex-row justify-between md:items-start mb-4 gap-2">
+                  <div>
+                    <h4 className="text-xl font-bold text-white">{job.company}</h4>
+                    <div className="text-emerald-400 font-semibold">{job.position}</div>
+                  </div>
+                  <div className="text-gray-500 text-sm whitespace-nowrap">{job.startDate} — {job.endDate}</div>
                 </div>
-                <div className="text-gray-500 text-sm whitespace-nowrap">{job.startDate} — {job.endDate}</div>
+                <ul className="list-disc list-outside ml-4 space-y-2 text-gray-300 font-sans">
+                  {job.highlights.map((hlt: string, j: number) => (
+                    <li key={j} className="hover:text-gray-100 transition-colors leading-relaxed text-justify">{hlt}</li>
+                  ))}
+                </ul>
               </div>
-              <ul className="list-disc list-outside ml-4 space-y-2 text-gray-300 font-sans">
-                {job.highlights.map((hlt: string, j: number) => (
-                  <li key={j} className="hover:text-gray-100 transition-colors leading-relaxed text-justify">{hlt}</li>
-                ))}
-              </ul>
-            </div>
+            </Fragment>
           ))}
         </section>
 

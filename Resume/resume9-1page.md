@@ -24,7 +24,7 @@ Site Reliability Engineer with 12+ years of software engineering experience buil
 
 ---
 
-## PROFESSIONAL EXPERIENCE
+## PROFESSIONAL EXPERIENCE - STARTUP
 
 ### Lead MLOps Engineer | REASON BENEFIT AI CORPORATION | Remote | Oct 2025 - Present
 
@@ -32,6 +32,8 @@ Site Reliability Engineer with 12+ years of software engineering experience buil
 - Building Python automation tools for ML pipeline orchestration, reducing manual operational overhead
 - Optimizing model serving infrastructure through performance profiling and capacity tuning
 - Implementing automated test frameworks for ML pipelines to improve production reliability
+
+## PROFESSIONAL EXPERIENCE
 
 ### Lead Site Reliability Engineer (SRE) | Trimble/Viewpoint | Portland, OR | Jan 2019 - Present
 
