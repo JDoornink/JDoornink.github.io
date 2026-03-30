@@ -42,7 +42,7 @@ export default function Home() {
           <div className="flex justify-between gap-2 pt-4 text-[13px] md:text-sm overflow-x-auto pb-2 whitespace-nowrap w-full no-scrollbar">
             <a href="https://github.com/JDoornink" target="_blank" rel="noreferrer" className="flex-1 text-center px-3 py-1.5 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded hover:bg-neutral-700 transition-colors">GitHub</a>
             <a href="https://www.linkedin.com/in/josefdoornink/" target="_blank" rel="noreferrer" className="flex-1 text-center px-3 py-1.5 bg-[#0a66c2]/20 border border-[#0a66c2]/50 text-blue-300 rounded hover:bg-[#0a66c2]/40 transition-colors">LinkedIn</a>
-            <a href="/Josef_Doornink_Resume.pdf" target="_blank" className="flex-1 text-center px-3 py-1.5 bg-blue-900/20 border border-blue-500/50 text-blue-300 rounded hover:bg-blue-900/40 transition-colors">Download Resume PDF</a>
+            <a href="/Josef_Doornink_Resume.pdf" target="_blank" className="flex-1 text-center px-3 py-1.5 bg-blue-900/20 border border-blue-500/50 text-blue-300 rounded hover:bg-blue-900/40 transition-colors">Resume PDF</a>
             <ClientNav />
           </div>
         </header>
@@ -79,13 +79,13 @@ export default function Home() {
               <a key={i} href={project.url} target="_blank" rel="noreferrer" className="block bg-gray-900 border border-neutral-800 p-6 rounded-lg hover:border-purple-500/30 transition-colors group relative flex flex-col h-full">
                 <h4 className="text-white font-bold leading-tight mb-2 group-hover:text-purple-400 transition-colors underline decoration-purple-500/30 underline-offset-4">{project.name}</h4>
                 <p className="text-gray-400 font-sans text-sm leading-relaxed mb-4 flex-grow">{project.description}</p>
-                
+
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {project.keywords?.map((kw: string, j: number) => (
                     <span key={j} className="px-2 py-1 bg-neutral-950 border border-neutral-700/50 rounded text-[10px] uppercase tracking-wider text-gray-300 group-hover:border-purple-900 transition-colors">{kw}</span>
                   ))}
                 </div>
-                
+
                 <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity text-purple-400">
                   ↗
                 </div>

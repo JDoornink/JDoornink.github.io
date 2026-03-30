@@ -13,16 +13,16 @@ export async function generateStaticParams() {
   if (!fs.existsSync(jobsDir)) return [];
 
   const paths: { company: string; role: string }[] = [];
-  
+
   const companies = fs.readdirSync(jobsDir);
   for (const company of companies) {
     const companyPath = path.join(jobsDir, company);
     if (!fs.statSync(companyPath).isDirectory()) continue;
-    
+
     const roles = fs.readdirSync(companyPath);
     for (const role of roles) {
       if (fs.statSync(path.join(companyPath, role)).isDirectory()) {
-         paths.push({ company, role });
+        paths.push({ company, role });
       }
     }
   }
@@ -33,7 +33,7 @@ export async function generateStaticParams() {
 export default async function TailoredJobPage({ params }: Props) {
   const { company, role } = await params;
   const dataPath = path.join(process.cwd(), 'data', 'jobs', company, role, 'data.json');
-  
+
   if (!fs.existsSync(dataPath)) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-950 text-white">
@@ -50,7 +50,7 @@ export default async function TailoredJobPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-gray-200 font-mono p-8 md:p-16">
-      
+
       {/* SRE FinOps Telemetry Badge - Radical Transparency */}
       {data.telemetry && (
         <div className="absolute top-4 right-4 bg-gray-900 border border-neutral-800 rounded-lg p-4 text-xs shadow-xl max-w-sm">
@@ -76,7 +76,7 @@ export default async function TailoredJobPage({ params }: Props) {
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto space-y-12 pt-12">
-        
+
         <header className="space-y-4 border-b border-gray-800 pb-8">
           <div className="text-sm font-bold text-blue-400 tracking-widest uppercase flex items-center space-x-2">
             <span>[ Target TargetLock ]</span>
@@ -85,7 +85,7 @@ export default async function TailoredJobPage({ params }: Props) {
           </div>
           <h1 className="text-5xl font-extrabold tracking-tight text-white mb-2">{data.basics.name}</h1>
           <h2 className="text-xl text-gray-400">{data.basics.label}</h2>
-          
+
           <p className="w-full text-gray-300 leading-relaxed pt-4 font-sans text-lg text-justify">
             {data.basics.summary}
           </p>
@@ -93,7 +93,7 @@ export default async function TailoredJobPage({ params }: Props) {
           <div className="flex justify-between gap-2 pt-4 text-[13px] md:text-sm overflow-x-auto pb-2 whitespace-nowrap w-full no-scrollbar">
             <a href="https://github.com/JDoornink" target="_blank" rel="noreferrer" className="flex-1 text-center px-3 py-1.5 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded hover:bg-neutral-700 transition-colors">GitHub</a>
             <a href="https://www.linkedin.com/in/josefdoornink/" target="_blank" rel="noreferrer" className="flex-1 text-center px-3 py-1.5 bg-[#0a66c2]/20 border border-[#0a66c2]/50 text-blue-300 rounded hover:bg-[#0a66c2]/40 transition-colors">LinkedIn</a>
-            <a href={`/t/${company}/${role}/resume.pdf`} target="_blank" className="flex-1 text-center px-3 py-1.5 bg-blue-900/20 border border-blue-500/50 text-blue-300 rounded hover:bg-blue-900/40 transition-colors">Download Resume PDF</a>
+            <a href={`/t/${company}/${role}/resume.pdf`} target="_blank" className="flex-1 text-center px-3 py-1.5 bg-blue-900/20 border border-blue-500/50 text-blue-300 rounded hover:bg-blue-900/40 transition-colors">Resume PDF</a>
             <ClientNav />
           </div>
         </header>
@@ -130,13 +130,13 @@ export default async function TailoredJobPage({ params }: Props) {
               <a key={i} href={project.url} target="_blank" rel="noreferrer" className="block bg-gray-900 border border-neutral-800 p-6 rounded-lg hover:border-purple-500/30 transition-colors group relative flex flex-col h-full">
                 <h4 className="text-white font-bold leading-tight mb-2 group-hover:text-purple-400 transition-colors underline decoration-purple-500/30 underline-offset-4">{project.name}</h4>
                 <p className="text-gray-400 font-sans text-sm leading-relaxed mb-4 flex-grow">{project.description}</p>
-                
+
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {project.keywords?.map((kw: string, j: number) => (
                     <span key={j} className="px-2 py-1 bg-neutral-950 border border-neutral-700/50 rounded text-[10px] uppercase tracking-wider text-gray-300 group-hover:border-purple-900 transition-colors">{kw}</span>
                   ))}
                 </div>
-                
+
                 <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity text-purple-400">
                   ↗
                 </div>
@@ -155,7 +155,7 @@ export default async function TailoredJobPage({ params }: Props) {
                   <div className="text-sm text-emerald-400 mb-2 font-bold uppercase tracking-wider">{skill.name}</div>
                   <div className="flex flex-wrap gap-2">
                     {skill.keywords.map((kw: string, j: number) => (
-                       <span key={j} className="px-2 py-1 bg-black border border-neutral-700 rounded text-xs text-gray-300">{kw}</span>
+                      <span key={j} className="px-2 py-1 bg-black border border-neutral-700 rounded text-xs text-gray-300">{kw}</span>
                     ))}
                   </div>
                 </div>
@@ -193,24 +193,24 @@ export default async function TailoredJobPage({ params }: Props) {
             <div className="bg-gray-900 border border-neutral-800 rounded-lg p-6 space-y-6">
               {data.publications?.map((pub: any, i: number) => (
                 <div key={i} className={`relative flex flex-col justify-between ${i !== data.publications.length - 1 ? 'border-b border-neutral-800 pb-6' : 'pb-0'}`}>
-                  
+
                   <div>
                     <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-2">
-                       <h4 className="text-white font-bold text-sm leading-snug">{pub.title}</h4>
-                       
-                       <div className="flex-shrink-0 bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded border border-gray-700 flex items-center space-x-1 cursor-default whitespace-nowrap" title="Google Scholar Citations">
-                         <span>Citations:</span>
-                         <span className="font-bold text-rose-400">{pub.citations}</span>
-                       </div>
+                      <h4 className="text-white font-bold text-sm leading-snug">{pub.title}</h4>
+
+                      <div className="flex-shrink-0 bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded border border-gray-700 flex items-center space-x-1 cursor-default whitespace-nowrap" title="Google Scholar Citations">
+                        <span>Citations:</span>
+                        <span className="font-bold text-rose-400">{pub.citations}</span>
+                      </div>
                     </div>
-                    
+
                     <div className="text-rose-400 font-semibold text-xs mb-2">{pub.journal} {pub.date && `• ${pub.date}`}</div>
-                    <p 
-                       className="text-gray-500 font-sans italic text-xs mb-4" 
-                       dangerouslySetInnerHTML={{ __html: pub.authors.replace('J Doornink', '<strong class="text-white font-bold underline decoration-rose-500/50 underline-offset-2">J Doornink</strong>') }}
+                    <p
+                      className="text-gray-500 font-sans italic text-xs mb-4"
+                      dangerouslySetInnerHTML={{ __html: pub.authors.replace('J Doornink', '<strong class="text-white font-bold underline decoration-rose-500/50 underline-offset-2">J Doornink</strong>') }}
                     />
                   </div>
-                  
+
                   {pub.isFirstAuthor && (
                     <div className="self-start inline-block bg-rose-900/40 text-rose-300 text-[10px] px-2 py-1 uppercase tracking-widest rounded border border-rose-500/30">
                       ★ First Author
