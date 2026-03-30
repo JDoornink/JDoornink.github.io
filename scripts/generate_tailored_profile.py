@@ -73,9 +73,11 @@ def process_job_description(target_folder):
         md_content += f"**{skill['name']}:** {' | '.join(skill['keywords'])}\n\n"
     
     md_content += "---\n\n"
-    md_content += "## PROFESSIONAL EXPERIENCE\n\n"
+    md_content += "## PROFESSIONAL EXPERIENCE - STARTUP\n\n"
     
-    for job in tailored_data['work']:
+    for i, job in enumerate(tailored_data['work']):
+        if i == 1:
+            md_content += "## PROFESSIONAL EXPERIENCE\n\n"
         md_content += f"### {job['position']}\n"
         md_content += f"**{job['company']}** | Remote | {job['startDate']} - {job['endDate']}\n\n"
         for highlight in job['highlights']:

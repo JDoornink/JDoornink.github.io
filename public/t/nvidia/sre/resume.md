@@ -14,15 +14,15 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 
 ## TECHNICAL SKILLS
 
-**Core Technologies:** Python | Go/Golang | Kubernetes (AKS) | Docker | Terraform
+**Core Technologies:** Kubernetes (AKS) | Docker | Terraform | Azure | GCP | Helm | YAML | Python | Go/Golang
 
-**AI/ML Engineering:** LLM Model Serving | ML Pipelines | Distributed Training Systems | RLHF Infrastructure
+**AI/ML Engineering:** LLM Model Serving | ML Pipelines | Distributed Training Systems | RLHF Infrastructure | Azure Machine Learning | Vertex AI | Model Finetuning Systems
 
-**Observability & SRE:** Prometheus | New Relic | Grafana | Distributed Tracing | Incident Response
+**Observability & SRE:** New Relic | Distributed Tracing | CI/CD Pipelines | GitHub Actions | Performance Profiling | Incident Response | Prometheus | Grafana
 
 ---
 
-## PROFESSIONAL EXPERIENCE
+## PROFESSIONAL EXPERIENCE - STARTUP
 
 ### Lead MLOps Engineer
 **REASON BENEFIT AI CORPORATION** | Remote | October 2025 - Present
@@ -33,6 +33,8 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 - Optimize model serving infrastructure through performance profiling and system-level optimizations, improving inference throughput by 40%.
 - Collaborate with research teams to translate experimental model architectures into production-ready systems with focus on reliability and scalability.
 - Implement automated testing frameworks for ML pipelines to quickly detect regressions and ensure model quality in production.
+
+## PROFESSIONAL EXPERIENCE
 
 ### Lead Site Reliability Engineer (SRE) I -> II -> III
 **Trimble/Viewpoint** | Remote | January 2019 - Present
