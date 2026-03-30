@@ -40,7 +40,7 @@ python scripts/generate_tailored_profile.py data/jobs/anthropic/sre-lead
 1. Parses the raw text of `jd.txt`.
 2. Cross-references it against your master SRE skills in `master_resume.json`.
 3. Outputs a tailored, highly-targeted `data.json` directly into the folder.
-4. Generates a custom Markdown (`resume.md`) and perfectly formatted PDF (`resume.pdf`) inside the folder.
+4. Automatically compiles and publishes a custom Markdown (`resume.md`) and precisely formatted PDF (`resume.pdf`) directly into the Next.js static hosting tree (`public/t/[company]/[role]/`) for clean GitOps routing.
 
 ### Step 4: Validate the Vercel/Next.js Target Output
 Because Next.js uses dynamic `/t/[company]/[role]` routing, your new page is already live! 
