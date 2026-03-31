@@ -79,3 +79,44 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 ### Agentic SRE Pipeline & Portfolio (2025)
 - The source code driving this exact platform. A Next.js (React) infrastructure executing a Python/RAG Agent pipeline that strictly parses unstructured Job Descriptions and outputs statically generated, targeted frontend bundles dynamically.
 
+---
+
+## CERTIFICATIONS
+
+- **CNCF Certified Kubernetes Security Specialist (CKS)** | CNCF | March 2024
+- **CNCF Certified Kubernetes Administrator (CKA)** | CNCF | June 2021
+- **Machine Learning Specialization** | Stanford / Coursera | September 2025
+- **HashiCorp Certified Terraform Associate** | HashiCorp | July 2022
+- **Microsoft Certified Azure Developer Associate** | Microsoft | August 2019
+
+---
+
+## EDUCATION
+
+**Master of Science**, University of California, Davis | 2006
+
+**Bachelor of Science, Mechanical Engineering**, California State University, Chico | 2003
+
+---
+
+## PATENTS & AWARDS
+
+**Bone screw with multiple thread profiles for far cortical locking and flexible engagement to a bone (US9314286B2)**
+- A bone screw including a head, a shaft, and a tip. The shaft includes a first threaded section, a second threaded section, and an unthreaded section positioned between the first and second threaded sections. Designed to enable dynamic fixation.
+
+**Bone screw with multiple thread profiles... (US8740955B2)**
+- Original patent formulation for the orthopedic implant enabling far cortical locking via a flexible-engagement thread profile.
+
+**Scientific Exhibit Award of Excellence**
+- Awarded at the American Academy of Orthopaedic Surgeons (AAOS) 2010 Annual Meeting for the landmark exhibit: 'Effects of Construct Stiffness on Healing of Fractures Stabilized With Locking Plates' (Bottlang M., Doornink J., Fitzpatrick DC, Marsh JL, Augat P., von Rechenberg B., Lesser M., Madey SM).
+
+---
+
+## PUBLICATIONS (Subset of 11)
+
+- M Bottlang, **J Doornink**, DC Fitzpatrick, SM Madey. *Far cortical locking can reduce stiffness of locked plating constructs while retaining construct strength.* The Journal of Bone and Joint Surgery (JBJS), 2009
+- M Bottlang, M Lesser, J Koerber, **J Doornink**, S Mueller, DC Fitzpatrick.... *Far cortical locking can improve healing of fractures stabilized with locking plates.* The Journal of Bone and Joint Surgery (JBJS), 2010
+- M Bottlang, **J Doornink**, TJ Lujan, DC Fitzpatrick, PV Marsh.... *Effects of construct stiffness on healing of fractures stabilized with locking plates.* The Journal of Bone and Joint Surgery (JBJS), 2010
+- **J Doornink**, DC Fitzpatrick, SM Madey, M Bottlang. *Far cortical locking enables flexible fixation with periarticular locking plates.* Journal of Orthopaedic Trauma, 2011
+- **J Doornink**, DC Fitzpatrick, S Boldhaus, SM Madey, M Bottlang. *Effects of hybrid plating with locked and nonlocked screws on the strength of locked plating constructs in the osteoporotic diaphysis.* Journal of Trauma and Acute Care Surgery, 2010
+

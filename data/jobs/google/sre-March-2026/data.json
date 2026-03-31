@@ -276,7 +276,7 @@
     }
   ],
   "telemetry": {
-    "generation_latency_ms": 2709,
+    "generation_latency_ms": 2706,
     "tokens_used": 3450,
     "cost_usd": 0.043,
     "strict_schema_eval_score": "100%",
