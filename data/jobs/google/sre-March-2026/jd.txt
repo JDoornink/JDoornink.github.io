@@ -1,0 +1,43 @@
+About the job
+Minimum qualifications:
+
+Bachelor’s degree in Computer Science, a related field, or equivalent practical experience.
+5 years of experience with programming in one or more programming languages.
+3 years of people management experience.
+3 years of experience leading projects and working with administration (e.g., filesystems, inodes, system calls) or networking (e.g., TCP/IP, routing, network topologies and hardware, SDN).
+3 years of experience developing infrastructure, distributed systems/networks.
+2 years of experience with distributed systems and system design.
+
+Preferred qualifications:
+
+Master's degree in Computer Science or Engineering.
+Experience in building scalable, reliable and highly performant web applications.
+Experience with programming languages Java or C++.
+Experience with Artificial Intelligence.
+Experience in experimental design (e.g., A/B, multivariate) and incremental analysis.
+
+About The Job
+
+Site Reliability Engineering (SRE) combines software and systems engineering to build and run large-scale, massively distributed, fault-tolerant systems. SRE ensures that Google's services—both our internally critical and our externally-visible systems—have reliability, uptime appropriate to users' needs and a fast rate of improvement. Additionally SRE’s will keep an ever-watchful eye on our systems capacity and performance.
+
+Much of our software development focuses on optimizing existing systems, building infrastructure and eliminating work through automation. On the SRE team, you’ll have the opportunity to manage the complex challenges of scale which are unique to Google, while using your expertise in coding, algorithms, complexity analysis and large-scale system design.
+
+SRE's culture of intellectual curiosity, problem solving and openness is key to its success. Our organization brings together people with a wide variety of backgrounds, experiences and perspectives. We encourage them to collaborate, think big and take risks in a blame-free environment. We promote self-direction to work on meaningful projects, while we also strive to create an environment that provides the support and mentorship needed to learn and grow.
+
+To learn more: check out our books on Site Reliability Engineering or read a career profile about why a Software Engineer chose to join SRE.
+
+Search front-end SRE is the place where Search interfaces with our users. Our team is responsible for managing the application front-end for websearch. This system manages the bits and bytes that go out to the user, controls the user experience for Search, and is the tip of the spear for experimentation, logging, and access control for Google’s flagship product. Experience Search as we move forward into AI.
+
+Behind everything our users see online is the architecture built by the Technical Infrastructure team to keep it running. From developing and maintaining our data centers to building the next generation of Google platforms, we make Google's product portfolio possible. We're proud to be our engineers' engineers and love voiding warranties by taking things apart so we can rebuild them. We keep our networks up and running, ensuring our users have the best and fastest experience possible.
+
+The US base salary range for this full-time position is $207,000-$300,000 + bonus + equity + benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Your recruiter can share more about the specific salary range for your preferred location during the hiring process.
+
+Please note that the compensation details listed in US role postings reflect the base salary only, and do not include bonus, equity, or benefits. Learn more about benefits at Google .
+
+Responsibilities
+
+Lead a team of Software/Systems Engineers on projects for users and be responsible for uptime.
+Own end-to-end availability and performance of key services and build automation to prevent problem recurrence. Automate response to all non-exceptional service conditions.
+Lead by example, mentor the team and establish credibility through quality technical execution.
+Manage on-call rotations across continents, using a follow-the-sun model.
+Design, write and deliver software to improve the availability, scalability, latency and efficiency of Google's services.
