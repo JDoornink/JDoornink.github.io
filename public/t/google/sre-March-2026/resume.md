@@ -73,10 +73,10 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 ## KEY TECHNICAL PROJECTS
 
 ### K8gentS (2025)
-- An autonomous Root Cause Analysis (RCA) agent designed specifically for Kubernetes clusters. Leverages LLM logic and system telemetry to automatically diagnose pod failures, resource exhaustion, and network bottlenecks, drastically reducing operational MTTR.
+- An autonomous Root Cause Analysis (RCA) agent designed specifically for Kubernetes clusters. Leverages LLM logic and system telemetry to automatically diagnose pod failures, resource exhaustion, and network bottlenecks, drastically reducing operational MTTR and increasing visibility.
 
 ### OmniSight-Core (2025)
-- A centralized observability and anomaly detection platform for distributed microservices. Engineered to aggregate telemetry, system metrics, and distributed traces into actionable infrastructure insights.
+- A production-grade video search engine capable of understanding semantic queries (e.g., \"Find a red truck at night\"). Demonstrates self-healing infrastructure that automatically detects model performance decay and triggers retraining.
 
 ### Agentic SRE Pipeline & Portfolio (2025)
 - The source code driving this exact platform. A Next.js (React) infrastructure executing a Python/RAG Agent pipeline that strictly parses unstructured Job Descriptions and outputs statically generated, targeted frontend bundles dynamically.

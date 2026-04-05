@@ -109,7 +109,7 @@ Site Reliability Engineer with 12+ years of software engineering experience spec
 - **Machine Learning Specialization** | Stanford/Coursera | September 2025
 - **Microsoft Certified Azure Developer Associate** | August 2019 | H210-5692
 - **HashiCorp Certified Terraform Associate** | July 2022 | HCTAO-002
-- **Production Machine Learning Systems** | Coursera / Google Cloud | April 2026 | 01X41BH2KFVE
+- **Production Machine Learning Systems** | Google Cloud / Coursera | April 2026 | 01X41BH2KFVE
 
 ---
 

@@ -8,19 +8,17 @@ Portland, OR | jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josef
 
 ## PROFESSIONAL SUMMARY
 
-Site Reliability Engineer with 12+ years of software engineering experience building reliable distributed systems and scalable cloud platforms. Currently focused on applying SRE fundamentals to AI engineering and MLOps infrastructure, with hands-on work in model training/serving environments. CKS/CKA certified with a strong track record in automation, performance optimization, and reducing operational toil.
+Site Reliability Engineer with 12+ years specializing in distributed systems, cloud infrastructure, and large-scale Kubernetes environments (CKS/CKA certified). Focused on building platform tooling that drives engineering productivity and eliminates toil. Currently bridging SRE and AI by scaling MLOps pipelines and model serving infrastructure. Deep expertise in observability, performance tuning, and infrastructure automation.
 
 ---
 
 ## TECHNICAL SKILLS
 
-**Languages:** Python | Go/Golang | Bash | C# | SQL
+**Core Technologies:** Kubernetes (AKS) | Docker | Terraform | Azure | AWS | GCP | Helm | YAML | Python | Go/Golang | Bash | C# | SQL | Kafka | Redis | ElasticSearch
 
-**ML/AI Engineering:** Model Serving | ML Pipeline Development | Distributed Training Systems | Model Training Infrastructure
+**AI/ML Engineering:** LLM Model Serving | ML Pipelines | Distributed Training Systems | RLHF Infrastructure | Azure Machine Learning | Vertex AI | Drift Detection | Model Finetuning Systems
 
-**Infrastructure:** Kubernetes (AKS) | Docker | Helm | Terraform | Azure | AWS | Kafka | Redis | ElasticSearch
-
-**DevOps & SRE:** GitHub Actions | Azure DevOps | CI/CD | Prometheus | New Relic | Azure Monitor
+**Observability & SRE:** New Relic | Azure Monitor | Distributed Tracing | CI/CD Pipelines | GitHub Actions | Performance Profiling | Incident Response | Prometheus | Grafana | Azure DevOps
 
 ---
 
@@ -28,41 +26,50 @@ Site Reliability Engineer with 12+ years of software engineering experience buil
 
 ### Lead MLOps Engineer | REASON BENEFIT AI CORPORATION | Remote | Oct 2025 - Present
 
-- Architecting AKS production environments for ML model training and serving with distributed inference
-- Building Python automation tools for ML pipeline orchestration, reducing manual operational overhead
-- Optimizing model serving infrastructure through performance profiling and capacity tuning
-- Implementing automated test frameworks for ML pipelines to improve production reliability
+- Architected and maintained large-scale AKS production environments for ML model training, supporting distributed model inference at scale
+- Improved inference throughput by 40% by optimizing model serving infrastructure through systematic performance profiling and tuning
+- Reduced training cycle times by profiling RL pipeline bottlenecks by introducing automated pipeline scripts and validations
+- Assured model quality in production and detected regressions quickly by implementing automated testing frameworks and integrating robust observability metrics
 
 ## PROFESSIONAL EXPERIENCE
 
-### Lead Site Reliability Engineer (SRE) | Trimble/Viewpoint | Portland, OR | Jan 2019 - Present
+### Lead Site Reliability Engineer (SRE) I -> II -> III | Trimble/Viewpoint | Portland, OR | Jan 2019 - Present
 
-- Architected AKS production environments handling 10M+ requests/day across 30+ microservices with 99.9% uptime
-- Developed automation tools using Python and Go that eliminated 80+ hours/month operational toil
-- Led performance optimization efforts reducing P99 latency and improving throughput for distributed systems
-- Built custom CLI tooling in Go (Cobra) streamlining workflows for 50+ engineers
-- Implemented Infrastructure as Code using Terraform managing 500+ cloud resources
-- Created CI/CD pipelines with automated testing,sophisticated deployment templates, and rollback mechanisms
+- Achieved 99.9% uptime SLA managing 10M+ requests/day by architecting and scaling AKS production environments across 30+ distributed microservices
+- Eliminated 80+ hours/month of operational toil and accelerated deployment velocity 3x by developing high-performance automation tools in Python and Go
+- Accelerated model deployment velocity and reduced manual overhead by 70% by building yaml-based automation tools for ML pipeline orchestration
+- Reduced P99 latency by 45% and improved throughput by 60% by leading systematic performance optimization and instrumentation initiatives
+- Streamlined workflows and improved developer productivity for 50+ engineers by building custom CI/CD pipelines and Go CLI tooling (Cobra)
+- Reduced MTTR by 50% by designing and implementing a comprehensive observability stack with distributed tracing in New Relic
+- Managed 500+ cloud resources consistently by implementing Infrastructure as Code methodologies using Terraform
 
 ### Software Developer | Viewpoint | Portland, OR | Mar 2018 - Jan 2019
 
-- Developed cloud-based SaaS applications using .NET and Angular on Azure platform
-- Built RESTful APIs for multi-tenant applications serving thousands of users
+- Scaled multi-tenant architectures to serve thousands of users by developing robust RESTful APIs and migrating on-premise SaaS solutions to Azure (.NET/Angular)
 
 ### Software Developer I | Onfulfillment | Portland, OR | Mar 2014 - Mar 2018
 
-- Engineered multi-tenant e-commerce platform using .NET, C#, SQL Server integrated with SaaS APIs
-- Led migration of legacy codebase to modern platform, measurably improving response times
+- Improved application response times by 40% (measured via New Relic APM) by engineering and leading the uplift migration of a legacy .NET/C# monolith to a modern greenfield platform
+
+### Biomechanical Research Engineer II | Legacy Biomechanics Research Lab | Portland, OR | Jan 2007 - Dec 2013
+
+- Delivered multiple US FDA-approved internal implants by leading the test methodology and development lifecycle for a multimillion-dollar NIH-funded orthopaedic project
 
 ---
 
 ## KEY TECHNICAL PROJECTS
 
-**Distributed Training Pipeline Optimization (2025)** - Improved training cycle time by profiling RL pipeline bottlenecks, reducing Python GIL contention, and introducing automated pipeline validation
+**K8gentS (Kubernetes RCA Agent) (2026)** - Created an autonomous Root Cause Analysis tool bridging SRE and AI. Leverages LLM reasoning and system telemetry to automatically diagnose pod failures, drastically reducing MTTR footprint.
 
-**Kubernetes Security Hardening (2024)** - Reduced security risk by implementing CKS controls and automation that supported SOC2 compliance
+**OmniSight-Core (2026)** - Engineered a centralized observability platform and video search engine capable of understanding semantic queries, utilizing self-healing infrastructure to automatically detect model performance decay.
 
-**High-Performance CLI Tooling (2023)** - Created production-grade CLI tools in Go for infrastructure management adopted by 50+ engineers
+**Agentic SRE Pipeline (2026)** - Built the foundational Next.js infrastructure executing a Python/RAG Agent pipeline that programmatically parses unstructured Job Descriptions to statically generate tailored frontend bundles dynamically.
+
+**Distributed Training Pipeline Optimization (2025)** - Improved training cycle time by profiling RL pipeline bottlenecks, reducing Python GIL contention, and introducing automated pipeline validation.
+
+**Kubernetes Security Hardening (2024)** - Reduced security risk by implementing CKS controls and automation that supported SOC2 compliance.
+
+**High-Performance CLI Tooling (2023)** - Created production-grade CLI tools in Go for infrastructure management adopted by 50+ engineers.
 
 ---
 
@@ -73,7 +80,7 @@ Site Reliability Engineer with 12+ years of software engineering experience buil
 - **Machine Learning Specialization** | Stanford/Coursera | September 2025
 - **Microsoft Certified Azure Developer Associate** | August 2019 | H210-5692
 - **HashiCorp Certified Terraform Associate** | July 2022 | HCTAO-002
-- **Production Machine Learning Systems** | Coursera / Google Cloud | April 2026 | 01X41BH2KFVE
+- **Production Machine Learning Systems** | Google Cloud / Coursera | April 2026 | 01X41BH2KFVE
 
 ---
 

@@ -28,12 +28,12 @@
       "summary": "",
       "highlights": [
         "Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.",
-        "Build Python-based automation tools for ML pipeline orchestration, reducing manual overhead by 70% and accelerating model deployment velocity.",
+        "Built yaml-based automation tools for ML pipeline orchestration, reducing manual overhead by 70% and accelerating model deployment velocity.",
         "Integrate with observability frameworks for model performance tracking, latency monitoring, and resource utilization across distributed training systems.",
         "Optimize model serving infrastructure through performance profiling and system-level optimizations, improving inference throughput by 40%.",
         "Collaborate with research teams to translate experimental model architectures into production-ready systems with focus on reliability and scalability.",
         "Implement automated testing frameworks for ML pipelines to quickly detect regressions and ensure model quality in production.",
-        "Led Distributed Training Pipeline Optimization by profiling RL (Reinforcement Learning) pipeline bottlenecks, reducing Python GIL contention, and introducing automated pipeline validations to improve training cycle time."
+        "Led Distributed Training Pipeline Optimization by profiling RL (Reinforcement Learning) pipeline bottlenecks by introducing automated pipeline scripts and validations to improve training cycle time."
       ]
     },
     {
@@ -120,7 +120,7 @@
         "Distributed Training Systems",
         "RLHF Infrastructure",
         "Azure Machine Learning",
-        "Vertex AI",
+        "Vertex AI", "Drift Detection",
         "Model Finetuning Systems"
       ]
     },
@@ -144,7 +144,7 @@
   "projects": [
     {
       "name": "K8gentS",
-      "description": "An autonomous Root Cause Analysis (RCA) agent designed specifically for Kubernetes clusters. Leverages LLM logic and system telemetry to automatically diagnose pod failures, resource exhaustion, and network bottlenecks, drastically reducing operational MTTR.",
+      "description": "An autonomous Root Cause Analysis (RCA) agent designed specifically for Kubernetes clusters. Leverages LLM logic and system telemetry to automatically diagnose pod failures, resource exhaustion, and network bottlenecks, drastically reducing operational MTTR and increasing visibility.",
       "url": "https://github.com/JDoornink/K8gentS",
       "keywords": [
         "Kubernetes API",
@@ -155,7 +155,7 @@
     },
     {
       "name": "OmniSight-Core",
-      "description": "A centralized observability and anomaly detection platform for distributed microservices. Engineered to aggregate telemetry, system metrics, and distributed traces into actionable infrastructure insights.",
+      "description": "A production-grade video search engine capable of understanding semantic queries (e.g., \"Find a red truck at night\"). Demonstrates self-healing infrastructure that automatically detects model performance decay and triggers retraining.",
       "url": "https://github.com/JDoornink/OmniSight-Core",
       "keywords": [
         "Observability",
@@ -215,7 +215,7 @@
       "name": "Production Machine Learning Systems",
       "issuer": "Coursera / Google Cloud",
       "date": "April 2026",
-      "badge": "/img/certificates/badge/VertexAI.png",
+      "badge": "/img/certificates/badge/VertexAI.svg",
       "url": "/img/certificates/josef-doornink-production-machine-learning-systems.pdf"
     }
   ],

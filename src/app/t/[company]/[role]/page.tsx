@@ -94,12 +94,12 @@ export default async function TailoredJobPage({ params }: Props) {
             <a href="https://github.com/JDoornink" target="_blank" rel="noreferrer" className="flex-1 text-center px-3 py-1.5 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded hover:bg-neutral-700 transition-colors">GitHub</a>
             <a href="https://www.linkedin.com/in/josefdoornink/" target="_blank" rel="noreferrer" className="flex-1 text-center px-3 py-1.5 bg-[#0a66c2]/20 border border-[#0a66c2]/50 text-blue-300 rounded hover:bg-[#0a66c2]/40 transition-colors">LinkedIn</a>
             <ClientNav />
-            <a href={`/t/${company}/${role}/resume.pdf`} target="_blank" className="flex-1 text-center px-3 py-1.5 bg-blue-900/20 border border-blue-500/50 text-blue-300 rounded hover:bg-blue-900/40 transition-colors">Resume</a>
+            <a href={`/t/${company}/${role}/resume.pdf`} target="_blank" className="flex-1 text-center px-3 py-1.5 bg-blue-900/20 border border-blue-500/50 text-blue-300 rounded hover:bg-blue-900/40 transition-colors">Resume-pdf</a>
           </div>
         </header>
 
         <section id="certifications" className="space-y-6 pt-2">
-          <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white">CERTS/COURSES</h3>
+          <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white">Certifications & Courses</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {data.certifications?.map((cert: any, i: number) => (
               <div key={i} className="bg-gray-900 border border-neutral-800 p-4 rounded-lg hover:border-emerald-500/30 transition-colors flex items-center space-x-6">
