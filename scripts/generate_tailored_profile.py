@@ -92,7 +92,7 @@ def process_job_description(target_folder):
         
     if tailored_data.get('certifications'):
         md_content += "---\n\n"
-        md_content += "## CERTIFICATIONS\n\n"
+        md_content += "## CERTS/COURSES\n\n"
         for cert in tailored_data.get('certifications', []):
             md_content += f"- **{cert['name']}** | {cert['issuer']} | {cert['date']}\n"
         md_content += "\n"
