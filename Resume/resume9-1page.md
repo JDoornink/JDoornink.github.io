@@ -29,7 +29,7 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 - Architected and maintained large-scale AKS production environments for ML model training, supporting distributed model inference at scale
 - Improved inference throughput by 40% by optimizing model serving infrastructure through systematic performance profiling and tuning
 - Reduced training cycle times by profiling RL pipeline bottlenecks by introducing automated pipeline scripts and validations
-- Assured model quality in production and detected regressions quickly by implementing automated testing frameworks and integrating robust observability metrics
+
 
 ## PROFESSIONAL EXPERIENCE
 
