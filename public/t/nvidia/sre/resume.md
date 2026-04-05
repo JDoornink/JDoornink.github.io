@@ -14,11 +14,11 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 
 ## TECHNICAL SKILLS
 
-**Core Technologies:** Kubernetes (AKS) | Docker | Terraform | Azure | GCP | Helm | YAML | Python | Go/Golang
+**Core Technologies:** Kubernetes (AKS) | Docker | Terraform | Azure | AWS | GCP | Helm | YAML | Python | Go/Golang | Bash | C# | SQL | Kafka | Redis | ElasticSearch
 
 **AI/ML Engineering:** LLM Model Serving | ML Pipelines | Distributed Training Systems | RLHF Infrastructure | Azure Machine Learning | Vertex AI | Model Finetuning Systems
 
-**Observability & SRE:** New Relic | Distributed Tracing | CI/CD Pipelines | GitHub Actions | Performance Profiling | Incident Response | Prometheus | Grafana
+**Observability & SRE:** New Relic | Azure Monitor | Distributed Tracing | CI/CD Pipelines | GitHub Actions | Performance Profiling | Incident Response | Prometheus | Grafana | Azure DevOps
 
 ---
 
@@ -33,6 +33,7 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 - Optimize model serving infrastructure through performance profiling and system-level optimizations, improving inference throughput by 40%.
 - Collaborate with research teams to translate experimental model architectures into production-ready systems with focus on reliability and scalability.
 - Implement automated testing frameworks for ML pipelines to quickly detect regressions and ensure model quality in production.
+- Led Distributed Training Pipeline Optimization by profiling RL (Reinforcement Learning) pipeline bottlenecks, reducing Python GIL contention, and introducing automated pipeline validations to improve training cycle time.
 
 ## PROFESSIONAL EXPERIENCE
 
@@ -43,10 +44,11 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 - Developed high-performance automation tools using Python and Go that eliminated 80+ hours/month of operational toil, accelerating deployment velocity by 3x across engineering teams.
 - Led performance optimization initiatives through systematic profiling and instrumentation, reducing P99 latency by 45% and improving throughput by 60% for distributed systems.
 - Built custom CLI tooling in Go (Cobra framework) to streamline workflows for 50+ engineers, dramatically improving team productivity through better developer experience.
-- Designed and implemented comprehensive observability stack (Prometheus, Grafana, Azure Monitor) with distributed tracing for debugging performance bottlenecks in distributed microservices.
+- Designed and implemented comprehensive observability stack (New Relic) with distributed tracing for debugging performance bottlenecks resulting in 50% reduction in MTTR.
 - Led capacity planning and performance optimization for Kubernetes clusters and backend databases, implementing auto-scaling strategies supporting 200% traffic growth.
 - Created sophisticated CI/CD pipelines using GitHub Actions and Azure DevOps with automated testing, sophisticated deployment templates, and rollback mechanisms.
 - Implemented Infrastructure as Code using Terraform managing 500+ cloud resources, enabling consistent and repeatable infrastructure provisioning.
+- Spearheaded Kubernetes Security Hardening initiatives by implementing CKS controls and automated policies that supported SOC2 compliance and reduced security risks.
 
 ### Software Developer
 **Viewpoint** | Remote | March 2018 - January 2019
@@ -78,4 +80,46 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 
 ### Agentic SRE Pipeline & Portfolio (2025)
 - The source code driving this exact platform. A Next.js (React) infrastructure executing a Python/RAG Agent pipeline that strictly parses unstructured Job Descriptions and outputs statically generated, targeted frontend bundles dynamically.
+
+---
+
+## CERTS/COURSES
+
+- **CNCF Certified Kubernetes Security Specialist (CKS)** | CNCF | March 2024
+- **CNCF Certified Kubernetes Administrator (CKA)** | CNCF | June 2021
+- **Machine Learning Specialization** | Stanford / Coursera | September 2025
+- **HashiCorp Certified Terraform Associate** | HashiCorp | July 2022
+- **Microsoft Certified Azure Developer Associate** | Microsoft | August 2019
+- **Production Machine Learning Systems** | Coursera / Google Cloud | April 2026
+
+---
+
+## EDUCATION
+
+**Master of Science**, University of California, Davis | 2006
+
+**Bachelor of Science, Mechanical Engineering**, California State University, Chico | 2003
+
+---
+
+## PATENTS & AWARDS
+
+**Bone screw with multiple thread profiles for far cortical locking and flexible engagement to a bone (US9314286B2)**
+- A bone screw including a head, a shaft, and a tip. The shaft includes a first threaded section, a second threaded section, and an unthreaded section positioned between the first and second threaded sections. Designed to enable dynamic fixation.
+
+**Bone screw with multiple thread profiles... (US8740955B2)**
+- Original patent formulation for the orthopedic implant enabling far cortical locking via a flexible-engagement thread profile.
+
+**Scientific Exhibit Award of Excellence**
+- Awarded at the American Academy of Orthopaedic Surgeons (AAOS) 2010 Annual Meeting for the landmark exhibit: 'Effects of Construct Stiffness on Healing of Fractures Stabilized With Locking Plates' (Bottlang M., Doornink J., Fitzpatrick DC, Marsh JL, Augat P., von Rechenberg B., Lesser M., Madey SM).
+
+---
+
+## PUBLICATIONS (Subset of 11)
+
+- M Bottlang, **J Doornink**, DC Fitzpatrick, SM Madey. *Far cortical locking can reduce stiffness of locked plating constructs while retaining construct strength.* The Journal of Bone and Joint Surgery (JBJS), 2009
+- M Bottlang, M Lesser, J Koerber, **J Doornink**, S Mueller, DC Fitzpatrick.... *Far cortical locking can improve healing of fractures stabilized with locking plates.* The Journal of Bone and Joint Surgery (JBJS), 2010
+- M Bottlang, **J Doornink**, TJ Lujan, DC Fitzpatrick, PV Marsh.... *Effects of construct stiffness on healing of fractures stabilized with locking plates.* The Journal of Bone and Joint Surgery (JBJS), 2010
+- **J Doornink**, DC Fitzpatrick, SM Madey, M Bottlang. *Far cortical locking enables flexible fixation with periarticular locking plates.* Journal of Orthopaedic Trauma, 2011
+- **J Doornink**, DC Fitzpatrick, S Boldhaus, SM Madey, M Bottlang. *Effects of hybrid plating with locked and nonlocked screws on the strength of locked plating constructs in the osteoporotic diaphysis.* Journal of Trauma and Acute Care Surgery, 2010
 

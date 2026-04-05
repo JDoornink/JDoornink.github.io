@@ -99,7 +99,7 @@ export default async function TailoredJobPage({ params }: Props) {
         </header>
 
         <section id="certifications" className="space-y-6 pt-2">
-          <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white">Certifications</h3>
+          <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white">CERTS/COURSES</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {data.certifications?.map((cert: any, i: number) => (
               <div key={i} className="bg-gray-900 border border-neutral-800 p-4 rounded-lg hover:border-emerald-500/30 transition-colors flex items-center space-x-6">

@@ -90,6 +90,35 @@ def process_job_description(target_folder):
         md_content += f"### {proj['name']} (2025)\n"
         md_content += f"- {proj['description']}\n\n"
         
+    if tailored_data.get('certifications'):
+        md_content += "---\n\n"
+        md_content += "## CERTS/COURSES\n\n"
+        for cert in tailored_data.get('certifications', []):
+            md_content += f"- **{cert['name']}** | {cert['issuer']} | {cert['date']}\n"
+        md_content += "\n"
+
+    if tailored_data.get('education'):
+        md_content += "---\n\n"
+        md_content += "## EDUCATION\n\n"
+        for edu in tailored_data.get('education', []):
+            md_content += f"**{edu['degree']}**, {edu['institution']} | {edu['date']}\n\n"
+
+    if tailored_data.get('patents'):
+        md_content += "---\n\n"
+        md_content += "## PATENTS & AWARDS\n\n"
+        for pat in tailored_data.get('patents', []):
+            md_content += f"**{pat['title']}**\n"
+            if pat.get('description'):
+                md_content += f"- {pat['description']}\n\n"
+
+    if tailored_data.get('publications'):
+        md_content += "---\n\n"
+        md_content += "## PUBLICATIONS (Subset of 11)\n\n"
+        for pub in tailored_data.get('publications', []):
+            authors = pub['authors'].replace('J Doornink', '**J Doornink**')
+            md_content += f"- {authors}. *{pub['title']}.* {pub['journal']}, {pub['date']}\n"
+        md_content += "\n"
+
     with open(out_md_path, 'w', encoding='utf-8') as f:
         f.write(md_content)
     print(f"[+] Generated identical structural targeted Markdown: {out_md_path}")

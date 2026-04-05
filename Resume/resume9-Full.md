@@ -51,7 +51,7 @@ Site Reliability Engineer with 12+ years of software engineering experience spec
 - Developed high-performance automation tools using **Python** and **Go** that eliminated 80+ hours/month of operational toil, accelerating deployment velocity by 3x across engineering teams
 - Led performance optimization initiatives through systematic profiling and instrumentation, reducing P99 latency by 45% and improving throughput by 60% for distributed systems
 - Built custom CLI tooling in **Go (Cobra framework)** to streamline workflows for 50+ engineers, dramatically improving team productivity through better developer experience
-- Designed and implemented comprehensive observability stack (Prometheus, Grafana, Azure Monitor) with distributed tracing for debugging performance bottlenecks in distributed microservices
+- Designed and implemented comprehensive observability stack (New Relic) with distributed tracing for debugging performance bottlenecks in distributed microservices
 - Led capacity planning and performance optimization for Kubernetes clusters and backend databases, implementing auto-scaling strategies supporting 200% traffic growth
 - Created sophisticated CI/CD pipelines using **GitHub Actions** and Azure DevOps with automated testing, sophisticated deployment templates, and rollback mechanisms
 - Implemented Infrastructure as Code using **Terraform** managing 500+ cloud resources, enabling consistent and repeatable infrastructure provisioning
@@ -102,13 +102,14 @@ Site Reliability Engineer with 12+ years of software engineering experience spec
 
 ---
 
-## CERTIFICATIONS
+## CERTS/COURSES
 
 - **CNCF Certified Kubernetes Security Specialist (CKS)** | March 2024 | LF-ghgugl1a0s
 - **CNCF Certified Kubernetes Administrator (CKA)** | June 2021 | LF-w50bpv1lpd
 - **Machine Learning Specialization** | Stanford/Coursera | September 2025
 - **Microsoft Certified Azure Developer Associate** | August 2019 | H210-5692
 - **HashiCorp Certified Terraform Associate** | July 2022 | HCTAO-002
+- **Production Machine Learning Systems** | Coursera / Google Cloud | April 2026 | 01X41BH2KFVE
 
 ---
 

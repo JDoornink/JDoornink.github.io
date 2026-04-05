@@ -32,7 +32,8 @@
         "Integrate with observability frameworks for model performance tracking, latency monitoring, and resource utilization across distributed training systems.",
         "Optimize model serving infrastructure through performance profiling and system-level optimizations, improving inference throughput by 40%.",
         "Collaborate with research teams to translate experimental model architectures into production-ready systems with focus on reliability and scalability.",
-        "Implement automated testing frameworks for ML pipelines to quickly detect regressions and ensure model quality in production."
+        "Implement automated testing frameworks for ML pipelines to quickly detect regressions and ensure model quality in production.",
+        "Led Distributed Training Pipeline Optimization by profiling RL (Reinforcement Learning) pipeline bottlenecks, reducing Python GIL contention, and introducing automated pipeline validations to improve training cycle time."
       ]
     },
     {
@@ -46,10 +47,11 @@
         "Developed high-performance automation tools using Python and Go that eliminated 80+ hours/month of operational toil, accelerating deployment velocity by 3x across engineering teams.",
         "Led performance optimization initiatives through systematic profiling and instrumentation, reducing P99 latency by 45% and improving throughput by 60% for distributed systems.",
         "Built custom CLI tooling in Go (Cobra framework) to streamline workflows for 50+ engineers, dramatically improving team productivity through better developer experience.",
-        "Designed and implemented comprehensive observability stack (Prometheus, Grafana, Azure Monitor) with distributed tracing for debugging performance bottlenecks in distributed microservices.",
+        "Designed and implemented comprehensive observability stack (New Relic) with distributed tracing for debugging performance bottlenecks resulting in 50% reduction in MTTR.",
         "Led capacity planning and performance optimization for Kubernetes clusters and backend databases, implementing auto-scaling strategies supporting 200% traffic growth.",
         "Created sophisticated CI/CD pipelines using GitHub Actions and Azure DevOps with automated testing, sophisticated deployment templates, and rollback mechanisms.",
-        "Implemented Infrastructure as Code using Terraform managing 500+ cloud resources, enabling consistent and repeatable infrastructure provisioning."
+        "Implemented Infrastructure as Code using Terraform managing 500+ cloud resources, enabling consistent and repeatable infrastructure provisioning.",
+        "Spearheaded Kubernetes Security Hardening initiatives by implementing CKS controls and automated policies that supported SOC2 compliance and reduced security risks."
       ]
     },
     {
@@ -95,11 +97,18 @@
         "Docker",
         "Terraform",
         "Azure",
+        "AWS",
         "GCP",
         "Helm",
         "YAML",
         "Python",
-        "Go/Golang"
+        "Go/Golang",
+        "Bash",
+        "C#",
+        "SQL",
+        "Kafka",
+        "Redis",
+        "ElasticSearch"
       ]
     },
     {
@@ -120,13 +129,15 @@
       "level": "Expert",
       "keywords": [
         "New Relic",
+        "Azure Monitor",
         "Distributed Tracing",
         "CI/CD Pipelines",
         "GitHub Actions",
         "Performance Profiling",
         "Incident Response",
         "Prometheus",
-        "Grafana"
+        "Grafana",
+        "Azure DevOps"
       ]
     }
   ],
@@ -199,6 +210,13 @@
       "date": "August 2019",
       "badge": "/img/certificates/badge/AzureDevAssociate.png",
       "url": "/img/certificates/josef-doornink-azure-certificate.pdf"
+    },
+    {
+      "name": "Production Machine Learning Systems",
+      "issuer": "Coursera / Google Cloud",
+      "date": "April 2026",
+      "badge": "/img/certificates/badge/VertexAI.png",
+      "url": "/img/certificates/josef-doornink-production-machine-learning-systems.pdf"
     }
   ],
   "education": [

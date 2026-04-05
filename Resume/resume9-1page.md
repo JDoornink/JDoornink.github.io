@@ -18,7 +18,7 @@ Site Reliability Engineer with 12+ years of software engineering experience buil
 
 **ML/AI Engineering:** Model Serving | ML Pipeline Development | Distributed Training Systems | Model Training Infrastructure
 
-**Infrastructure:** Kubernetes (AKS) | Docker | Terraform | Azure | AWS | Kafka | Redis | ElasticSearch
+**Infrastructure:** Kubernetes (AKS) | Docker | Helm | Terraform | Azure | AWS | Kafka | Redis | ElasticSearch
 
 **DevOps & SRE:** GitHub Actions | Azure DevOps | CI/CD | Prometheus | New Relic | Azure Monitor
 
@@ -66,13 +66,14 @@ Site Reliability Engineer with 12+ years of software engineering experience buil
 
 ---
 
-## CERTIFICATIONS
+## CERTS/COURSES
 
 - **CNCF Certified Kubernetes Security Specialist (CKS)** | March 2024 | LF-ghgugl1a0s
 - **CNCF Certified Kubernetes Administrator (CKA)** | June 2021 | LF-w50bpv1lpd
 - **Machine Learning Specialization** | Stanford/Coursera | September 2025
 - **Microsoft Certified Azure Developer Associate** | August 2019 | H210-5692
 - **HashiCorp Certified Terraform Associate** | July 2022 | HCTAO-002
+- **Production Machine Learning Systems** | Coursera / Google Cloud | April 2026 | 01X41BH2KFVE
 
 ---
 
@@ -81,3 +82,24 @@ Site Reliability Engineer with 12+ years of software engineering experience buil
 **Master of Science**, University of California, Davis | 2006
 
 **Bachelor of Science**, Mechanical Engineering | California State University, Chico | 2003
+
+---
+
+## PUBLICATIONS (Subset of 11)
+
+- **Doornink J**, Fitzpatrick DC, Madey SM, Bottlang M. *Far Cortical Locking Enables Flexible Fixation with Periarticular Locking Plates in the Distal Femur.* Journal of Orthopaedic Trauma, 2011 Feb; 25 Suppl 1: S29-34
+- **Doornink J**, Fitzpatrick DC, Boldhaus S, Madey SM, Bottlang M. *Effects of Hybrid Plating With Locked and Nonlocked Screws on the Strength of Locked Plating Constructs in the Osteoporotic Diaphysis.* Journal of Trauma-Injury Infection & Critical Care, August 2010, Vol 69, Issue 2
+- Bottlang M, Fitzpatrick DC, Lujan TJ, **Doornink J**, Madey SM. *Biomechanics and Use of Far Cortical Locking in Orthopaedic Trauma.* Orthopaedic Knowledge Online Journal, August 2012
+
+---
+
+## PATENTS & AWARDS
+
+**Patents:**
+- Bottlang M, Keith M, **Doornink J**, Koser AL. *Bone Screw with Multiple Thread Profiles for Far Cortical Locking and Flexible Engagement to a Bone.* US Patent No. US9314286 B2 and US8740955 B2
+
+**Awards:**
+- *Scientific Exhibit Award of Excellence*, American Academy of Orthopaedic Surgeons (AAOS), 2010
+
+**FDA-Approved Medical Devices:**
+- Led engineering team that created 4 FDA-approved orthopaedic implants currently used in national and international trauma centers (K101696, K123918, K130810)
