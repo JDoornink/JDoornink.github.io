@@ -7,7 +7,6 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 - Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.
 - Build Python-based automation tools for ML pipeline orchestration, reducing manual overhead by 70% and accelerating model deployment velocity.
 - Integrate with observability frameworks for model performance tracking, latency monitoring, and resource utilization across distributed training systems.
-- Optimize model serving infrastructure through performance profiling and system-level optimizations, improving inference throughput by 40%.
 - Collaborate with research teams to translate experimental model architectures into production-ready systems with focus on reliability and scalability.
 - Implement automated testing frameworks for ML pipelines to quickly detect regressions and ensure model quality in production.
 
