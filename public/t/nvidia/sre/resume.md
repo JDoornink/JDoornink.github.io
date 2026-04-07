@@ -16,7 +16,7 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 
 **Core Technologies:** Kubernetes (AKS) | Docker | Terraform | Azure | AWS | GCP | Helm | YAML | Python | Go/Golang | Bash | C# | SQL | Kafka | Redis | ElasticSearch
 
-**AI/ML Engineering:** LLM Model Serving | ML Pipelines | Distributed Training Systems | RLHF Infrastructure | Azure Machine Learning | Vertex AI | Model Finetuning Systems
+**AI/ML Engineering:** LLM Model Serving | ML Pipelines | Distributed Training Systems | RLHF Infrastructure | Azure Machine Learning | Vertex AI | Drift Detection | Model Finetuning Systems
 
 **Observability & SRE:** New Relic | Azure Monitor | Distributed Tracing | CI/CD Pipelines | GitHub Actions | Performance Profiling | Incident Response | Prometheus | Grafana | Azure DevOps
 
@@ -28,12 +28,9 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 **REASON BENEFIT AI CORPORATION** | Remote | October 2025 - Present
 
 - Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.
-- Build Python-based automation tools for ML pipeline orchestration, reducing manual overhead by 70% and accelerating model deployment velocity.
 - Integrate with observability frameworks for model performance tracking, latency monitoring, and resource utilization across distributed training systems.
-- Optimize model serving infrastructure through performance profiling and system-level optimizations, improving inference throughput by 40%.
 - Collaborate with research teams to translate experimental model architectures into production-ready systems with focus on reliability and scalability.
-- Implement automated testing frameworks for ML pipelines to quickly detect regressions and ensure model quality in production.
-- Led Distributed Training Pipeline Optimization by profiling RL (Reinforcement Learning) pipeline bottlenecks, reducing Python GIL contention, and introducing automated pipeline validations to improve training cycle time.
+- Led Distributed Training Pipeline Optimization by profiling RL (Reinforcement Learning) pipeline bottlenecks by introducing automated pipeline scripts and validations to improve training cycle time.
 
 ## PROFESSIONAL EXPERIENCE
 
@@ -42,6 +39,7 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 
 - Architected and maintained large-scale Azure Kubernetes Service (AKS) production environments handling 10M+ requests/day across 30+ microservices with 99.9% uptime SLA.
 - Developed high-performance automation tools using Python and Go that eliminated 80+ hours/month of operational toil, accelerating deployment velocity by 3x across engineering teams.
+- Built yaml-based automation tools for ML pipeline orchestration, reducing manual overhead by 70% and accelerating model deployment velocity.
 - Led performance optimization initiatives through systematic profiling and instrumentation, reducing P99 latency by 45% and improving throughput by 60% for distributed systems.
 - Built custom CLI tooling in Go (Cobra framework) to streamline workflows for 50+ engineers, dramatically improving team productivity through better developer experience.
 - Designed and implemented comprehensive observability stack (New Relic) with distributed tracing for debugging performance bottlenecks resulting in 50% reduction in MTTR.
@@ -76,7 +74,7 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 - An autonomous Root Cause Analysis (RCA) agent designed specifically for Kubernetes clusters. Leverages LLM logic and system telemetry to automatically diagnose pod failures, resource exhaustion, and network bottlenecks, drastically reducing operational MTTR and increasing visibility.
 
 ### OmniSight-Core (2025)
-- A production-grade video search engine capable of understanding semantic queries (e.g., \"Find a red truck at night\"). Demonstrates self-healing infrastructure that automatically detects model performance decay and triggers retraining.
+- A production-grade video search engine capable of understanding semantic queries (e.g., "Find a red truck at night"). Demonstrates self-healing infrastructure that automatically detects model performance decay and triggers retraining.
 
 ### Agentic SRE Pipeline & Portfolio (2025)
 - The source code driving this exact platform. A Next.js (React) infrastructure executing a Python/RAG Agent pipeline that strictly parses unstructured Job Descriptions and outputs statically generated, targeted frontend bundles dynamically.
@@ -90,7 +88,7 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 - **Machine Learning Specialization** | Stanford / Coursera | September 2025
 - **HashiCorp Certified Terraform Associate** | HashiCorp | July 2022
 - **Microsoft Certified Azure Developer Associate** | Microsoft | August 2019
-- **Production Machine Learning Systems** | Coursera / Google Cloud | April 2026
+- **Production Machine Learning Systems** | Google Cloud / Coursera | April 2026
 
 ---
 

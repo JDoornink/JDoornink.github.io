@@ -1,0 +1,35 @@
+Here's a few reasons why 85+ of them choose Campminder:
+
+With 20+ years experience of serving the industry through its digital transformation, we're stable, profitable, and have developed a loyal customer base (that continues to grow).
+We build software for summer camps, an industry that enables meaningful experiences for kids.
+We work on interesting, ambitious projects that create real value for our clients.
+We know our team members feel their work has an impact on the organization's purpose.
+At the same time, we are genuinely committed to work/life balance. Our team members feel they have the flexibility to take time off when needed and feel supported in making use of flexible working arrangements.
+We invest in emerging technology and cutting-edge leadership and are proud to take an "AI-Enabled" approach in our solutions.
+We've been listed on Outside Magazine's 50 Best Places to Work for 8 consecutive years for our values-led culture and employee experience.
+
+This role's mission & overview:
+
+We are looking for a Senior DevOps Engineer to join our Platform team to work across the technology organization to transform our development, testing, and deployment processes. This person will partner with AI engineering experts to incorporate AI into our engineering processes at Campminder, in a thoughtful way that increases velocity, quality, and people empowerment across the organization. They will also enable a culture of fast experimentation and iteration through fast feedback loops with customers, while keeping long-term vision and architecture in mind. They will provide mentorship and strong collaboration on DevOps best practices across the entire technology organization.
+
+This is a high-impact, high-autonomy role for someone who thrives on solving hard technical problems that unlock a whole new way of working at Campminder, while being in close collaboration with people across the technology organization.
+
+As a Senior DevOps Engineer on our Platform team, you will:
+
+Transform our DevOps platform and bring it into alignment with modern cloud native tooling and practices
+Transform the way we monitor and operate software in production to fully incorporate modern automation and AI tools
+Incorporate AI tooling throughout our entire architecture in order to empower engineers to develop, test, and operate their software better
+Enable engineering teams to rearchitect monolithic .Net Framework and legacy JavaScript Framework systems into a modular, platform-focused architecture
+Mentor engineers across Campminder in DevOps skills and practices
+Collaborate across the full engineering org to define and implement DevOps and AI best practices
+
+We think a successful candidate will bring:
+
+Experience supporting AI tooling in development, testing, and deployment workflows
+Experience completely automating testing and deployment pipelines and implementing CI/CD for a range of systems and architectures, from monolithic to greenfield
+Experience significantly improving the local development experience for engineers working in a monolithic system
+Experience transforming tooling and approaches to monitoring, alerting, and operating software in production to bring them in alignment with best practices
+Extensive experience with infrastructure as code (such as Terraform), Kubernetes, and container orchestration
+Experience with networking and security best practices
+A passion for mentorship, teaching, and supporting engineers in their DevOps growth journey
+A passion for empowering delivery teams to move quickly and unblock themselves

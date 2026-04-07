@@ -28,9 +28,7 @@
       "summary": "",
       "highlights": [
         "Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.",
-        "Built yaml-based automation tools for ML pipeline orchestration, reducing manual overhead by 70% and accelerating model deployment velocity.",
         "Integrate with observability frameworks for model performance tracking, latency monitoring, and resource utilization across distributed training systems.",
-        "Optimize model serving infrastructure through performance profiling and system-level optimizations, improving inference throughput by 40%.",
         "Collaborate with research teams to translate experimental model architectures into production-ready systems with focus on reliability and scalability.",
         "Led Distributed Training Pipeline Optimization by profiling RL (Reinforcement Learning) pipeline bottlenecks by introducing automated pipeline scripts and validations to improve training cycle time."
       ]
@@ -44,6 +42,7 @@
       "highlights": [
         "Architected and maintained large-scale Azure Kubernetes Service (AKS) production environments handling 10M+ requests/day across 30+ microservices with 99.9% uptime SLA.",
         "Developed high-performance automation tools using Python and Go that eliminated 80+ hours/month of operational toil, accelerating deployment velocity by 3x across engineering teams.",
+        "Built yaml-based automation tools for ML pipeline orchestration, reducing manual overhead by 70% and accelerating model deployment velocity.",
         "Led performance optimization initiatives through systematic profiling and instrumentation, reducing P99 latency by 45% and improving throughput by 60% for distributed systems.",
         "Built custom CLI tooling in Go (Cobra framework) to streamline workflows for 50+ engineers, dramatically improving team productivity through better developer experience.",
         "Designed and implemented comprehensive observability stack (New Relic) with distributed tracing for debugging performance bottlenecks resulting in 50% reduction in MTTR.",
@@ -119,7 +118,8 @@
         "Distributed Training Systems",
         "RLHF Infrastructure",
         "Azure Machine Learning",
-        "Vertex AI", "Drift Detection",
+        "Vertex AI",
+        "Drift Detection",
         "Model Finetuning Systems"
       ]
     },
@@ -212,7 +212,7 @@
     },
     {
       "name": "Production Machine Learning Systems",
-      "issuer": "Coursera / Google Cloud",
+      "issuer": "Google Cloud / Coursera",
       "date": "April 2026",
       "badge": "/img/certificates/badge/VertexAI.svg",
       "url": "/img/certificates/josef-doornink-production-machine-learning-systems.pdf"
@@ -293,7 +293,7 @@
     }
   ],
   "telemetry": {
-    "generation_latency_ms": 2706,
+    "generation_latency_ms": 2707,
     "tokens_used": 3450,
     "cost_usd": 0.043,
     "strict_schema_eval_score": "100%",
