@@ -1,7 +1,4 @@
-import fs from 'fs';
-import path from 'path';
 import ClientNav from './ClientNav';
-import { Fragment } from 'react';
 
 import data from '../../data/master_resume.json';
 
@@ -29,21 +26,24 @@ export default function Home() {
           <div className="text-sm font-bold text-emerald-400 tracking-widest uppercase mb-2">
             [ Master Profile / Non-Targeted ]
           </div>
-          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-2">{data.basics.name}</h1>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">{data.basics.name}</h1>
+          </div>
           <h2 className="text-xl md:text-2xl text-blue-400 font-semibold">{data.basics.label}</h2>
 
           <p className="w-full text-gray-300 leading-relaxed pt-4 font-sans text-lg text-justify">
             {data.basics.summary}
           </p>
 
-          <div className="flex justify-between gap-2 pt-4 text-[13px] md:text-sm overflow-x-auto pb-2 whitespace-nowrap w-full no-scrollbar">
-            <a href="https://github.com/JDoornink" target="_blank" rel="noreferrer" className="flex-1 text-center px-3 py-1.5 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded hover:bg-neutral-700 transition-colors">GitHub</a>
-            <a href="https://www.linkedin.com/in/josefdoornink/" target="_blank" rel="noreferrer" className="flex-1 text-center px-3 py-1.5 bg-[#0a66c2]/20 border border-[#0a66c2]/50 text-blue-300 rounded hover:bg-[#0a66c2]/40 transition-colors">LinkedIn</a>
+          <div className="grid grid-cols-3 gap-2 pt-4 text-[13px] md:text-sm pb-2 w-full">
+            <a href="/Josef_Doornink_Resume.pdf" target="_blank" className="inline-flex items-center justify-center gap-2 whitespace-nowrap px-3 py-2 bg-white/5 border border-neutral-600 text-gray-200 rounded hover:bg-white/10 hover:border-neutral-400 transition-colors font-medium">📄 Resume PDF</a>
+            <a href="https://github.com/JDoornink" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center whitespace-nowrap px-3 py-2 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded hover:bg-neutral-700 transition-colors">GitHub</a>
+            <a href="https://www.linkedin.com/in/josefdoornink/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center whitespace-nowrap px-3 py-2 bg-[#0a66c2]/20 border border-[#0a66c2]/50 text-blue-300 rounded hover:bg-[#0a66c2]/40 transition-colors">LinkedIn</a>
             <ClientNav />
-            <a href="/Josef_Doornink_Resume.pdf" target="_blank" className="flex-1 text-center px-3 py-1.5 bg-blue-900/20 border border-blue-500/50 text-blue-300 rounded hover:bg-blue-900/40 transition-colors">Resume-pdf</a>
           </div>
         </header>
 
+        {/* ===== CERTIFICATIONS (emerald) ===== */}
         <section id="certifications" className="space-y-6 pt-2">
           <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white">Certifications & Courses</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -69,6 +69,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ===== PROJECTS (purple) ===== */}
         <section id="projects" className="space-y-6 pt-2">
           <h3 className="text-2xl font-bold border-l-4 border-purple-500 pl-4 text-white">Featured Architecture & Tooling</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -91,7 +92,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="grid grid-cols-1 gap-8 pt-4">
+        {/* ===== SKILLS (blue) ===== */}
+        <section id="skills" className="grid grid-cols-1 gap-8 pt-4">
           <div className="space-y-6">
             <h3 className="text-2xl font-bold border-l-4 border-blue-500 pl-4 text-white">Aggregated Skills</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -109,36 +111,38 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="space-y-6">
-          <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white">Professional Experience - Startup</h3>
+        {/* ===== EXPERIENCE (amber) — unified, startup gets badge ===== */}
+        <section id="experience" className="space-y-6">
+          <h3 className="text-2xl font-bold border-l-4 border-amber-500 pl-4 text-white">Professional Experience</h3>
           {data.work.map((job: any, i: number) => (
-            <Fragment key={i}>
-              {i === 1 && (
-                <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white pt-4">Professional Experience</h3>
-              )}
-              <div className="bg-gray-900 border border-neutral-800 p-6 rounded-lg relative overflow-hidden group">
-                <div className="absolute top-0 left-0 w-1 h-full bg-emerald-500/50 group-hover:bg-emerald-400 transition-colors"></div>
-                <div className="flex flex-col md:flex-row justify-between md:items-start mb-4 gap-2">
-                  <div>
+            <div key={i} className="bg-gray-900 border border-neutral-800 p-6 rounded-lg relative overflow-hidden group">
+              <div className="absolute top-0 left-0 w-1 h-full bg-amber-500/50 group-hover:bg-amber-400 transition-colors"></div>
+              <div className="flex flex-col md:flex-row justify-between md:items-start mb-4 gap-2">
+                <div>
+                  <div className="flex items-center gap-3">
                     <h4 className="text-xl font-bold text-white">{job.company}</h4>
-                    <div className="text-emerald-400 font-semibold">{job.position}</div>
+                    {i === 0 && (
+                      <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-900/40 text-amber-300 text-[10px] uppercase tracking-widest rounded border border-amber-500/30 font-bold">
+                        🚀 Startup
+                      </span>
+                    )}
                   </div>
-                  <div className="text-gray-500 text-sm whitespace-nowrap">{job.startDate} — {job.endDate}</div>
+                  <div className="text-amber-400 font-semibold">{job.position}</div>
                 </div>
-                <ul className="list-disc list-outside ml-4 space-y-2 text-gray-300 font-sans">
-                  {job.highlights.map((hlt: string, j: number) => (
-                    <li key={j} className="hover:text-gray-100 transition-colors leading-relaxed text-justify">{hlt}</li>
-                  ))}
-                </ul>
+                <div className="text-gray-500 text-sm whitespace-nowrap">{job.startDate} — {job.endDate}</div>
               </div>
-            </Fragment>
+              <ul className="list-disc list-outside ml-4 space-y-2 text-gray-300 font-sans">
+                {job.highlights.map((hlt: string, j: number) => (
+                  <li key={j} className="hover:text-gray-100 transition-colors leading-relaxed text-justify">{hlt}</li>
+                ))}
+              </ul>
+            </div>
           ))}
         </section>
 
-
-
-        <section className="grid grid-cols-1 gap-8">
-          <div id="publications" className="space-y-6">
+        {/* ===== PUBLICATIONS (rose) ===== */}
+        <section id="publications" className="grid grid-cols-1 gap-8">
+          <div className="space-y-6">
             <h3 className="text-2xl font-bold border-l-4 border-rose-500 pl-4 text-white">Publications (Subset of 11)</h3>
             <div className="bg-gray-900 border border-neutral-800 rounded-lg p-6 space-y-6">
               {data.publications?.map((pub: any, i: number) => (
@@ -146,7 +150,11 @@ export default function Home() {
 
                   <div>
                     <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-2">
-                      <h4 className="text-white font-bold text-sm leading-snug">{pub.title}</h4>
+                      {pub.url ? (
+                        <a href={pub.url} target="_blank" rel="noreferrer" className="text-white font-bold text-sm leading-snug hover:text-rose-400 hover:underline decoration-rose-500/50 underline-offset-4 transition-colors">{pub.title}</a>
+                      ) : (
+                        <h4 className="text-white font-bold text-sm leading-snug">{pub.title}</h4>
+                      )}
 
                       {/* Citation Badge */}
                       <div className="flex-shrink-0 bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded border border-gray-700 flex items-center space-x-1 cursor-default whitespace-nowrap" title="Google Scholar Citations">
@@ -173,7 +181,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
+        {/* ===== EDUCATION & PATENTS (yellow) ===== */}
+        <section id="credentials" className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
 
           <div className="space-y-6">
             <h3 className="text-2xl font-bold border-l-4 border-yellow-500 pl-4 text-white">Education</h3>
@@ -188,17 +197,17 @@ export default function Home() {
             </div>
           </div>
 
-          <div id="patents" className="space-y-6">
-            <h3 className="text-2xl font-bold border-l-4 border-purple-500 pl-4 text-white">Patents & Awards</h3>
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold border-l-4 border-yellow-500 pl-4 text-white">Patents & Awards</h3>
             <div className="space-y-4">
               {data.patents.map((patent: any, i: number) => (
-                <div key={i} className="bg-gray-900 border border-neutral-800 p-6 rounded-lg hover:border-purple-500/30 transition-colors relative group">
+                <div key={i} className="bg-gray-900 border border-neutral-800 p-6 rounded-lg hover:border-yellow-500/30 transition-colors relative group">
                   {patent.url ? (
                     <a href={patent.url} target="_blank" rel="noreferrer" className="block outline-none">
-                      <h4 className="text-white font-bold mb-2 group-hover:text-purple-400 transition-colors underline decoration-purple-500/30 underline-offset-4">{patent.title}</h4>
+                      <h4 className="text-white font-bold mb-2 group-hover:text-yellow-400 transition-colors underline decoration-yellow-500/30 underline-offset-4">{patent.title}</h4>
                       <p className="text-gray-400 text-xs mb-3 uppercase tracking-wider">{patent.date}</p>
                       <p className="text-gray-300 font-sans leading-relaxed text-justify text-sm">{patent.description}</p>
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity text-purple-400">
+                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity text-yellow-400">
                         ↗
                       </div>
                     </a>
@@ -206,7 +215,7 @@ export default function Home() {
                     <div className="block outline-none">
                       <div className="flex items-center space-x-2 mb-2">
                         <span className="text-yellow-400 text-lg">🏆</span>
-                        <h4 className="text-white font-bold group-hover:text-purple-400 transition-colors">{patent.title}</h4>
+                        <h4 className="text-white font-bold group-hover:text-yellow-400 transition-colors">{patent.title}</h4>
                       </div>
                       <p className="text-gray-400 text-xs mb-3 uppercase tracking-wider">{patent.date}</p>
                       <p className="text-gray-300 font-sans leading-relaxed text-justify text-sm">{patent.description}</p>

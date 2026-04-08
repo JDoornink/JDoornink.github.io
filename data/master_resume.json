@@ -40,16 +40,15 @@
       "endDate": "Present",
       "summary": "",
       "highlights": [
-        "Architected and maintained large-scale Azure Kubernetes Service (AKS) production environments handling 10M+ requests/day across 30+ microservices with 99.9% uptime SLA.",
-        "Developed high-performance automation tools using Python and Go that eliminated 80+ hours/month of operational toil, accelerating deployment velocity by 3x across engineering teams.",
-        "Built yaml-based automation tools for ML pipeline orchestration, reducing manual overhead by 70% and accelerating model deployment velocity.",
-        "Led performance optimization initiatives through systematic profiling and instrumentation, reducing P99 latency by 45% and improving throughput by 60% for distributed systems.",
-        "Built custom CLI tooling in Go (Cobra framework) to streamline workflows for 50+ engineers, dramatically improving team productivity through better developer experience.",
-        "Designed and implemented comprehensive observability stack (New Relic) with distributed tracing for debugging performance bottlenecks resulting in 50% reduction in MTTR.",
-        "Led capacity planning and performance optimization for Kubernetes clusters and backend databases, implementing auto-scaling strategies supporting 200% traffic growth.",
-        "Created sophisticated CI/CD pipelines using GitHub Actions and Azure DevOps with automated testing, sophisticated deployment templates, and rollback mechanisms.",
-        "Implemented Infrastructure as Code using Terraform managing 500+ cloud resources, enabling consistent and repeatable infrastructure provisioning.",
-        "Spearheaded Kubernetes Security Hardening initiatives by implementing CKS controls and automated policies that supported SOC2 compliance and reduced security risks."
+        "Architected AKS production environments handling 10M+ requests/day across 30+ microservices at 99.9% uptime SLA.",
+        "Built automation tooling in Python and Go eliminating 80+ hours/month of toil and accelerating deployment velocity 3x.",
+        "Developed yaml-based ML pipeline orchestration tools, reducing manual overhead by 70%.",
+        "Reduced P99 latency 45% and improved throughput 60% through systematic profiling of distributed systems.",
+        "Developed Go CLI tooling (Cobra) adopted by 50+ engineers for streamlined infrastructure workflows.",
+        "Implemented New Relic observability stack with distributed tracing, cutting MTTR by 50%.",
+        "Led Kubernetes capacity planning and auto-scaling strategies supporting 200% traffic growth.",
+        "Built CI/CD pipelines (GitHub Actions, Azure DevOps) with automated testing and rollback mechanisms.",
+        "Managed 500+ cloud resources via Terraform IaC; implemented CKS security controls for SOC2 compliance."
       ]
     },
     {
@@ -256,7 +255,8 @@
       "journal": "The Journal of Bone and Joint Surgery (JBJS)",
       "date": "2009",
       "citations": "301",
-      "isFirstAuthor": false
+      "isFirstAuthor": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19651958/"
     },
     {
       "title": "Far cortical locking can improve healing of fractures stabilized with locking plates",
@@ -264,7 +264,8 @@
       "journal": "The Journal of Bone and Joint Surgery (JBJS)",
       "date": "2010",
       "citations": "299",
-      "isFirstAuthor": false
+      "isFirstAuthor": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20595573/"
     },
     {
       "title": "Effects of construct stiffness on healing of fractures stabilized with locking plates",
@@ -272,7 +273,8 @@
       "journal": "The Journal of Bone and Joint Surgery (JBJS)",
       "date": "2010",
       "citations": "246",
-      "isFirstAuthor": false
+      "isFirstAuthor": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21123589/"
     },
     {
       "title": "Far cortical locking enables flexible fixation with periarticular locking plates",
@@ -280,7 +282,8 @@
       "journal": "Journal of Orthopaedic Trauma",
       "date": "2011",
       "citations": "97",
-      "isFirstAuthor": true
+      "isFirstAuthor": true,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21248557/"
     },
     {
       "title": "Effects of hybrid plating with locked and nonlocked screws on the strength of locked plating constructs in the osteoporotic diaphysis",
@@ -288,7 +291,8 @@
       "journal": "Journal of Trauma and Acute Care Surgery",
       "date": "2010",
       "citations": "67",
-      "isFirstAuthor": true
+      "isFirstAuthor": true,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20699751/"
     }
   ]
 }

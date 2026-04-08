@@ -83,18 +83,20 @@ export default async function TailoredJobPage({ params }: Props) {
             <span>{"->"}</span>
             <span className="text-white">{company} : {role}</span>
           </div>
-          <h1 className="text-5xl font-extrabold tracking-tight text-white mb-2">{data.basics.name}</h1>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+            <h1 className="text-5xl font-extrabold tracking-tight text-white">{data.basics.name}</h1>
+          </div>
           <h2 className="text-xl text-gray-400">{data.basics.label}</h2>
 
           <p className="w-full text-gray-300 leading-relaxed pt-4 font-sans text-lg text-justify">
             {data.basics.summary}
           </p>
 
-          <div className="flex justify-between gap-2 pt-4 text-[13px] md:text-sm overflow-x-auto pb-2 whitespace-nowrap w-full no-scrollbar">
-            <a href="https://github.com/JDoornink" target="_blank" rel="noreferrer" className="flex-1 text-center px-3 py-1.5 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded hover:bg-neutral-700 transition-colors">GitHub</a>
-            <a href="https://www.linkedin.com/in/josefdoornink/" target="_blank" rel="noreferrer" className="flex-1 text-center px-3 py-1.5 bg-[#0a66c2]/20 border border-[#0a66c2]/50 text-blue-300 rounded hover:bg-[#0a66c2]/40 transition-colors">LinkedIn</a>
+          <div className="grid grid-cols-3 gap-2 pt-4 text-[13px] md:text-sm pb-2 w-full">
+            <a href={`/t/${company}/${role}/resume.pdf`} target="_blank" className="inline-flex items-center justify-center gap-2 whitespace-nowrap px-3 py-2 bg-white/5 border border-neutral-600 text-gray-200 rounded hover:bg-white/10 hover:border-neutral-400 transition-colors font-medium">📄 Resume PDF</a>
+            <a href="https://github.com/JDoornink" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center whitespace-nowrap px-3 py-2 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded hover:bg-neutral-700 transition-colors">GitHub</a>
+            <a href="https://www.linkedin.com/in/josefdoornink/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center whitespace-nowrap px-3 py-2 bg-[#0a66c2]/20 border border-[#0a66c2]/50 text-blue-300 rounded hover:bg-[#0a66c2]/40 transition-colors">LinkedIn</a>
             <ClientNav />
-            <a href={`/t/${company}/${role}/resume.pdf`} target="_blank" className="flex-1 text-center px-3 py-1.5 bg-blue-900/20 border border-blue-500/50 text-blue-300 rounded hover:bg-blue-900/40 transition-colors">Resume-pdf</a>
           </div>
         </header>
 
@@ -145,14 +147,14 @@ export default async function TailoredJobPage({ params }: Props) {
           </div>
         </section>
 
-        {/* Full-Width Section for Targeted Skills */}
-        <section className="grid grid-cols-1 gap-8 pt-4">
+        {/* ===== SKILLS (blue) ===== */}
+        <section id="skills" className="grid grid-cols-1 gap-8 pt-4">
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white">Targeted Skills</h3>
+            <h3 className="text-2xl font-bold border-l-4 border-blue-500 pl-4 text-white">Targeted Skills</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {data.skills.map((skill: any, i: number) => (
-                <div key={i} className="bg-gray-900 border border-neutral-800 p-4 rounded-lg">
-                  <div className="text-sm text-emerald-400 mb-2 font-bold uppercase tracking-wider">{skill.name}</div>
+                <div key={i} className="bg-gray-900 border border-neutral-800 p-4 rounded-lg hover:border-blue-500/30 transition-colors">
+                  <div className="text-sm text-blue-400 mb-2 font-bold uppercase tracking-wider">{skill.name}</div>
                   <div className="flex flex-wrap gap-2">
                     {skill.keywords.map((kw: string, j: number) => (
                       <span key={j} className="px-2 py-1 bg-black border border-neutral-700 rounded text-xs text-gray-300">{kw}</span>
@@ -164,15 +166,23 @@ export default async function TailoredJobPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="space-y-6">
-          <h3 className="text-2xl font-bold border-l-4 border-blue-500 pl-4 text-white">Experience (Tailored to JD)</h3>
+        {/* ===== EXPERIENCE (amber) — unified, startup gets badge ===== */}
+        <section id="experience" className="space-y-6">
+          <h3 className="text-2xl font-bold border-l-4 border-amber-500 pl-4 text-white">Experience (Tailored to JD)</h3>
           {data.work.map((job: any, i: number) => (
             <div key={i} className="bg-gray-900 border border-neutral-800 p-6 rounded-lg relative overflow-hidden group">
-              <div className="absolute top-0 left-0 w-1 h-full bg-blue-500/50 group-hover:bg-blue-400 transition-colors"></div>
-              <div className="flex justify-between items-start mb-4">
+              <div className="absolute top-0 left-0 w-1 h-full bg-amber-500/50 group-hover:bg-amber-400 transition-colors"></div>
+              <div className="flex flex-col md:flex-row justify-between md:items-start mb-4 gap-2">
                 <div>
-                  <h4 className="text-xl font-bold text-white">{job.company}</h4>
-                  <div className="text-blue-400 font-semibold">{job.position}</div>
+                  <div className="flex items-center gap-3">
+                    <h4 className="text-xl font-bold text-white">{job.company}</h4>
+                    {i === 0 && (
+                      <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-900/40 text-amber-300 text-[10px] uppercase tracking-widest rounded border border-amber-500/30 font-bold">
+                        🚀 Startup
+                      </span>
+                    )}
+                  </div>
+                  <div className="text-amber-400 font-semibold">{job.position}</div>
                 </div>
                 <div className="text-gray-500 text-sm whitespace-nowrap">{job.startDate} — {job.endDate}</div>
               </div>
@@ -187,8 +197,9 @@ export default async function TailoredJobPage({ params }: Props) {
 
 
 
-        <section className="grid grid-cols-1 gap-8">
-          <div id="publications" className="space-y-6">
+        {/* ===== PUBLICATIONS (rose) ===== */}
+        <section id="publications" className="grid grid-cols-1 gap-8">
+          <div className="space-y-6">
             <h3 className="text-2xl font-bold border-l-4 border-rose-500 pl-4 text-white">Publications (Subset of 11)</h3>
             <div className="bg-gray-900 border border-neutral-800 rounded-lg p-6 space-y-6">
               {data.publications?.map((pub: any, i: number) => (
@@ -196,7 +207,11 @@ export default async function TailoredJobPage({ params }: Props) {
 
                   <div>
                     <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-2">
-                      <h4 className="text-white font-bold text-sm leading-snug">{pub.title}</h4>
+                      {pub.url ? (
+                        <a href={pub.url} target="_blank" rel="noreferrer" className="text-white font-bold text-sm leading-snug hover:text-rose-400 hover:underline decoration-rose-500/50 underline-offset-4 transition-colors">{pub.title}</a>
+                      ) : (
+                        <h4 className="text-white font-bold text-sm leading-snug">{pub.title}</h4>
+                      )}
 
                       <div className="flex-shrink-0 bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded border border-gray-700 flex items-center space-x-1 cursor-default whitespace-nowrap" title="Google Scholar Citations">
                         <span>Citations:</span>
@@ -222,8 +237,8 @@ export default async function TailoredJobPage({ params }: Props) {
           </div>
         </section>
 
-        {/* Multi-Column Section for Education & Patents */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
+        {/* ===== EDUCATION & PATENTS (yellow) ===== */}
+        <section id="credentials" className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
           <div className="space-y-6">
             <h3 className="text-2xl font-bold border-l-4 border-yellow-500 pl-4 text-white">Education</h3>
             <div className="space-y-4">
@@ -237,17 +252,17 @@ export default async function TailoredJobPage({ params }: Props) {
             </div>
           </div>
 
-          <div id="patents" className="space-y-6">
-            <h3 className="text-2xl font-bold border-l-4 border-purple-500 pl-4 text-white">Patents & Awards</h3>
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold border-l-4 border-yellow-500 pl-4 text-white">Patents & Awards</h3>
             <div className="space-y-4">
               {data.patents?.map((patent: any, i: number) => (
-                <div key={i} className="bg-gray-900 border border-neutral-800 p-6 rounded-lg hover:border-purple-500/30 transition-colors relative group">
+                <div key={i} className="bg-gray-900 border border-neutral-800 p-6 rounded-lg hover:border-yellow-500/30 transition-colors relative group">
                   {patent.url ? (
                     <a href={patent.url} target="_blank" rel="noreferrer" className="block outline-none">
-                      <h4 className="text-white font-bold mb-2 group-hover:text-purple-400 transition-colors underline decoration-purple-500/30 underline-offset-4">{patent.title}</h4>
-                      <p className="text-gray-400 text-xs mb-3 uppercase tracking-wider">Issued: {patent.date}</p>
+                      <h4 className="text-white font-bold mb-2 group-hover:text-yellow-400 transition-colors underline decoration-yellow-500/30 underline-offset-4">{patent.title}</h4>
+                      <p className="text-gray-400 text-xs mb-3 uppercase tracking-wider">{patent.date}</p>
                       <p className="text-gray-300 font-sans leading-relaxed text-justify text-sm">{patent.description}</p>
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity text-purple-400">
+                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity text-yellow-400">
                         ↗
                       </div>
                     </a>
@@ -255,7 +270,7 @@ export default async function TailoredJobPage({ params }: Props) {
                     <div className="block outline-none">
                       <div className="flex items-center space-x-2 mb-2">
                         <span className="text-yellow-400 text-lg">🏆</span>
-                        <h4 className="text-white font-bold group-hover:text-purple-400 transition-colors">{patent.title}</h4>
+                        <h4 className="text-white font-bold group-hover:text-yellow-400 transition-colors">{patent.title}</h4>
                       </div>
                       <p className="text-gray-400 text-xs mb-3 uppercase tracking-wider">{patent.date}</p>
                       <p className="text-gray-300 font-sans leading-relaxed text-justify text-sm">{patent.description}</p>
