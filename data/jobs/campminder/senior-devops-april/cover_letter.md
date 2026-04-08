@@ -5,14 +5,14 @@ linkedin.com/in/josefdoornink | jdoornink.github.io
 
 April 6, 2026
 
-Hiring Team — Platform Engineering
+Hiring Team — Senior DevOps Engineer
 CampMinder
 
 ---
 
 Dear CampMinder Hiring Team,
 
-I'm a Lead SRE with 12+ years in cloud-native infrastructure, Kubernetes, and CI/CD automation. The Platform Engineer role aligns directly with work I've been doing at scale and looking to continue doing, but somewhere with a direct impact.
+I'm a Lead SRE with 12+ years in cloud-native infrastructure, Kubernetes, and CI/CD automation. The Senior DevOps Engineer role aligns directly with work I've been doing at scale and looking to continue doing, but somewhere with a direct impact.
 
 At Trimble/Viewpoint, I owned the DevOps platform top-to-bottom: AKS environments at 10M+ requests/day, full CI/CD pipelines in GitHub Actions and Azure DevOps, and Terraform managing 500+ cloud resources. I also built the observability stack (New Relic, distributed tracing) that cut MTTR by 50% and drove the custom tooling that eliminated 80+ hours/month of manual toil for a 50-person engineering org.
 
