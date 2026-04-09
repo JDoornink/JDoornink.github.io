@@ -1,0 +1,306 @@
+{
+  "basics": {
+    "name": "Josef Doornink",
+    "label": "Site Reliability Engineer | AI Infrastructure & MLOps",
+    "email": "jdoorarg@gmail.com",
+    "phone": "",
+    "url": "https://jdoornink.github.io/",
+    "summary": "Site Reliability Engineer with 12+ years specializing in distributed systems, cloud infrastructure, and large-scale Kubernetes environments (CKS/CKA certified). Focused on building platform tooling that drives engineering productivity and eliminates toil. Currently bridging SRE and AI by scaling MLOps pipelines and model serving infrastructure. Deep expertise in observability, performance tuning, and infrastructure automation.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "josefdoornink",
+        "url": "https://www.linkedin.com/in/josefdoornink/"
+      },
+      {
+        "network": "GitHub",
+        "username": "JDoornink",
+        "url": "https://github.com/JDoornink"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "REASON BENEFIT AI CORPORATION",
+      "position": "Lead MLOps Engineer",
+      "startDate": "October 2025",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": [
+        "Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.",
+        "Integrate with observability frameworks for model performance tracking, latency monitoring, and resource utilization across distributed training systems.",
+        "Collaborate with research teams to translate experimental model architectures into production-ready systems with focus on reliability and scalability.",
+        "Led Distributed Training Pipeline Optimization by profiling RL (Reinforcement Learning) pipeline bottlenecks by introducing automated pipeline scripts and validations to improve training cycle time."
+      ]
+    },
+    {
+      "company": "Trimble/Viewpoint",
+      "position": "Lead Site Reliability Engineer (SRE) I -> II -> III",
+      "startDate": "January 2019",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": [
+        "Architected AKS production environments handling 10M+ requests/day across 30+ microservices at 99.9% uptime SLA.",
+        "Built automation tooling in Python and Go eliminating 80+ hours/month of toil and accelerating deployment velocity 3x.",
+        "Developed yaml-based ML pipeline orchestration tools, reducing manual overhead by 70%.",
+        "Reduced P99 latency 45% and improved throughput 60% through systematic profiling of distributed systems.",
+        "Developed Go CLI tooling (Cobra) adopted by 50+ engineers for streamlined infrastructure workflows.",
+        "Implemented New Relic observability stack with distributed tracing, cutting MTTR by 50%.",
+        "Led Kubernetes capacity planning and auto-scaling strategies supporting 200% traffic growth.",
+        "Built CI/CD pipelines (GitHub Actions, Azure DevOps) with automated testing and rollback mechanisms.",
+        "Managed 500+ cloud resources via Terraform IaC; implemented CKS security controls for SOC2 compliance."
+      ]
+    },
+    {
+      "company": "Viewpoint",
+      "position": "Software Developer",
+      "startDate": "March 2018",
+      "endDate": "January 2019",
+      "summary": "",
+      "highlights": [
+        "Developed cloud-based SaaS applications using .NET and Angular, migrating on-premise software solutions to Azure cloud platform.",
+        "Built RESTful APIs for multi-tenant applications serving thousands of users with focus on performance and scalability."
+      ]
+    },
+    {
+      "company": "Onfulfillment",
+      "position": "Software Developer I",
+      "startDate": "March 2014",
+      "endDate": "March 2018",
+      "summary": "",
+      "highlights": [
+        "Engineered multi-tenant e-commerce platform using Microsoft Stack (.NET, C#, SQL Server) integrated with third-party SaaS APIs.",
+        "Led 'uplift' initiative migrating legacy codebase to modern greenfield platform, improving response times by 40% measured through New Relic APM."
+      ]
+    },
+    {
+      "company": "Legacy Biomechanics Research Lab",
+      "position": "Biomechanical Research Engineer II",
+      "startDate": "2007",
+      "endDate": "2013",
+      "summary": "",
+      "highlights": [
+        "Lead test and development engineer for NIH-funded multimillion-dollar research project focused on bone fixation solutions.",
+        "Managed successful implant creation, delivery, and test methodology producing multiple US FDA-approved implants."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Core Technologies",
+      "level": "Advanced",
+      "keywords": [
+        "Kubernetes (AKS)",
+        "Docker",
+        "Terraform",
+        "Azure",
+        "AWS",
+        "GCP",
+        "Helm",
+        "YAML",
+        "Python",
+        "Go/Golang",
+        "Bash",
+        "C#",
+        "SQL",
+        "Kafka",
+        "Redis",
+        "ElasticSearch"
+      ]
+    },
+    {
+      "name": "AI/ML Engineering",
+      "level": "Advanced",
+      "keywords": [
+        "LLM Model Serving",
+        "ML Pipelines",
+        "Distributed Training Systems",
+        "RLHF Infrastructure",
+        "Azure Machine Learning",
+        "Vertex AI",
+        "Drift Detection",
+        "Model Finetuning Systems"
+      ]
+    },
+    {
+      "name": "Observability & SRE",
+      "level": "Expert",
+      "keywords": [
+        "New Relic",
+        "Azure Monitor",
+        "Distributed Tracing",
+        "CI/CD Pipelines",
+        "GitHub Actions",
+        "Performance Profiling",
+        "Incident Response",
+        "Prometheus",
+        "Grafana",
+        "Azure DevOps"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "K8gentS",
+      "description": "An autonomous Root Cause Analysis (RCA) agent designed specifically for Kubernetes clusters. Leverages LLM logic and system telemetry to automatically diagnose pod failures, resource exhaustion, and network bottlenecks, drastically reducing operational MTTR and increasing visibility.",
+      "url": "https://github.com/JDoornink/K8gentS",
+      "keywords": [
+        "Kubernetes API",
+        "Go",
+        "LLM Reasoning",
+        "Automation"
+      ]
+    },
+    {
+      "name": "OmniSight-Core",
+      "description": "A production-grade video search engine capable of understanding semantic queries (e.g., \"Find a red truck at night\"). Demonstrates self-healing infrastructure that automatically detects model performance decay and triggers retraining.",
+      "url": "https://github.com/JDoornink/OmniSight-Core",
+      "keywords": [
+        "Observability",
+        "Distributed Systems",
+        "Telemetry"
+      ]
+    },
+    {
+      "name": "Agentic SRE Pipeline & Portfolio",
+      "description": "The source code driving this exact platform. A Next.js (React) infrastructure executing a Python/RAG Agent pipeline that strictly parses unstructured Job Descriptions and outputs statically generated, targeted frontend bundles dynamically.",
+      "url": "https://github.com/JDoornink/JDoornink.github.io",
+      "keywords": [
+        "Next.js",
+        "Python RAG",
+        "TailwindCSS",
+        "GitOps"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "CNCF Certified Kubernetes Security Specialist (CKS)",
+      "issuer": "CNCF",
+      "date": "March 2024",
+      "badge": "/img/certificates/badge/CKS-New.png",
+      "url": "/img/certificates/josef-doornink-cks-certificate.pdf"
+    },
+    {
+      "name": "CNCF Certified Kubernetes Administrator (CKA)",
+      "issuer": "CNCF",
+      "date": "June 2021",
+      "badge": "/img/certificates/badge/CKA.png",
+      "url": "/img/certificates/josef-doornink-cka-certificate.pdf"
+    },
+    {
+      "name": "Machine Learning Specialization",
+      "issuer": "Stanford / Coursera",
+      "date": "September 2025",
+      "badge": "/img/certificates/badge/MachineLearning-Stanford.png",
+      "url": "/img/certificates/josef-doornink-machine-learning.pdf"
+    },
+    {
+      "name": "HashiCorp Certified Terraform Associate",
+      "issuer": "HashiCorp",
+      "date": "July 2022",
+      "badge": "/img/certificates/badge/Terraform.png",
+      "url": "/img/certificates/josef-doornink-terraform-certificate.pdf"
+    },
+    {
+      "name": "Microsoft Certified Azure Developer Associate",
+      "issuer": "Microsoft",
+      "date": "August 2019",
+      "badge": "/img/certificates/badge/AzureDevAssociate.png",
+      "url": "/img/certificates/josef-doornink-azure-certificate.pdf"
+    },
+    {
+      "name": "Production Machine Learning Systems",
+      "issuer": "Google Cloud / Coursera",
+      "date": "April 2026",
+      "badge": "/img/certificates/badge/VertexAI.svg",
+      "url": "/img/certificates/josef-doornink-production-machine-learning-systems.pdf"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of California, Davis",
+      "degree": "Master of Science",
+      "date": "2006"
+    },
+    {
+      "institution": "California State University, Chico",
+      "degree": "Bachelor of Science, Mechanical Engineering",
+      "date": "2003"
+    }
+  ],
+  "patents": [
+    {
+      "title": "Bone screw with multiple thread profiles for far cortical locking and flexible engagement to a bone (US9314286B2)",
+      "date": "Granted: April 2016",
+      "url": "https://patents.google.com/patent/US9314286B2/en",
+      "description": "A bone screw including a head, a shaft, and a tip. The shaft includes a first threaded section, a second threaded section, and an unthreaded section positioned between the first and second threaded sections. Designed to enable dynamic fixation."
+    },
+    {
+      "title": "Bone screw with multiple thread profiles... (US8740955B2)",
+      "date": "Granted: June 2014",
+      "url": "https://patents.google.com/patent/US8740955B2/en",
+      "description": "Original patent formulation for the orthopedic implant enabling far cortical locking via a flexible-engagement thread profile."
+    },
+    {
+      "title": "Scientific Exhibit Award of Excellence",
+      "description": "Awarded at the American Academy of Orthopaedic Surgeons (AAOS) 2010 Annual Meeting for the landmark exhibit: 'Effects of Construct Stiffness on Healing of Fractures Stabilized With Locking Plates' (Bottlang M., Doornink J., Fitzpatrick DC, Marsh JL, Augat P., von Rechenberg B., Lesser M., Madey SM).",
+      "date": "Awarded: 2010",
+      "url": "https://journals.lww.com/jbjsjournal/citation/2010/12002/effects_of_construct_stiffness_on_healing_of.3.aspx"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Far cortical locking can reduce stiffness of locked plating constructs while retaining construct strength",
+      "authors": "M Bottlang, J Doornink, DC Fitzpatrick, SM Madey",
+      "journal": "The Journal of Bone and Joint Surgery (JBJS)",
+      "date": "2009",
+      "cited by": "301",
+      "isFirstAuthor": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19651958/"
+    },
+    {
+      "title": "Far cortical locking can improve healing of fractures stabilized with locking plates",
+      "authors": "M Bottlang, M Lesser, J Koerber, J Doornink, S Mueller, DC Fitzpatrick...",
+      "journal": "The Journal of Bone and Joint Surgery (JBJS)",
+      "date": "2010",
+      "cited by": "299",
+      "isFirstAuthor": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20595573/"
+    },
+    {
+      "title": "Effects of construct stiffness on healing of fractures stabilized with locking plates",
+      "authors": "M Bottlang, J Doornink, TJ Lujan, DC Fitzpatrick, PV Marsh...",
+      "journal": "The Journal of Bone and Joint Surgery (JBJS)",
+      "date": "2010",
+      "cited by": "246",
+      "isFirstAuthor": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21123589/"
+    },
+    {
+      "title": "Far cortical locking enables flexible fixation with periarticular locking plates",
+      "authors": "J Doornink, DC Fitzpatrick, SM Madey, M Bottlang",
+      "journal": "Journal of Orthopaedic Trauma",
+      "date": "2011",
+      "cited by": "97",
+      "isFirstAuthor": true,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21248557/"
+    },
+    {
+      "title": "Effects of hybrid plating with locked and nonlocked screws on the strength of locked plating constructs in the osteoporotic diaphysis",
+      "authors": "J Doornink, DC Fitzpatrick, S Boldhaus, SM Madey, M Bottlang",
+      "journal": "Journal of Trauma and Acute Care Surgery",
+      "date": "2010",
+      "cited by": "67",
+      "isFirstAuthor": true,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20699751/"
+    }
+  ],
+  "telemetry": {
+    "generation_latency_ms": 2706,
+    "tokens_used": 3450,
+    "cost_usd": 0.043,
+    "strict_schema_eval_score": "100%",
+    "prompt_version": "v4-adversarial-defense"
+  }
+}
