@@ -158,8 +158,8 @@ export default function Home() {
 
                       {/* Citation Badge */}
                       <div className="flex-shrink-0 bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded border border-gray-700 flex items-center space-x-1 cursor-default whitespace-nowrap" title="Google Scholar Citations">
-                        <span>Citations:</span>
-                        <span className="font-bold text-rose-400">{pub.citations}</span>
+                        <span>Cited by:</span>
+                        <span className="font-bold text-rose-400">{pub["cited by"]}</span>
                       </div>
                     </div>
 
