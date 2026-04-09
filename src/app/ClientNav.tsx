@@ -28,7 +28,7 @@ export default function ClientNav() {
           key={s.id}
           href={`#${s.id}`}
           onClick={(e) => handleScroll(e, s.id)}
-          className={`inline-flex items-center justify-center whitespace-nowrap px-3 py-2 ${s.bg} border ${s.border} ${s.text} rounded ${s.hover} transition-colors`}
+          className={`inline-flex items-center justify-center text-center px-3 py-2 ${s.bg} border ${s.border} ${s.text} rounded ${s.hover} transition-colors`}
         >
           {s.label}
         </a>
