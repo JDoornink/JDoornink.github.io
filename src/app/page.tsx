@@ -36,7 +36,7 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-3 gap-2 pt-4 text-[13px] md:text-sm pb-2 w-full">
-            <a href="/Josef_Doornink_Resume.pdf" target="_blank" className="inline-flex items-center justify-center gap-2 whitespace-nowrap px-3 py-2 bg-white/5 border border-neutral-600 text-gray-200 rounded hover:bg-white/10 hover:border-neutral-400 transition-colors font-medium">📄 Resume PDF</a>
+            <a href="/Josef_Doornink_Resume.pdf" target="_blank" className="inline-flex items-center justify-center gap-2 px-3 py-2 bg-white/5 border border-neutral-600 text-gray-200 rounded hover:bg-white/10 hover:border-neutral-400 transition-colors font-medium">📄 Resume PDF</a>
             <a href="https://github.com/JDoornink" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center whitespace-nowrap px-3 py-2 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded hover:bg-neutral-700 transition-colors">GitHub</a>
             <a href="https://www.linkedin.com/in/josefdoornink/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center whitespace-nowrap px-3 py-2 bg-[#0a66c2]/20 border border-[#0a66c2]/50 text-blue-300 rounded hover:bg-[#0a66c2]/40 transition-colors">LinkedIn</a>
             <ClientNav />
