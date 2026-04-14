@@ -1,4 +1,4 @@
-# JOSEF DOORNINK
+﻿# JOSEF DOORNINK
 
 **Site Reliability Engineer | AI Infrastructure & MLOps**
 
@@ -8,7 +8,7 @@ Portland, OR | jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josef
 
 ## PROFESSIONAL SUMMARY
 
-Site Reliability Engineer with 12+ years of software engineering experience specializing in reliable distributed systems, cloud infrastructure, and large-scale Kubernetes environments. Expert in Python and Go with a strong track record building tooling and platforms that improve engineering productivity. Currently applying SRE principles to AI engineering and MLOps systems, with hands-on work in model training and serving infrastructure. CKS/CKA certified with deep experience in observability, performance optimization, and automation.
+A creative problem-solver who creates solutions where none exist, I build the infrastructure that scales research into reality. Few production engineers have published 10 peer-reviewed papers, earned 2 US patents, won a major design award, and shipped FDA-cleared hardware. That discipline now drives 10+ years of SRE and AI infrastructure work (CKS/CKA certified), bridging mathematical rigor and system integrity at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.
 
 ---
 
@@ -120,7 +120,7 @@ Site Reliability Engineer with 12+ years of software engineering experience spec
 
 ---
 
-## PUBLICATIONS (Subset of 11)
+## PUBLICATIONS (Subset of 10)
 
 - **Doornink J**, Fitzpatrick DC, Madey SM, Bottlang M. *Far Cortical Locking Enables Flexible Fixation with Periarticular Locking Plates in the Distal Femur.* Journal of Orthopaedic Trauma, 2011 Feb; 25 Suppl 1: S29-34
 - **Doornink J**, Fitzpatrick DC, Boldhaus S, Madey SM, Bottlang M. *Effects of Hybrid Plating With Locked and Nonlocked Screws on the Strength of Locked Plating Constructs in the Osteoporotic Diaphysis.* Journal of Trauma-Injury Infection & Critical Care, August 2010, Vol 69, Issue 2

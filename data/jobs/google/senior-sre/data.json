@@ -1,11 +1,11 @@
-{
+﻿{
   "basics": {
     "name": "Josef Doornink",
     "label": "Site Reliability Engineer | AI Infrastructure & MLOps",
     "email": "jdoorarg@gmail.com",
     "phone": "",
     "url": "https://jdoornink.github.io/",
-    "summary": "Site Reliability Engineer with 12+ years specializing in distributed systems, cloud infrastructure, and large-scale Kubernetes environments (CKS/CKA certified). Focused on building platform tooling that drives engineering productivity and eliminates toil. Currently bridging SRE and AI by scaling MLOps pipelines and model serving infrastructure. Deep expertise in observability, performance tuning, and infrastructure automation.",
+    "summary": "A creative problem-solver who creates solutions where none exist, I build the infrastructure that scales research into reality. Few production engineers have published 10 peer-reviewed papers, earned 2 US patents, won a major design award, and shipped FDA-cleared hardware. That discipline now drives 10+ years of SRE and AI infrastructure work (CKS/CKA certified), bridging mathematical rigor and system integrity at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.",
     "profiles": [
       {
         "network": "LinkedIn",

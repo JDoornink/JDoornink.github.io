@@ -113,7 +113,7 @@ def process_job_description(target_folder):
 
     if tailored_data.get('publications'):
         md_content += "---\n\n"
-        md_content += "## PUBLICATIONS (Subset of 11)\n\n"
+        md_content += "## PUBLICATIONS\n\n"
         for pub in tailored_data.get('publications', []):
             authors = pub['authors'].replace('J Doornink', '**J Doornink**')
             md_content += f"- {authors}. *{pub['title']}.* {pub['journal']}, {pub['date']}\n"

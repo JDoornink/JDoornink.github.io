@@ -1,4 +1,4 @@
-# JOSEF DOORNINK
+﻿# JOSEF DOORNINK
 
 **Site Reliability Engineer | AI Infrastructure & MLOps**
 
@@ -8,7 +8,7 @@ Portland, OR | jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josef
 
 ## PROFESSIONAL SUMMARY
 
-Site Reliability Engineer with 12+ years specializing in distributed systems, cloud infrastructure, and large-scale Kubernetes environments (CKS/CKA certified). Focused on building platform tooling that drives engineering productivity and eliminates toil. Currently bridging SRE and AI by scaling MLOps pipelines and model serving infrastructure. Deep expertise in observability, performance tuning, and infrastructure automation.
+A creative problem-solver who creates solutions where none exist, I build the infrastructure that scales research into reality. Few production engineers have published 10 peer-reviewed papers, earned 2 US patents, won a major design award, and shipped FDA-cleared hardware. That discipline now drives 10+ years of SRE and AI infrastructure work (CKS/CKA certified), bridging mathematical rigor and system integrity at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.
 
 ---
 
@@ -113,7 +113,7 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 
 ---
 
-## PUBLICATIONS (Subset of 11)
+## PUBLICATIONS (Subset of 10)
 
 - M Bottlang, **J Doornink**, DC Fitzpatrick, SM Madey. *Far cortical locking can reduce stiffness of locked plating constructs while retaining construct strength.* The Journal of Bone and Joint Surgery (JBJS), 2009
 - M Bottlang, M Lesser, J Koerber, **J Doornink**, S Mueller, DC Fitzpatrick.... *Far cortical locking can improve healing of fractures stabilized with locking plates.* The Journal of Bone and Joint Surgery (JBJS), 2010
