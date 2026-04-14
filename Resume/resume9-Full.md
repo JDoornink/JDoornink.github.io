@@ -120,7 +120,7 @@ A creative problem-solver who creates solutions where none exist, I build the in
 
 ---
 
-## PUBLICATIONS (Subset of 10)
+## PUBLICATIONS
 
 - **Doornink J**, Fitzpatrick DC, Madey SM, Bottlang M. *Far Cortical Locking Enables Flexible Fixation with Periarticular Locking Plates in the Distal Femur.* Journal of Orthopaedic Trauma, 2011 Feb; 25 Suppl 1: S29-34
 - **Doornink J**, Fitzpatrick DC, Boldhaus S, Madey SM, Bottlang M. *Effects of Hybrid Plating With Locked and Nonlocked Screws on the Strength of Locked Plating Constructs in the Osteoporotic Diaphysis.* Journal of Trauma-Injury Infection & Critical Care, August 2010, Vol 69, Issue 2
