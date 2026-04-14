@@ -143,7 +143,7 @@ export default function Home() {
         {/* ===== PUBLICATIONS (rose) ===== */}
         <section id="publications" className="grid grid-cols-1 gap-8">
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold border-l-4 border-rose-500 pl-4 text-white">Publications (Subset of 11)</h3>
+            <h3 className="text-2xl font-bold border-l-4 border-rose-500 pl-4 text-white">Publications</h3>
             <div className="bg-gray-900 border border-neutral-800 rounded-lg p-6 space-y-6">
               {data.publications?.map((pub: any, i: number) => (
                 <div key={i} className={`relative flex flex-col justify-between ${i !== data.publications.length - 1 ? 'border-b border-neutral-800 pb-6' : 'pb-0'}`}>

@@ -5,7 +5,7 @@
     "email": "jdoorarg@gmail.com",
     "phone": "",
     "url": "https://jdoornink.github.io/",
-    "summary": "Site Reliability Engineer with 12+ years specializing in distributed systems, cloud infrastructure, and large-scale Kubernetes environments (CKS/CKA certified). Focused on building platform tooling that drives engineering productivity and eliminates toil. Currently bridging SRE and AI by scaling MLOps pipelines and model serving infrastructure. Deep expertise in observability, performance tuning, and infrastructure automation.",
+    "summary": "A creative problem-solver who creates solutions where none exist, I build the infrastructure that scales research into reality. Few production engineers have published 10 peer-reviewed papers, earned 2 US patents, won a major design award, and shipped FDA-cleared hardware. That discipline now drives 10+ years of SRE and AI infrastructure work (CKS/CKA certified), bridging mathematical rigor and system integrity at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -28,9 +28,9 @@
       "summary": "",
       "highlights": [
         "Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.",
-        "Integrate with observability frameworks for model performance tracking, latency monitoring, and resource utilization across distributed training systems.",
-        "Collaborate with research teams to translate experimental model architectures into production-ready systems with focus on reliability and scalability.",
-        "Led Distributed Training Pipeline Optimization by profiling RL (Reinforcement Learning) pipeline bottlenecks by introducing automated pipeline scripts and validations to improve training cycle time."
+        "Integrate with Azure offerings for resource utilization across distributed training systems.",
+        "Collaborate with research teams to translate desired microservice architectures into cloud-based systems with focus on reliability and scalability.",
+        "Led Distributed Training Pipeline Creation by automating pipeline bottlenecks through automated pipeline scripts and validations to improve training cycle time."
       ]
     },
     {
@@ -231,6 +231,12 @@
   ],
   "patents": [
     {
+      "title": "Bone screw with multiple thread profiles for far cortical locking and flexible engagement to a bone (US10918430B2)",
+      "date": "Granted: February 2021",
+      "url": "https://patents.google.com/patent/US10918430B2/en",
+      "description": "Continuation patent for the far cortical locking bone screw. A bone screw with dual thread profiles enabling flexible engagement to the far cortex only, allowing dynamic fixation that promotes superior fracture healing."
+    },
+    {
       "title": "Bone screw with multiple thread profiles for far cortical locking and flexible engagement to a bone (US9314286B2)",
       "date": "Granted: April 2016",
       "url": "https://patents.google.com/patent/US9314286B2/en",
@@ -257,34 +263,43 @@
       "date": "2009",
       "cited by": "301",
       "isFirstAuthor": false,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/19651958/"
+      "url": "https://journals.lww.com/jbjsjournal/fulltext/2009/08000/Far_Cortical_Locking_Can_Reduce_Stiffness_of.20.aspx"
+    },
+    {
+      "title": "A nonlocking end screw can decrease fracture risk caused by locked plating in the osteoporotic diaphysis",
+      "authors": "M Bottlang, J Doornink, GD Byrd, DC Fitzpatrick, SM Madey",
+      "journal": "The Journal of Bone and Joint Surgery (JBJS)",
+      "date": "2009",
+      "cited by": "121",
+      "isFirstAuthor": false,
+      "url": "https://journals.lww.com/jbjsjournal/fulltext/2009/03000/A_Nonlocking_End_Screw_Can_Decrease_Fracture_Risk.14.aspx"
+    },
+    {
+      "title": "Relative stability of conventional and locked plating fixation in a model of the osteoporotic femoral diaphysis",
+      "authors": "DC Fitzpatrick, J Doornink, SM Madey, M Bottlang",
+      "journal": "Clinical Biomechanics",
+      "date": "2009",
+      "cited by": "140",
+      "isFirstAuthor": false,
+      "url": "https://www.sciencedirect.com/science/article/pii/S0268003308003185"
     },
     {
       "title": "Far cortical locking can improve healing of fractures stabilized with locking plates",
-      "authors": "M Bottlang, M Lesser, J Koerber, J Doornink, S Mueller, DC Fitzpatrick...",
+      "authors": "M Bottlang, M Lesser, J Koerber, J Doornink, B von Rechenberg, P Augat, DC Fitzpatrick, SM Madey, JL Marsh",
       "journal": "The Journal of Bone and Joint Surgery (JBJS)",
       "date": "2010",
       "cited by": "299",
       "isFirstAuthor": false,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20595573/"
+      "url": "https://journals.lww.com/jbjsjournal/fulltext/2010/07070/far_cortical_locking_can_improve_healing_of.12.aspx"
     },
     {
       "title": "Effects of construct stiffness on healing of fractures stabilized with locking plates",
-      "authors": "M Bottlang, J Doornink, TJ Lujan, DC Fitzpatrick, PV Marsh...",
+      "authors": "M Bottlang, J Doornink, TJ Lujan, DC Fitzpatrick, JL Marsh, P Augat, B von Rechenberg, M Lesser, SM Madey",
       "journal": "The Journal of Bone and Joint Surgery (JBJS)",
       "date": "2010",
       "cited by": "246",
       "isFirstAuthor": false,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/21123589/"
-    },
-    {
-      "title": "Far cortical locking enables flexible fixation with periarticular locking plates",
-      "authors": "J Doornink, DC Fitzpatrick, SM Madey, M Bottlang",
-      "journal": "Journal of Orthopaedic Trauma",
-      "date": "2011",
-      "cited by": "97",
-      "isFirstAuthor": true,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/21248557/"
+      "url": "https://journals.lww.com/jbjsjournal/fulltext/2010/12002/effects_of_construct_stiffness_on_healing_of.3.aspx"
     },
     {
       "title": "Effects of hybrid plating with locked and nonlocked screws on the strength of locked plating constructs in the osteoporotic diaphysis",
@@ -293,7 +308,43 @@
       "date": "2010",
       "cited by": "67",
       "isFirstAuthor": true,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20699751/"
+      "url": "https://journals.lww.com/jtrauma/fulltext/2010/08000/Effects_of_Hybrid_Plating_With_Locked_and.25.aspx"
+    },
+    {
+      "title": "Far cortical locking enables flexible fixation with periarticular locking plates",
+      "authors": "J Doornink, DC Fitzpatrick, SM Madey, M Bottlang",
+      "journal": "Journal of Orthopaedic Trauma",
+      "date": "2011",
+      "cited by": "97",
+      "isFirstAuthor": true,
+      "url": "https://journals.lww.com/jorthotrauma/fulltext/2011/02001/far_cortical_locking_enables_flexible_fixation.6.aspx"
+    },
+    {
+      "title": "Biplanar fixation of a locking plate in the diaphysis improves construct strength",
+      "authors": "PJ Denard, J Doornink, D Phelan, SM Madey, DC Fitzpatrick, M Bottlang",
+      "journal": "Clinical Biomechanics",
+      "date": "2011",
+      "cited by": "32",
+      "isFirstAuthor": false,
+      "url": "https://www.sciencedirect.com/science/article/pii/S0268003310003359"
+    },
+    {
+      "title": "Rapid cVEMP and oVEMP responses elicited by a novel head striker and recording device",
+      "authors": "PA Wackym, JA Ratigan, JD Birck, SH Johnson, J Doornink, M Bottlang, SK Gardiner, FO Black",
+      "journal": "Otology & Neurotology",
+      "date": "2012",
+      "cited by": "31",
+      "isFirstAuthor": false,
+      "url": "https://journals.lww.com/otology-neurotology/fulltext/2012/10000/Rapid_cVEMP_and_oVEMP_Responses_Elicited_by_a.19.aspx"
+    },
+    {
+      "title": "Dynamic fixation of distal femur fractures using far cortical locking screws: a prospective observational study",
+      "authors": "M Bottlang, DC Fitzpatrick, D Sheerin, E Kubiak, R Gellman, C Vande Zandschulp, J Doornink, K Earley, SM Madey",
+      "journal": "Journal of Orthopaedic Trauma",
+      "date": "2014",
+      "cited by": "140",
+      "isFirstAuthor": false,
+      "url": "https://journals.lww.com/jorthotrauma/fulltext/2014/04000/Dynamic_Fixation_of_Distal_Femur_Fractures_Using.1.aspx"
     }
   ]
 }
