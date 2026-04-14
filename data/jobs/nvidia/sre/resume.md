@@ -1,4 +1,4 @@
-﻿# Josef Doornink - Site Reliability Engineer | AI Infrastructure & MLOps
+# Josef Doornink - Site Reliability Engineer | AI Infrastructure & MLOps
 
 A creative problem-solver who creates solutions where none exist, I build the infrastructure that scales research into reality. Few production engineers have published 10 peer-reviewed papers, earned 2 US patents, won a major design award, and shipped FDA-cleared hardware. That discipline now drives 10+ years of SRE and AI infrastructure work (CKS/CKA certified), bridging mathematical rigor and system integrity at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.
 

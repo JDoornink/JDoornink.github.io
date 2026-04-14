@@ -1,4 +1,4 @@
-﻿# JOSEF DOORNINK
+# JOSEF DOORNINK
 
 **Site Reliability Engineer | AI Infrastructure & MLOps**
 
