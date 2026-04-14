@@ -94,16 +94,23 @@ A creative problem-solver who creates solutions where none exist, I build the in
 
 ## PUBLICATIONS
 
-- **Doornink J**, Fitzpatrick DC, Madey SM, Bottlang M. *Far Cortical Locking Enables Flexible Fixation with Periarticular Locking Plates in the Distal Femur.* Journal of Orthopaedic Trauma, 2011 Feb; 25 Suppl 1: S29-34
-- **Doornink J**, Fitzpatrick DC, Boldhaus S, Madey SM, Bottlang M. *Effects of Hybrid Plating With Locked and Nonlocked Screws on the Strength of Locked Plating Constructs in the Osteoporotic Diaphysis.* Journal of Trauma-Injury Infection & Critical Care, August 2010, Vol 69, Issue 2
-- Bottlang M, Fitzpatrick DC, Lujan TJ, **Doornink J**, Madey SM. *Biomechanics and Use of Far Cortical Locking in Orthopaedic Trauma.* Orthopaedic Knowledge Online Journal, August 2012
+- M Bottlang, **J Doornink**, DC Fitzpatrick, SM Madey. *Far cortical locking can reduce stiffness of locked plating constructs while retaining construct strength.* The Journal of Bone and Joint Surgery (JBJS), 2009
+- M Bottlang, **J Doornink**, GD Byrd, DC Fitzpatrick, SM Madey. *A nonlocking end screw can decrease fracture risk caused by locked plating in the osteoporotic diaphysis.* The Journal of Bone and Joint Surgery (JBJS), 2009
+- DC Fitzpatrick, **J Doornink**, SM Madey, M Bottlang. *Relative stability of conventional and locked plating fixation in a model of the osteoporotic femoral diaphysis.* Clinical Biomechanics, 2009
+- M Bottlang, M Lesser, J Koerber, **J Doornink**, B von Rechenberg, P Augat, DC Fitzpatrick, SM Madey, JL Marsh. *Far cortical locking can improve healing of fractures stabilized with locking plates.* The Journal of Bone and Joint Surgery (JBJS), 2010
+- M Bottlang, **J Doornink**, TJ Lujan, DC Fitzpatrick, JL Marsh, P Augat, B von Rechenberg, M Lesser, SM Madey. *Effects of construct stiffness on healing of fractures stabilized with locking plates.* The Journal of Bone and Joint Surgery (JBJS), 2010
+- **J Doornink**, DC Fitzpatrick, S Boldhaus, SM Madey, M Bottlang. *Effects of hybrid plating with locked and nonlocked screws on the strength of locked plating constructs in the osteoporotic diaphysis.* Journal of Trauma and Acute Care Surgery, 2010
+- **J Doornink**, DC Fitzpatrick, SM Madey, M Bottlang. *Far cortical locking enables flexible fixation with periarticular locking plates.* Journal of Orthopaedic Trauma, 2011
+- PJ Denard, **J Doornink**, D Phelan, SM Madey, DC Fitzpatrick, M Bottlang. *Biplanar fixation of a locking plate in the diaphysis improves construct strength.* Clinical Biomechanics, 2011
+- PA Wackym, JA Ratigan, JD Birck, SH Johnson, **J Doornink**, M Bottlang, SK Gardiner, FO Black. *Rapid cVEMP and oVEMP responses elicited by a novel head striker and recording device.* Otology & Neurotology, 2012
+- M Bottlang, DC Fitzpatrick, D Sheerin, E Kubiak, R Gellman, C Vande Zandschulp, **J Doornink**, K Earley, SM Madey. *Dynamic fixation of distal femur fractures using far cortical locking screws: a prospective observational study.* Journal of Orthopaedic Trauma, 2014
 
 ---
 
 ## PATENTS & AWARDS
 
 **Patents:**
-- Bottlang M, Keith M, **Doornink J**, Koser AL. *Bone Screw with Multiple Thread Profiles for Far Cortical Locking and Flexible Engagement to a Bone.* US Patent No. US9314286 B2 and US8740955 B2
+- *Bone Screw with Multiple Thread Profiles for Far Cortical Locking and Flexible Engagement to a Bone.* US Patent No. US10918430B2 (2021), US9314286B2 (2016), US8740955B2 (2014)
 
 **Awards:**
 - *Scientific Exhibit Award of Excellence*, American Academy of Orthopaedic Surgeons (AAOS), 2010
