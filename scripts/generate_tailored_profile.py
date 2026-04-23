@@ -2,137 +2,231 @@ import os
 import sys
 import json
 import time
+import anthropic
+
+def _load_dotenv():
+    env_path = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', '.env'))
+    if os.path.exists(env_path):
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith('#') and '=' in line:
+                    k, v = line.split('=', 1)
+                    os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+
+_load_dotenv()
+
 
 def process_job_description(target_folder):
-    # Extract company and role names reliably by splitting path
     path_parts = os.path.normpath(target_folder).split(os.sep)
     if len(path_parts) >= 3:
         company = path_parts[-2]
         role = path_parts[-1]
     else:
-        print("Error: Target folder path must exactly follow the 'data/jobs/company/role' structure.")
+        print("Error: Target folder path must follow the 'data/jobs/company/role' structure.")
         sys.exit(1)
 
     jd_path = os.path.join(target_folder, 'jd.txt')
     master_json_path = os.path.join('data', 'master_resume.json')
     out_json_path = os.path.join(target_folder, 'data.json')
-    
-    # Static artifact routing logic for Next.js public/ tree SSG hosting
+
     public_target_dir = os.path.join('public', 't', company, role)
     os.makedirs(public_target_dir, exist_ok=True)
     out_md_path = os.path.join(public_target_dir, 'resume.md')
     out_pdf_path = os.path.join(public_target_dir, 'resume.pdf')
-    
+    out_cover_letter_md = os.path.join(public_target_dir, 'cover_letter.md')
+    out_cover_letter_pdf = os.path.join(public_target_dir, 'cover_letter.pdf')
+
     if not os.path.exists(jd_path):
-        print(f"Error: Could not find Job Description text file at {jd_path}")
+        print(f"Error: Could not find Job Description at {jd_path}")
         sys.exit(1)
-        
-    print(f"[*] Initializing Agent for targeted folder: {target_folder}")
+
+    print(f"[*] Initializing pipeline for: {company}/{role}")
     start_time = time.time()
-    
+
     with open(master_json_path, 'r', encoding='utf-8') as f:
         master_data = json.load(f)
-        
     with open(jd_path, 'r', encoding='utf-8') as f:
         jd_text = f.read()
 
-    print("[*] Parsing Job Description and querying LLM for tailored configuration...")
-    # NOTE: In the live version, you would replace this block with an actual call
-    # to Anthropic/OpenAI APIs. For this initial setup we simulate the output.
-    
-    time.sleep(1.5) # Simulate API latency
-    
-    tailored_data = master_data.copy()
-    
-    # Simulate tailoring the headline based on the JD
-    # We dynamically inject a mock "cost" block to satisfy the FinOps "Wow Factor"
+    client = anthropic.Anthropic()
+
+    # --- Step 1: Tailor resume JSON ---
+    print("[*] Tailoring resume JSON...")
+    resume_system = """You are an expert resume tailoring agent. Analyze the job description and
+reorder/filter the candidate's resume JSON to best match the role.
+
+Rules:
+- Keep ALL data accurate — never fabricate or exaggerate
+- Reorder work highlights to lead with the most relevant achievements for this role
+- Reorder skills keywords to front-load technologies mentioned in the JD
+- Reorder projects and certifications by relevance to the role
+- Update basics.summary to directly address the key requirements in the JD (factual only)
+- Return ONLY valid JSON matching the exact same schema as the input"""
+
+    with client.messages.stream(
+        model="claude-sonnet-4-6",
+        max_tokens=8000,
+        system=resume_system,
+        messages=[{"role": "user", "content": f"Job Description:\n{jd_text}\n\n---\n\nMaster Resume JSON:\n{json.dumps(master_data, indent=2)}\n\n---\n\nReturn the tailored JSON only, no other text."}]
+    ) as stream:
+        resume_response = stream.get_final_message()
+
+    raw = next(b.text for b in resume_response.content if b.type == "text").strip()
+    if raw.startswith("```"):
+        raw = raw.split("\n", 1)[1].rsplit("```", 1)[0]
+    tailored_data = json.loads(raw)
+
+    elapsed_ms = int((time.time() - start_time) * 1000)
     tailored_data['telemetry'] = {
-        'generation_latency_ms': int((time.time() - start_time) * 1000) + 1205,
-        'tokens_used': 3450,
-        'cost_usd': 0.043,
-        'strict_schema_eval_score': "100%",
-        'prompt_version': "v4-adversarial-defense"
+        'generation_latency_ms': elapsed_ms,
+        'input_tokens': resume_response.usage.input_tokens,
+        'output_tokens': resume_response.usage.output_tokens,
+        'model': 'claude-sonnet-4-6',
+        'prompt_version': 'v2'
     }
-    
-    # 1. Output targeted JSON
+
     with open(out_json_path, 'w', encoding='utf-8') as f:
         json.dump(tailored_data, f, indent=2)
-    print(f"[+] Generated tailored JSON: {out_json_path}")
-    
-    # 2. Output MD file logically mapped perfectly to Master PDF parser schemas
-    md_content = f"# {tailored_data['basics']['name'].upper()}\n\n"
-    md_content += f"**{tailored_data['basics']['label']}**\n\n"
-    md_content += f"Portland, OR | {tailored_data['basics']['email']} | [LinkedIn]({tailored_data['basics']['profiles'][0]['url']}) | [GitHub]({tailored_data['basics']['profiles'][1]['url']}) | [Portfolio]({tailored_data['basics']['url']})\n\n"
-    md_content += "---\n\n"
-    md_content += "## PROFESSIONAL SUMMARY\n\n"
-    md_content += f"{tailored_data['basics']['summary']}\n\n"
-    md_content += "---\n\n"
-    
-    md_content += "## TECHNICAL SKILLS\n\n"
-    for skill in tailored_data['skills']:
-        md_content += f"**{skill['name']}:** {' | '.join(skill['keywords'])}\n\n"
-    
-    md_content += "---\n\n"
-    md_content += "## PROFESSIONAL EXPERIENCE - STARTUP\n\n"
-    
-    for i, job in enumerate(tailored_data['work']):
-        if i == 1:
-            md_content += "## PROFESSIONAL EXPERIENCE\n\n"
-        md_content += f"### {job['position']}\n"
-        md_content += f"**{job['company']}** | Remote | {job['startDate']} - {job['endDate']}\n\n"
-        for highlight in job['highlights']:
-            md_content += f"- {highlight}\n"
-        md_content += "\n"
-        
-    md_content += "---\n\n"
-    md_content += "## KEY TECHNICAL PROJECTS\n\n"
-    for proj in tailored_data.get('projects', []):
-        md_content += f"### {proj['name']} (2025)\n"
-        md_content += f"- {proj['description']}\n\n"
-        
-    if tailored_data.get('certifications'):
-        md_content += "---\n\n"
-        md_content += "## CERTS/COURSES\n\n"
-        for cert in tailored_data.get('certifications', []):
-            md_content += f"- **{cert['name']}** | {cert['issuer']} | {cert['date']}\n"
-        md_content += "\n"
+    print(f"[+] Tailored JSON: {out_json_path}")
 
-    if tailored_data.get('education'):
-        md_content += "---\n\n"
-        md_content += "## EDUCATION\n\n"
-        for edu in tailored_data.get('education', []):
-            md_content += f"**{edu['degree']}**, {edu['institution']} | {edu['date']}\n\n"
-
-    if tailored_data.get('patents'):
-        md_content += "---\n\n"
-        md_content += "## PATENTS & AWARDS\n\n"
-        for pat in tailored_data.get('patents', []):
-            md_content += f"**{pat['title']}**\n"
-            if pat.get('description'):
-                md_content += f"- {pat['description']}\n\n"
-
-    if tailored_data.get('publications'):
-        md_content += "---\n\n"
-        md_content += "## PUBLICATIONS\n\n"
-        for pub in tailored_data.get('publications', []):
-            authors = pub['authors'].replace('J Doornink', '**J Doornink**')
-            md_content += f"- {authors}. *{pub['title']}.* {pub['journal']}, {pub['date']}\n"
-        md_content += "\n"
-
+    # --- Step 2: Generate resume markdown + PDF ---
+    md_content = _render_resume_markdown(tailored_data)
     with open(out_md_path, 'w', encoding='utf-8') as f:
         f.write(md_content)
-    print(f"[+] Generated identical structural targeted Markdown: {out_md_path}")
-    
-    # 3. Dynamic PDF Generation tying directly into convert_to_pdf.py engine via automated bash runtime triggers
-    print(f"[*] Compiling custom Markdown structure into PDF layout over {out_pdf_path}...")
+    print(f"[+] Resume Markdown: {out_md_path}")
     os.system(f"python convert_to_pdf.py {out_md_path} {out_pdf_path}")
-    
-    print("\n[✔] Tailoring Pipeline Complete! You can now run 'npm run dev' to review the targeted route.")
+
+    # --- Step 3: Generate cover letter ---
+    print("[*] Generating cover letter...")
+    basics = tailored_data['basics']
+    cover_system = """You are an expert cover letter writer. Write a compelling, authentic cover letter
+that matches the candidate's voice — direct, confident, grounded in real experience.
+No fluff, no generic phrases. Under 400 words. Return only the cover letter text."""
+
+    cover_prompt = f"""Job Description:
+{jd_text}
+
+Candidate:
+Name: {basics['name']}
+Title: {basics['label']}
+Summary: {basics['summary']}
+
+Key experience highlights:
+{chr(10).join('- ' + h for job in tailored_data['work'][:3] for h in job['highlights'][:2])}
+
+Write a cover letter for this candidate applying to {company} for the {role.replace('-', ' ')} role."""
+
+    with client.messages.stream(
+        model="claude-sonnet-4-6",
+        max_tokens=2000,
+        system=cover_system,
+        messages=[{"role": "user", "content": cover_prompt}]
+    ) as stream:
+        cover_response = stream.get_final_message()
+
+    cover_text = next(b.text for b in cover_response.content if b.type == "text").strip()
+
+    cover_md = f"# Cover Letter\n**{basics['name']}** | {basics['email']}\n\n---\n\n{cover_text}\n"
+    with open(out_cover_letter_md, 'w', encoding='utf-8') as f:
+        f.write(cover_md)
+    print(f"[+] Cover Letter Markdown: {out_cover_letter_md}")
+    os.system(f"python convert_to_pdf.py {out_cover_letter_md} {out_cover_letter_pdf}")
+    print(f"[+] Cover Letter PDF: {out_cover_letter_pdf}")
+
+    total_ms = int((time.time() - start_time) * 1000)
+    total_in = resume_response.usage.input_tokens + cover_response.usage.input_tokens
+    total_out = resume_response.usage.output_tokens + cover_response.usage.output_tokens
+    print(f"\n[✔] Pipeline complete in {total_ms}ms | {total_in} in / {total_out} out tokens")
+    print(f"    Preview: http://localhost:3000/t/{company}/{role}")
+
+
+def _render_resume_markdown(data):
+    basics = data['basics']
+    profiles = {p['network']: p['url'] for p in basics.get('profiles', [])}
+
+    lines = [
+        f"# {basics['name'].upper()}",
+        "",
+        f"**{basics['label']}**",
+        "",
+        f"Portland, OR | {basics['email']}"
+        + (f" | [LinkedIn]({profiles['LinkedIn']})" if 'LinkedIn' in profiles else "")
+        + (f" | [GitHub]({profiles['GitHub']})" if 'GitHub' in profiles else "")
+        + (f" | [Portfolio]({basics.get('url', '')})" if basics.get('url') else ""),
+        "",
+        "---", "",
+        "## PROFESSIONAL SUMMARY", "",
+        basics['summary'], "",
+        "---", "",
+        "## TECHNICAL SKILLS", "",
+    ]
+
+    for skill in data.get('skills', []):
+        lines.append(f"**{skill['name']}:** {' | '.join(skill['keywords'])}")
+        lines.append("")
+
+    lines += ["---", ""]
+
+    startup_written = False
+    professional_written = False
+
+    for job in sorted(data.get('work', []), key=lambda j: (0 if j.get('isStartup') else 1)):
+        is_startup = job.get('isStartup', False)
+        if is_startup and not startup_written:
+            lines += ["## PROFESSIONAL EXPERIENCE - STARTUP", ""]
+            startup_written = True
+        elif not is_startup and not professional_written:
+            lines += ["## PROFESSIONAL EXPERIENCE", ""]
+            professional_written = True
+        lines.append(f"### {job['position']} | {job['company']} | {job['startDate']} - {job['endDate']}")
+        lines.append("")
+        for h in job.get('highlights', []):
+            lines.append(f"- {h}")
+        lines.append("")
+
+    lines += ["---", "", "## KEY TECHNICAL PROJECTS", ""]
+    for proj in data.get('projects', []):
+        url = proj.get('url', '')
+        name_part = f"[{proj['name']}]({url})" if url else proj['name']
+        lines.append(f"**{name_part}** — {proj['description']}")
+        lines.append("")
+
+    if data.get('certifications'):
+        lines += ["---", "", "## CERTS/COURSES", ""]
+        for cert in data['certifications']:
+            lines.append(f"- **{cert['name']}** | {cert['issuer']} | {cert['date']}")
+        lines.append("")
+
+    if data.get('education'):
+        lines += ["---", "", "## EDUCATION", ""]
+        for edu in data['education']:
+            lines.append(f"**{edu['degree']}** — {edu['institution']} | {edu['date']}")
+            lines.append("")
+
+    if data.get('patents'):
+        lines += ["---", "", "## PATENTS & AWARDS", ""]
+        for pat in data['patents']:
+            url = pat.get('url', '')
+            title_part = f"[{pat['title']}]({url})" if url else pat['title']
+            lines.append(f"**{title_part}**")
+            if pat.get('description'):
+                lines.append(f"- {pat['description']}")
+            lines.append("")
+
+    if data.get('publications'):
+        lines += ["---", "", "## PUBLICATIONS", ""]
+        for pub in data['publications']:
+            authors = pub['authors'].replace('J Doornink', '**J Doornink**')
+            lines.append(f"- {authors}. *{pub['title']}.* {pub['journal']}, {pub['date']}")
+        lines.append("")
+
+    return "\n".join(lines)
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python generate_tailored_profile.py <target_folder>")
         print("Example: python generate_tailored_profile.py data/jobs/google/senior-sre")
         sys.exit(1)
-        
     process_job_description(sys.argv[1])

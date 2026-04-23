@@ -51,37 +51,15 @@ export default async function TailoredJobPage({ params }: Props) {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-gray-200 font-mono p-8 md:p-16">
 
-      {/* SRE FinOps Telemetry Badge - Radical Transparency */}
-      {data.telemetry && (
-        <div className="absolute top-4 right-4 bg-gray-900 border border-neutral-800 rounded-lg p-4 text-xs shadow-xl max-w-sm">
-          <div className="flex items-center space-x-2 text-emerald-400 mb-2 font-bold">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>Agentic Generation Telemetry</span>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-gray-400">
-            <div>Prompt Version:</div><div className="text-white">{data.telemetry.prompt_version}</div>
-            <div>Latency (ms):</div><div className="text-white">{data.telemetry.generation_latency_ms}</div>
-            <div>Tokens Used:</div><div className="text-white">{data.telemetry.tokens_used}</div>
-            <div>Inference Cost:</div><div className="text-white">${data.telemetry.cost_usd}</div>
-            <div>Schema Strictness:</div><div className="text-green-500">{data.telemetry.strict_schema_eval_score}</div>
-          </div>
-          <div className="mt-4 pt-3 border-t border-neutral-800 flex justify-between items-center">
-            <span className="text-[10px] uppercase tracking-wider text-gray-500">Radical SRE Transparency</span>
-            <button className="px-3 py-1 bg-white text-black font-semibold rounded hover:bg-gray-200 transition-colors">
-              View Master Diff
-            </button>
-          </div>
-        </div>
-      )}
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto space-y-12 pt-12">
 
         <header className="space-y-4 border-b border-gray-800 pb-8">
           <div className="text-sm font-bold text-blue-400 tracking-widest uppercase flex items-center space-x-2">
-            <span>[ Target TargetLock ]</span>
+            <span>{company}</span>
             <span>{"->"}</span>
-            <span className="text-white">{company} : {role}</span>
+            <span className="text-white">{role}</span>
           </div>
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
             <h1 className="text-5xl font-extrabold tracking-tight text-white">{data.basics.name}</h1>
@@ -168,15 +146,15 @@ export default async function TailoredJobPage({ params }: Props) {
 
         {/* ===== EXPERIENCE (amber) — unified, startup gets badge ===== */}
         <section id="experience" className="space-y-6">
-          <h3 className="text-2xl font-bold border-l-4 border-amber-500 pl-4 text-white">Experience (Tailored to JD)</h3>
-          {data.work.map((job: any, i: number) => (
+          <h3 className="text-2xl font-bold border-l-4 border-amber-500 pl-4 text-white">Experience</h3>
+          {[...data.work].sort((a: any, b: any) => (b.isStartup ? 1 : 0) - (a.isStartup ? 1 : 0)).map((job: any, i: number) => (
             <div key={i} className="bg-gray-900 border border-neutral-800 p-6 rounded-lg relative overflow-hidden group">
               <div className="absolute top-0 left-0 w-1 h-full bg-amber-500/50 group-hover:bg-amber-400 transition-colors"></div>
               <div className="flex flex-col md:flex-row justify-between md:items-start mb-4 gap-2">
                 <div>
                   <div className="flex items-center gap-3">
                     <h4 className="text-xl font-bold text-white">{job.company}</h4>
-                    {i === 0 && (
+                    {job.isStartup && (
                       <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-900/40 text-amber-300 text-[10px] uppercase tracking-widest rounded border border-amber-500/30 font-bold">
                         🚀 Startup
                       </span>

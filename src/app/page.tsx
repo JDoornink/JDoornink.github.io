@@ -114,14 +114,14 @@ export default function Home() {
         {/* ===== EXPERIENCE (amber) — unified, startup gets badge ===== */}
         <section id="experience" className="space-y-6">
           <h3 className="text-2xl font-bold border-l-4 border-amber-500 pl-4 text-white">Professional Experience</h3>
-          {data.work.map((job: any, i: number) => (
+          {[...data.work].sort((a: any, b: any) => (b.isStartup ? 1 : 0) - (a.isStartup ? 1 : 0)).map((job: any, i: number) => (
             <div key={i} className="bg-gray-900 border border-neutral-800 p-6 rounded-lg relative overflow-hidden group">
               <div className="absolute top-0 left-0 w-1 h-full bg-amber-500/50 group-hover:bg-amber-400 transition-colors"></div>
               <div className="flex flex-col md:flex-row justify-between md:items-start mb-4 gap-2">
                 <div>
                   <div className="flex items-center gap-3">
                     <h4 className="text-xl font-bold text-white">{job.company}</h4>
-                    {i === 0 && (
+                    {job.isStartup && (
                       <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-900/40 text-amber-300 text-[10px] uppercase tracking-widest rounded border border-amber-500/30 font-bold">
                         🚀 Startup
                       </span>
