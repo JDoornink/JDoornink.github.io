@@ -78,6 +78,28 @@ export default async function TailoredJobPage({ params }: Props) {
           </div>
         </header>
 
+        <section id="projects" className="space-y-6 pt-2">
+          <h3 className="text-2xl font-bold border-l-4 border-purple-500 pl-4 text-white">Featured Architecture & Tooling</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {data.projects?.map((project: any, i: number) => (
+              <a key={i} href={project.url} target="_blank" rel="noreferrer" className="block bg-gray-900 border border-neutral-800 p-6 rounded-lg hover:border-purple-500/30 transition-colors group relative flex flex-col h-full">
+                <h4 className="text-white font-bold leading-tight mb-2 group-hover:text-purple-400 transition-colors underline decoration-purple-500/30 underline-offset-4">{project.name}</h4>
+                <p className="text-gray-400 font-sans text-sm leading-relaxed mb-4 flex-grow">{project.description}</p>
+
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {project.keywords?.map((kw: string, j: number) => (
+                    <span key={j} className="px-2 py-1 bg-neutral-950 border border-neutral-700/50 rounded text-[10px] uppercase tracking-wider text-gray-300 group-hover:border-purple-900 transition-colors">{kw}</span>
+                  ))}
+                </div>
+
+                <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity text-purple-400">
+                  ↗
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
         <section id="certifications" className="space-y-6 pt-2">
           <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white">Certifications & Courses</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -99,28 +121,6 @@ export default async function TailoredJobPage({ params }: Props) {
                   <div className="text-gray-400 text-sm">{cert.issuer} • {cert.date}</div>
                 </div>
               </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="projects" className="space-y-6 pt-2">
-          <h3 className="text-2xl font-bold border-l-4 border-purple-500 pl-4 text-white">Featured Architecture & Tooling</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {data.projects?.map((project: any, i: number) => (
-              <a key={i} href={project.url} target="_blank" rel="noreferrer" className="block bg-gray-900 border border-neutral-800 p-6 rounded-lg hover:border-purple-500/30 transition-colors group relative flex flex-col h-full">
-                <h4 className="text-white font-bold leading-tight mb-2 group-hover:text-purple-400 transition-colors underline decoration-purple-500/30 underline-offset-4">{project.name}</h4>
-                <p className="text-gray-400 font-sans text-sm leading-relaxed mb-4 flex-grow">{project.description}</p>
-
-                <div className="flex flex-wrap gap-2 mt-auto">
-                  {project.keywords?.map((kw: string, j: number) => (
-                    <span key={j} className="px-2 py-1 bg-neutral-950 border border-neutral-700/50 rounded text-[10px] uppercase tracking-wider text-gray-300 group-hover:border-purple-900 transition-colors">{kw}</span>
-                  ))}
-                </div>
-
-                <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity text-purple-400">
-                  ↗
-                </div>
-              </a>
             ))}
           </div>
         </section>
