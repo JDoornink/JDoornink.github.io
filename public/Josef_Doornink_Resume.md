@@ -105,7 +105,6 @@ Site Reliability Engineer with 12+ years specializing in distributed systems, cl
 
 - **Doornink J**, Fitzpatrick DC, Madey SM, Bottlang M. *Far Cortical Locking Enables Flexible Fixation with Periarticular Locking Plates in the Distal Femur.* Journal of Orthopaedic Trauma, 2011 Feb; 25 Suppl 1: S29-34
 - **Doornink J**, Fitzpatrick DC, Boldhaus S, Madey SM, Bottlang M. *Effects of Hybrid Plating With Locked and Nonlocked Screws on the Strength of Locked Plating Constructs in the Osteoporotic Diaphysis.* Journal of Trauma-Injury Infection & Critical Care, August 2010, Vol 69, Issue 2
-- Bottlang M, Fitzpatrick DC, Lujan TJ, **Doornink J**, Madey SM. *Biomechanics and Use of Far Cortical Locking in Orthopaedic Trauma.* Orthopaedic Knowledge Online Journal, August 2012
 - Bottlang M, **Doornink J**, Fitzpatrick DC, Madey SM. *Far cortical locking can reduce stiffness of locked plating constructs while retaining construct strength.* The Journal of Bone and Joint Surgery (JBJS), 2009
 - Bottlang M, Lesser M, Koerber J, **Doornink J**, et al. *Far cortical locking can improve healing of fractures stabilized with locking plates.* The Journal of Bone and Joint Surgery (JBJS), 2010
 

@@ -34,8 +34,6 @@ def process_job_description(target_folder):
     os.makedirs(public_target_dir, exist_ok=True)
     out_md_path = os.path.join(public_target_dir, 'resume.md')
     out_pdf_path = os.path.join(public_target_dir, 'resume.pdf')
-    out_cover_letter_md = os.path.join(public_target_dir, 'cover_letter.md')
-    out_cover_letter_pdf = os.path.join(public_target_dir, 'cover_letter.pdf')
 
     if not os.path.exists(jd_path):
         print(f"Error: Could not find Job Description at {jd_path}")
@@ -97,47 +95,8 @@ Rules:
     print(f"[+] Resume Markdown: {out_md_path}")
     os.system(f"python convert_to_pdf.py {out_md_path} {out_pdf_path}")
 
-    # --- Step 3: Generate cover letter ---
-    print("[*] Generating cover letter...")
-    basics = tailored_data['basics']
-    cover_system = """You are an expert cover letter writer. Write a compelling, authentic cover letter
-that matches the candidate's voice — direct, confident, grounded in real experience.
-No fluff, no generic phrases. Under 400 words. Return only the cover letter text."""
-
-    cover_prompt = f"""Job Description:
-{jd_text}
-
-Candidate:
-Name: {basics['name']}
-Title: {basics['label']}
-Summary: {basics['summary']}
-
-Key experience highlights:
-{chr(10).join('- ' + h for job in tailored_data['work'][:3] for h in job['highlights'][:2])}
-
-Write a cover letter for this candidate applying to {company} for the {role.replace('-', ' ')} role."""
-
-    with client.messages.stream(
-        model="claude-sonnet-4-6",
-        max_tokens=2000,
-        system=cover_system,
-        messages=[{"role": "user", "content": cover_prompt}]
-    ) as stream:
-        cover_response = stream.get_final_message()
-
-    cover_text = next(b.text for b in cover_response.content if b.type == "text").strip()
-
-    cover_md = f"# Cover Letter\n**{basics['name']}** | {basics['email']}\n\n---\n\n{cover_text}\n"
-    with open(out_cover_letter_md, 'w', encoding='utf-8') as f:
-        f.write(cover_md)
-    print(f"[+] Cover Letter Markdown: {out_cover_letter_md}")
-    os.system(f"python convert_to_pdf.py {out_cover_letter_md} {out_cover_letter_pdf}")
-    print(f"[+] Cover Letter PDF: {out_cover_letter_pdf}")
-
     total_ms = int((time.time() - start_time) * 1000)
-    total_in = resume_response.usage.input_tokens + cover_response.usage.input_tokens
-    total_out = resume_response.usage.output_tokens + cover_response.usage.output_tokens
-    print(f"\n[✔] Pipeline complete in {total_ms}ms | {total_in} in / {total_out} out tokens")
+    print(f"\n[✔] Pipeline complete in {total_ms}ms | {resume_response.usage.input_tokens} in / {resume_response.usage.output_tokens} out tokens")
     print(f"    Preview: http://localhost:3000/t/{company}/{role}")
 
 

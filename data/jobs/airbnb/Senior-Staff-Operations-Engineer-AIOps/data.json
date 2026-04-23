@@ -5,7 +5,7 @@
     "email": "jdoorarg@gmail.com",
     "phone": "",
     "url": "https://jdoornink.github.io/",
-    "summary": "Senior Staff-level engineer with 10+ years of SRE and AI infrastructure experience, currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis \u2014 directly aligning with AIOps vision and strategy. Proven track record owning observability platforms, leading cross-team incident response, and building Python/Go automation that eliminated 80+ hours/month of operational toil. Deep expertise in cloud-native infrastructure (AWS, Azure, GCP), CI/CD, IaC via Terraform, and event-driven architectures. CKS/CKA certified with strong SDLC discipline; experienced leading 1\u20133 year architecture planning across distributed enterprise systems at scale.",
+    "summary": "Senior Staff-level engineer with 10+ years of SRE and AI infrastructure experience, currently designing autonomous AIOps pipelines that leverage LLMs for root-cause analysis and operational intelligence. Proven track record architecting large-scale cloud environments (Azure/AWS/GCP), building Python and Go automation that eliminates toil at scale, and leading cross-functional incident response and postmortem programs. Deep expertise in observability platforms, event-driven architectures, CI/CD, and IaC \u2014 with the technical rigor and leadership presence to own an AIOps vision, drive 1\u20133 year architecture roadmaps, and partner across BizTech engineering to improve service reliability and efficiency.",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -21,24 +21,6 @@
   },
   "work": [
     {
-      "company": "Trimble/Viewpoint",
-      "position": "Lead Site Reliability Engineer (SRE) I -> II -> III",
-      "startDate": "January 2019",
-      "endDate": "Present",
-      "summary": "",
-      "highlights": [
-        "Implemented New Relic observability stack with distributed tracing, cutting MTTR by 50% \u2014 directly enabling proactive monitoring and correlated insights across systems and applications.",
-        "Built automation tooling in Python and Go eliminating 80+ hours/month of toil and accelerating deployment velocity 3x, driving shift-left and process excellence initiatives.",
-        "Architected AKS production environments handling 10M+ requests/day across 30+ microservices at 99.9% uptime SLA.",
-        "Developed Go CLI tooling (Cobra) adopted by 50+ engineers for streamlined infrastructure workflows.",
-        "Built CI/CD pipelines (GitHub Actions, Azure DevOps) with automated testing and rollback mechanisms.",
-        "Managed 500+ cloud resources via Terraform IaC; implemented CKS security controls for SOC2 compliance.",
-        "Led Kubernetes capacity planning and auto-scaling strategies supporting 200% traffic growth.",
-        "Reduced P99 latency 45% and improved throughput 60% through systematic profiling of distributed systems.",
-        "Developed yaml-based ML pipeline orchestration tools, reducing manual overhead by 70%."
-      ]
-    },
-    {
       "company": "REASON BENEFIT AI CORPORATION",
       "position": "Lead MLOps Engineer",
       "startDate": "October 2025",
@@ -48,8 +30,26 @@
       "highlights": [
         "Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.",
         "Led Distributed Training Pipeline Creation by automating pipeline bottlenecks through automated pipeline scripts and validations to improve training cycle time.",
-        "Collaborate with engineering teams to translate desired microservice architectures into cloud-based systems with focus on reliability and scalability.",
+        "Collaborate with research teams to translate desired microservice architectures into cloud-based systems with focus on reliability and scalability.",
         "Integrate with Azure offerings for resource utilization across distributed training systems."
+      ]
+    },
+    {
+      "company": "Trimble/Viewpoint",
+      "position": "Lead Site Reliability Engineer (SRE) I -> II -> III",
+      "startDate": "January 2019",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": [
+        "Built automation tooling in Python and Go eliminating 80+ hours/month of toil and accelerating deployment velocity 3x, directly enabling shift-left operational programs.",
+        "Implemented New Relic observability stack with distributed tracing, cutting MTTR by 50% and enabling correlated, proactive monitoring across systems and applications.",
+        "Architected AKS production environments handling 10M+ requests/day across 30+ microservices at 99.9% uptime SLA.",
+        "Led Kubernetes capacity planning and auto-scaling strategies supporting 200% traffic growth.",
+        "Reduced P99 latency 45% and improved throughput 60% through systematic profiling of distributed systems.",
+        "Developed Go CLI tooling (Cobra) adopted by 50+ engineers for streamlined infrastructure workflows.",
+        "Built CI/CD pipelines (GitHub Actions, Azure DevOps) with automated testing and rollback mechanisms.",
+        "Managed 500+ cloud resources via Terraform IaC; implemented CKS security controls for SOC2 compliance.",
+        "Developed yaml-based ML pipeline orchestration tools, reducing manual overhead by 70%."
       ]
     },
     {
@@ -59,8 +59,8 @@
       "endDate": "January 2019",
       "summary": "",
       "highlights": [
-        "Developed cloud-based SaaS applications using .NET and Angular, migrating on-premise software solutions to Azure cloud platform.",
-        "Built RESTful APIs for multi-tenant applications serving thousands of users with focus on performance and scalability."
+        "Built RESTful APIs for multi-tenant applications serving thousands of users with focus on performance and scalability.",
+        "Developed cloud-based SaaS applications using .NET and Angular, migrating on-premise software solutions to Azure cloud platform."
       ]
     },
     {
@@ -114,33 +114,35 @@
       "level": "Expert",
       "keywords": [
         "AIOps",
-        "LLM Reasoning & RCA",
+        "LLM-driven Root Cause Analysis",
         "New Relic",
         "Distributed Tracing",
+        "Proactive Monitoring",
         "Incident Response",
         "Prometheus",
         "Grafana",
         "Azure Monitor",
-        "Proactive Monitoring",
         "MTTR Reduction",
-        "Performance Profiling",
-        "Postmortem Analysis"
+        "Event-Driven Architectures",
+        "AWS Lambda/SQS",
+        "API Integrations",
+        "Performance Profiling"
       ]
     },
     {
-      "name": "Platform & SDLC",
+      "name": "SRE & DevOps",
       "level": "Expert",
       "keywords": [
         "CI/CD Pipelines",
         "GitHub Actions",
         "Azure DevOps",
         "Infrastructure as Code",
-        "Event-Driven Architecture",
-        "API Integrations",
         "Configuration Management",
         "Distributed Version Control",
-        "Automation",
-        "Shift-Left"
+        "Automation & Toil Elimination",
+        "Postmortem & RCA",
+        "SLO/SLA Management",
+        "On-Call Incident Command"
       ]
     },
     {
@@ -150,9 +152,9 @@
         "ML Pipelines",
         "LLM Model Serving",
         "Distributed Training Systems",
-        "RLHF Infrastructure",
         "Azure Machine Learning",
         "Vertex AI",
+        "RLHF Infrastructure",
         "Drift Detection",
         "Model Finetuning Systems"
       ]
@@ -161,26 +163,27 @@
   "projects": [
     {
       "name": "K8gentS",
-      "description": "An autonomous Root Cause Analysis (RCA) agent designed specifically for Kubernetes clusters. Leverages LLM logic and system telemetry to automatically diagnose pod failures, resource exhaustion, and network bottlenecks, drastically reducing operational MTTR and increasing visibility. Directly embodies the AIOps vision of correlated, automated insights that streamline operations.",
+      "description": "An autonomous Root Cause Analysis (RCA) agent designed specifically for Kubernetes clusters. Leverages LLM logic and system telemetry to automatically diagnose pod failures, resource exhaustion, and network bottlenecks, drastically reducing operational MTTR and increasing visibility. Directly demonstrates the AIOps vision of correlated, automated operational intelligence.",
       "url": "https://github.com/JDoornink/K8gentS",
       "keywords": [
         "AIOps",
-        "Kubernetes API",
-        "Go",
         "LLM Reasoning",
+        "Go",
+        "Kubernetes API",
         "Automation",
         "Root Cause Analysis"
       ]
     },
     {
       "name": "OmniSight-Core",
-      "description": "A production-grade video search engine demonstrating self-healing infrastructure that automatically detects model performance decay and triggers retraining. Showcases proactive monitoring and observability patterns aligned with operational excellence.",
+      "description": "A production-grade video search engine capable of understanding semantic queries. Demonstrates self-healing infrastructure that automatically detects model performance decay and triggers retraining \u2014 an example of proactive, event-driven operational automation.",
       "url": "https://github.com/JDoornink/OmniSight-Core",
       "keywords": [
         "Observability",
+        "Self-Healing Systems",
         "Distributed Systems",
         "Telemetry",
-        "Self-Healing Infrastructure"
+        "Automation"
       ]
     },
     {
@@ -188,8 +191,8 @@
       "description": "The source code driving this exact platform. A Next.js (React) infrastructure executing a Python/RAG Agent pipeline that strictly parses unstructured Job Descriptions and outputs statically generated, targeted frontend bundles dynamically.",
       "url": "https://github.com/JDoornink/JDoornink.github.io",
       "keywords": [
-        "Next.js",
         "Python RAG",
+        "Next.js",
         "TailwindCSS",
         "GitOps"
       ]
@@ -342,15 +345,6 @@
       "url": "https://journals.lww.com/jorthotrauma/fulltext/2011/02001/far_cortical_locking_enables_flexible_fixation.6.aspx"
     },
     {
-      "title": "Biomechanics and use of far cortical locking in orthopaedic trauma",
-      "authors": "M Bottlang, DC Fitzpatrick, TJ Lujan, J Doornink, SM Madey",
-      "journal": "Orthopaedic Knowledge Online Journal",
-      "date": "2012",
-      "cited by": "",
-      "isFirstAuthor": false,
-      "url": "https://www.aaos.org/OKOJ/vol10/issue8/TRA041/"
-    },
-    {
       "title": "Biplanar fixation of a locking plate in the diaphysis improves construct strength",
       "authors": "PJ Denard, J Doornink, D Phelan, SM Madey, DC Fitzpatrick, M Bottlang",
       "journal": "Clinical Biomechanics",
@@ -379,9 +373,9 @@
     }
   ],
   "telemetry": {
-    "generation_latency_ms": 78787,
-    "input_tokens": 6178,
-    "output_tokens": 5287,
+    "generation_latency_ms": 78220,
+    "input_tokens": 6038,
+    "output_tokens": 5180,
     "model": "claude-sonnet-4-6",
     "prompt_version": "v2"
   }

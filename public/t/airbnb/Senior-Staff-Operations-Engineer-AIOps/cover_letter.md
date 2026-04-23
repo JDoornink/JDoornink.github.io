@@ -5,17 +5,21 @@
 
 Dear Airbnb Hiring Team,
 
-Airbnb's operations model sits at an interesting inflection point — the infrastructure complexity is real, the AI tooling is finally mature enough to act on it, and the gap between reactive ops and truly autonomous operations is closeable. That's exactly the work I've been doing, and why this role caught my attention.
+Airbnb's operations scale is exactly the kind of environment where AIOps stops being a buzzword and starts being the difference between reactive firefighting and genuine operational leverage. That's the problem I've been solving for the past decade, and it's why this role caught my attention.
 
-I'm currently architecting Agentic SRE pipelines that use LLMs for root-cause analysis — not as a proof of concept, but as production infrastructure designed to reduce human-in-the-loop latency during incidents. That work maps directly to the AIOps vision you're building: correlated insights, automated triage, and shift-left programs that give engineering teams back their focus.
+I'm currently architecting autonomous Agentic SRE pipelines that use LLMs for root-cause analysis — not as a proof-of-concept, but as production infrastructure designed to reduce human toil and accelerate resolution. That work maps directly to the AIOps vision and observability platform strategy you're building at Airbnb.
 
-On the observability side, I implemented a New Relic stack with distributed tracing that cut MTTR by 50%. That outcome didn't come from tooling alone — it came from designing the correlation layer correctly and building accountability into postmortem processes. I've led high-severity incident response as both incident commander and ops engineer, and I know what it takes to drive corrective actions that actually stick rather than cycling through the same failures.
+A few things I'd bring on day one:
 
-The automation work is where I've had the most measurable impact. I've built Python and Go tooling that eliminated over 80 hours of monthly operational toil and tripled deployment velocity. I've also built event-driven architectures and RESTful API integrations across cloud platforms — AWS, Azure, GCP — using Terraform for IaC and CI/CD pipelines with real SDLC discipline. I'm CKS and CKA certified and currently maintain a large-scale AKS environment supporting distributed ML model training and inference at scale.
+I've built observability platforms with distributed tracing from the ground up — implementing a New Relic stack that cut MTTR by 50% across a microservices environment handling 10M+ requests per day. I understand what it takes to move from reactive alerting to correlated, actionable insights at scale.
 
-What I want to be direct about: your posting asks for 15+ years; my experience is 10+. I'm flagging that honestly because I believe the depth and current relevance of my work — particularly in agentic AI applied to operations — closes that gap significantly. I'd rather demonstrate that in conversation than obscure it.
+I've written the automation that actually ships. Python and Go tooling I built eliminated 80+ hours of monthly toil and tripled deployment velocity. These weren't one-off scripts — they were maintained, tested, production-grade tools built for durability.
 
-I'm genuinely excited about the scope here: owning the AIOps roadmap, partnering on the observability platform, and driving architecture planning across production systems. This is the problem space I'm already living in.
+I've led cross-team technical initiatives end-to-end, including incident command, postmortem accountability, and driving corrective actions that stick. I know the difference between writing a postmortem and actually closing the loop.
+
+My infrastructure background spans AWS, Azure, and GCP, with deep experience in Kubernetes, IaC with Terraform, CI/CD pipelines, and event-driven architectures. I've architected and operated large-scale AKS environments for ML model training and serving — so I understand both the AI side and the infrastructure that has to support it reliably.
+
+What draws me to Airbnb specifically is the combination of a homegrown observability platform, a genuine commitment to AIOps strategy, and the complexity of supporting global infrastructure at this scale. That's a meaningful technical challenge, and the kind of environment where I do my best work.
 
 I'd welcome the conversation.
 

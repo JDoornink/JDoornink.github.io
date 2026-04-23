@@ -8,7 +8,7 @@ Portland, OR | jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josef
 
 ## PROFESSIONAL SUMMARY
 
-Senior Staff-level engineer with 10+ years of SRE and AI infrastructure experience, currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis — directly aligning with AIOps vision and strategy. Proven track record owning observability platforms, leading cross-team incident response, and building Python/Go automation that eliminated 80+ hours/month of operational toil. Deep expertise in cloud-native infrastructure (AWS, Azure, GCP), CI/CD, IaC via Terraform, and event-driven architectures. CKS/CKA certified with strong SDLC discipline; experienced leading 1–3 year architecture planning across distributed enterprise systems at scale.
+Senior Staff-level engineer with 10+ years of SRE and AI infrastructure experience, currently designing autonomous AIOps pipelines that leverage LLMs for root-cause analysis and operational intelligence. Proven track record architecting large-scale cloud environments (Azure/AWS/GCP), building Python and Go automation that eliminates toil at scale, and leading cross-functional incident response and postmortem programs. Deep expertise in observability platforms, event-driven architectures, CI/CD, and IaC — with the technical rigor and leadership presence to own an AIOps vision, drive 1–3 year architecture roadmaps, and partner across BizTech engineering to improve service reliability and efficiency.
 
 ---
 
@@ -16,11 +16,11 @@ Senior Staff-level engineer with 10+ years of SRE and AI infrastructure experien
 
 **Core Technologies:** Python | Go/Golang | AWS | GCP | Azure | Kubernetes (AKS) | Terraform | Docker | Helm | YAML | Bash | Kafka | Redis | ElasticSearch | C# | SQL
 
-**AIOps & Observability:** AIOps | LLM Reasoning & RCA | New Relic | Distributed Tracing | Incident Response | Prometheus | Grafana | Azure Monitor | Proactive Monitoring | MTTR Reduction | Performance Profiling | Postmortem Analysis
+**AIOps & Observability:** AIOps | LLM-driven Root Cause Analysis | New Relic | Distributed Tracing | Proactive Monitoring | Incident Response | Prometheus | Grafana | Azure Monitor | MTTR Reduction | Event-Driven Architectures | AWS Lambda/SQS | API Integrations | Performance Profiling
 
-**Platform & SDLC:** CI/CD Pipelines | GitHub Actions | Azure DevOps | Infrastructure as Code | Event-Driven Architecture | API Integrations | Configuration Management | Distributed Version Control | Automation | Shift-Left
+**SRE & DevOps:** CI/CD Pipelines | GitHub Actions | Azure DevOps | Infrastructure as Code | Configuration Management | Distributed Version Control | Automation & Toil Elimination | Postmortem & RCA | SLO/SLA Management | On-Call Incident Command
 
-**AI/ML Engineering:** ML Pipelines | LLM Model Serving | Distributed Training Systems | RLHF Infrastructure | Azure Machine Learning | Vertex AI | Drift Detection | Model Finetuning Systems
+**AI/ML Engineering:** ML Pipelines | LLM Model Serving | Distributed Training Systems | Azure Machine Learning | Vertex AI | RLHF Infrastructure | Drift Detection | Model Finetuning Systems
 
 ---
 
@@ -30,27 +30,27 @@ Senior Staff-level engineer with 10+ years of SRE and AI infrastructure experien
 
 - Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.
 - Led Distributed Training Pipeline Creation by automating pipeline bottlenecks through automated pipeline scripts and validations to improve training cycle time.
-- Collaborate with engineering teams to translate desired microservice architectures into cloud-based systems with focus on reliability and scalability.
+- Collaborate with research teams to translate desired microservice architectures into cloud-based systems with focus on reliability and scalability.
 - Integrate with Azure offerings for resource utilization across distributed training systems.
 
 ## PROFESSIONAL EXPERIENCE
 
 ### Lead Site Reliability Engineer (SRE) I -> II -> III | Trimble/Viewpoint | January 2019 - Present
 
-- Implemented New Relic observability stack with distributed tracing, cutting MTTR by 50% — directly enabling proactive monitoring and correlated insights across systems and applications.
-- Built automation tooling in Python and Go eliminating 80+ hours/month of toil and accelerating deployment velocity 3x, driving shift-left and process excellence initiatives.
+- Built automation tooling in Python and Go eliminating 80+ hours/month of toil and accelerating deployment velocity 3x, directly enabling shift-left operational programs.
+- Implemented New Relic observability stack with distributed tracing, cutting MTTR by 50% and enabling correlated, proactive monitoring across systems and applications.
 - Architected AKS production environments handling 10M+ requests/day across 30+ microservices at 99.9% uptime SLA.
+- Led Kubernetes capacity planning and auto-scaling strategies supporting 200% traffic growth.
+- Reduced P99 latency 45% and improved throughput 60% through systematic profiling of distributed systems.
 - Developed Go CLI tooling (Cobra) adopted by 50+ engineers for streamlined infrastructure workflows.
 - Built CI/CD pipelines (GitHub Actions, Azure DevOps) with automated testing and rollback mechanisms.
 - Managed 500+ cloud resources via Terraform IaC; implemented CKS security controls for SOC2 compliance.
-- Led Kubernetes capacity planning and auto-scaling strategies supporting 200% traffic growth.
-- Reduced P99 latency 45% and improved throughput 60% through systematic profiling of distributed systems.
 - Developed yaml-based ML pipeline orchestration tools, reducing manual overhead by 70%.
 
 ### Software Developer | Viewpoint | March 2018 - January 2019
 
-- Developed cloud-based SaaS applications using .NET and Angular, migrating on-premise software solutions to Azure cloud platform.
 - Built RESTful APIs for multi-tenant applications serving thousands of users with focus on performance and scalability.
+- Developed cloud-based SaaS applications using .NET and Angular, migrating on-premise software solutions to Azure cloud platform.
 
 ### Software Developer I | Onfulfillment | March 2014 - March 2018
 
@@ -66,9 +66,9 @@ Senior Staff-level engineer with 10+ years of SRE and AI infrastructure experien
 
 ## KEY TECHNICAL PROJECTS
 
-**[K8gentS](https://github.com/JDoornink/K8gentS)** — An autonomous Root Cause Analysis (RCA) agent designed specifically for Kubernetes clusters. Leverages LLM logic and system telemetry to automatically diagnose pod failures, resource exhaustion, and network bottlenecks, drastically reducing operational MTTR and increasing visibility. Directly embodies the AIOps vision of correlated, automated insights that streamline operations.
+**[K8gentS](https://github.com/JDoornink/K8gentS)** — An autonomous Root Cause Analysis (RCA) agent designed specifically for Kubernetes clusters. Leverages LLM logic and system telemetry to automatically diagnose pod failures, resource exhaustion, and network bottlenecks, drastically reducing operational MTTR and increasing visibility. Directly demonstrates the AIOps vision of correlated, automated operational intelligence.
 
-**[OmniSight-Core](https://github.com/JDoornink/OmniSight-Core)** — A production-grade video search engine demonstrating self-healing infrastructure that automatically detects model performance decay and triggers retraining. Showcases proactive monitoring and observability patterns aligned with operational excellence.
+**[OmniSight-Core](https://github.com/JDoornink/OmniSight-Core)** — A production-grade video search engine capable of understanding semantic queries. Demonstrates self-healing infrastructure that automatically detects model performance decay and triggers retraining — an example of proactive, event-driven operational automation.
 
 **[Agentic SRE Pipeline & Portfolio](https://github.com/JDoornink/JDoornink.github.io)** — The source code driving this exact platform. A Next.js (React) infrastructure executing a Python/RAG Agent pipeline that strictly parses unstructured Job Descriptions and outputs statically generated, targeted frontend bundles dynamically.
 
@@ -118,7 +118,6 @@ Senior Staff-level engineer with 10+ years of SRE and AI infrastructure experien
 - M Bottlang, **J Doornink**, TJ Lujan, DC Fitzpatrick, JL Marsh, P Augat, B von Rechenberg, M Lesser, SM Madey. *Effects of construct stiffness on healing of fractures stabilized with locking plates.* The Journal of Bone and Joint Surgery (JBJS), 2010
 - **J Doornink**, DC Fitzpatrick, S Boldhaus, SM Madey, M Bottlang. *Effects of hybrid plating with locked and nonlocked screws on the strength of locked plating constructs in the osteoporotic diaphysis.* Journal of Trauma and Acute Care Surgery, 2010
 - **J Doornink**, DC Fitzpatrick, SM Madey, M Bottlang. *Far cortical locking enables flexible fixation with periarticular locking plates.* Journal of Orthopaedic Trauma, 2011
-- M Bottlang, DC Fitzpatrick, TJ Lujan, **J Doornink**, SM Madey. *Biomechanics and use of far cortical locking in orthopaedic trauma.* Orthopaedic Knowledge Online Journal, 2012
 - PJ Denard, **J Doornink**, D Phelan, SM Madey, DC Fitzpatrick, M Bottlang. *Biplanar fixation of a locking plate in the diaphysis improves construct strength.* Clinical Biomechanics, 2011
 - PA Wackym, JA Ratigan, JD Birck, SH Johnson, **J Doornink**, M Bottlang, SK Gardiner, FO Black. *Rapid cVEMP and oVEMP responses elicited by a novel head striker and recording device.* Otology & Neurotology, 2012
 - M Bottlang, DC Fitzpatrick, D Sheerin, E Kubiak, R Gellman, C Vande Zandschulp, **J Doornink**, K Earley, SM Madey. *Dynamic fixation of distal femur fractures using far cortical locking screws: a prospective observational study.* Journal of Orthopaedic Trauma, 2014
