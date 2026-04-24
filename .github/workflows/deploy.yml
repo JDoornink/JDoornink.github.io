@@ -35,6 +35,12 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
       - name: Install dependencies
         run: pnpm install
       - name: Build with Next.js

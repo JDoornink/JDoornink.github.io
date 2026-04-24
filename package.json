@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "python scripts/generate_master_resume.py",
     "dev": "next dev",
+    "resume": "python scripts/generate_master_resume.py",
+    "prebuild": "python scripts/generate_master_resume.py",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",

@@ -172,7 +172,7 @@ if __name__ == "__main__":
     import sys
     if len(sys.argv) == 3:
         convert_md_to_pdf(Path(sys.argv[1]), Path(sys.argv[2]))
-        print(f"\n✅ Target PDF conversion fully complete: {sys.argv[2]}")
+        print(f"\n[+] PDF conversion complete: {sys.argv[2]}")
     else:
         # Convert both master resumes via offline fallback
         resume_dir = Path(__file__).parent / "Resume"
@@ -187,4 +187,4 @@ if __name__ == "__main__":
             resume_dir / "resume9-Full.pdf"
         )
         
-        print("\n✅ Default Master PDF conversion complete!")
+        print("\n[+] Default Master PDF conversion complete!")
