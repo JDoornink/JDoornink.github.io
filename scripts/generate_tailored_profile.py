@@ -125,6 +125,19 @@ def _render_resume_markdown(data):
         lines.append(f"**{skill['name']}:** {' | '.join(skill['keywords'])}")
         lines.append("")
 
+    lines += ["---", "", "## KEY TECHNICAL PROJECTS", ""]
+    for proj in data.get('projects', []):
+        url = proj.get('url', '')
+        name_part = f"[{proj['name']}]({url})" if url else proj['name']
+        lines.append(f"**{name_part}** — {proj['description']}")
+        lines.append("")
+
+    if data.get('certifications'):
+        lines += ["---", "", "## CERTS/COURSES", ""]
+        for cert in data['certifications']:
+            lines.append(f"- **{cert['name']}** | {cert['issuer']} | {cert['date']}")
+        lines.append("")
+
     lines += ["---", ""]
 
     startup_written = False
@@ -142,19 +155,6 @@ def _render_resume_markdown(data):
         lines.append("")
         for h in job.get('highlights', []):
             lines.append(f"- {h}")
-        lines.append("")
-
-    lines += ["---", "", "## KEY TECHNICAL PROJECTS", ""]
-    for proj in data.get('projects', []):
-        url = proj.get('url', '')
-        name_part = f"[{proj['name']}]({url})" if url else proj['name']
-        lines.append(f"**{name_part}** — {proj['description']}")
-        lines.append("")
-
-    if data.get('certifications'):
-        lines += ["---", "", "## CERTS/COURSES", ""]
-        for cert in data['certifications']:
-            lines.append(f"- **{cert['name']}** | {cert['issuer']} | {cert['date']}")
         lines.append("")
 
     if data.get('education'):

@@ -5,7 +5,7 @@
     "email": "jdoorarg@gmail.com",
     "phone": "",
     "url": "https://jdoornink.github.io/",
-    "summary": "A creative problem-solver who creates solutions where none exist, I build the infrastructure that scales research into reality. Few production engineers have published 10 peer-reviewed papers, earned 2 US patents, won a major design award, and shipped FDA-cleared hardware. That discipline now drives 10+ years of SRE and AI infrastructure work (CKS/CKA certified), bridging mathematical rigor and system integrity at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.",
+    "summary": "A creative problem-solver who creates solutions where none exist, I build the infrastructure that scales research into reality. Few production engineers have published 10 peer-reviewed papers, earned 2 US patents, won a major design award, and shipped FDA-cleared hardware. That discipline now drives 10+ years of SRE and AI infrastructure work (CKS/CKA certified), bridging mathematical rigor and system integrity at scale \u00e2\u20ac\u201d currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -142,13 +142,15 @@
   "projects": [
     {
       "name": "K8gentS",
-      "description": "An autonomous Root Cause Analysis (RCA) agent designed specifically for Kubernetes clusters. Leverages LLM logic and system telemetry to automatically diagnose pod failures, resource exhaustion, and network bottlenecks, drastically reducing operational MTTR and increasing visibility.",
+      "description": "What happens when you deploy a non-deterministic reasoning engine in a system that requires guarantees? K8gentS is an autonomous Kubernetes RCA agent built around that question. It routes cluster failures through Gemini-powered analysis, gates remediation behind both a human approval and an OPA Gatekeeper admission policy, and exposes diagnostics as an MCP server. The hard problems \u2014 confidence calibration, LLM vs deterministic routing, evaluating for unanticipated failures \u2014 are openly documented in the README.",
       "url": "https://github.com/JDoornink/K8gentS",
       "keywords": [
-        "Kubernetes API",
-        "Go",
-        "LLM Reasoning",
-        "Automation"
+        "AI Safety",
+        "Kubernetes",
+        "MCP",
+        "OPA Gatekeeper",
+        "Gemini",
+        "Python"
       ]
     },
     {
@@ -156,9 +158,12 @@
       "description": "A production-grade video search engine capable of understanding semantic queries (e.g., \"Find a red truck at night\"). Demonstrates self-healing infrastructure that automatically detects model performance decay and triggers retraining.",
       "url": "https://github.com/JDoornink/OmniSight-Core",
       "keywords": [
-        "Observability",
-        "Distributed Systems",
-        "Telemetry"
+        "MLOps",
+        "CLIP",
+        "Vector Search",
+        "Drift Detection",
+        "GKE",
+        "Python"
       ]
     },
     {
