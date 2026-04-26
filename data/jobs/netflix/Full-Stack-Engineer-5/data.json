@@ -151,7 +151,22 @@
         "OPA Gatekeeper",
         "Gemini",
         "Python"
-      ]
+      ],
+      "registryUrl": "https://registry.modelcontextprotocol.io/?search=k8gents"
+    },
+    {
+      "name": "agent-lint-cli",
+      "description": "ESLint for agents. A published Python CLI tool that validates MCP servers and scans AI agent implementations for security vulnerabilities. Supports configurable security levels, CI/CD integration with threshold-based failure conditions, and multiple output formats including SARIF.",
+      "url": "https://github.com/JDoornink/agent-lint",
+      "keywords": [
+        "MCP",
+        "AI Safety",
+        "Python",
+        "CLI",
+        "Security",
+        "CI/CD"
+      ],
+      "pypiUrl": "https://pypi.org/project/agent-lint-cli/"
     },
     {
       "name": "OmniSight-Core",

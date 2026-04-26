@@ -9,7 +9,7 @@ from reportlab.lib.enums import TA_CENTER
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
-from reportlab.platypus import HRFlowable, Paragraph, SimpleDocTemplate, Spacer
+from reportlab.platypus import HRFlowable, PageBreak, Paragraph, SimpleDocTemplate, Spacer
 
 
 def clean_text(text):
@@ -149,12 +149,16 @@ def convert_md_to_pdf(md_file, pdf_file):
             continue
 
         if line.startswith('## '):
+            if line[3:].strip() in ('CERTS/COURSES', 'PUBLICATIONS'):
+                story.append(PageBreak())
             story.append(Paragraph(inline_markdown_to_html(line[3:]), h2))
             story.append(HRFlowable(width='100%', thickness=0.5, color=colors.HexColor('#e8e8e8')))
             story.append(Spacer(1, 2))
             continue
 
         if line.startswith('### '):
+            if line[4:].strip().startswith('Software Developer | Viewpoint'):
+                story.append(PageBreak())
             story.append(Paragraph(inline_markdown_to_html(line[4:]), h3))
             continue
 

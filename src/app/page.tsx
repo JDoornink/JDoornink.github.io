@@ -45,23 +45,35 @@ export default function Home() {
 
         {/* ===== PROJECTS (purple) ===== */}
         <section id="projects" className="space-y-6 pt-2">
-          <h3 className="text-2xl font-bold border-l-4 border-purple-500 pl-4 text-white">Featured Architecture & Tooling</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h3 className="text-2xl font-bold border-l-4 border-purple-500 pl-4 text-white">Featured Projects</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
             {data.projects?.map((project: any, i: number) => (
-              <a key={i} href={project.url} target="_blank" rel="noreferrer" className="block bg-gray-900 border border-neutral-800 p-6 rounded-lg hover:border-purple-500/30 transition-colors group relative flex flex-col h-full">
-                <h4 className="text-white font-bold leading-tight mb-2 group-hover:text-purple-400 transition-colors underline decoration-purple-500/30 underline-offset-4">{project.name}</h4>
-                <p className="text-gray-400 font-sans text-sm leading-relaxed mb-4 flex-grow">{project.description}</p>
+              <div key={i} className={`bg-gray-900 border border-neutral-800 p-6 rounded-lg hover:border-purple-500/30 transition-colors group relative flex flex-col h-full ${i === 0 ? 'lg:col-span-3' : ''}`}>
+                <a href={project.url} target="_blank" rel="noreferrer" className="block mb-2">
+                  <h4 className="text-white font-bold leading-tight group-hover:text-purple-400 transition-colors underline decoration-purple-500/30 underline-offset-4">{project.name}</h4>
+                </a>
+                <p className="text-gray-400 font-sans text-sm leading-relaxed mb-3 flex-grow text-justify">{project.description}</p>
 
-                <div className="flex flex-wrap gap-2 mt-auto">
+                <div className="flex flex-wrap gap-2">
                   {project.keywords?.map((kw: string, j: number) => (
-                    <span key={j} className="px-2 py-1 bg-neutral-950 border border-neutral-700/50 rounded text-[10px] uppercase tracking-wider text-gray-300 group-hover:border-purple-900 transition-colors">{kw}</span>
+                    <span key={j} className="p-2 bg-neutral-950 border border-neutral-700/50 rounded text-[10px] uppercase tracking-wider text-gray-300 group-hover:border-purple-900 transition-colors">{kw}</span>
                   ))}
+                  {project.registryUrl && (
+                    <a href={project.registryUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 p-2 bg-blue-900/30 border border-blue-500/40 rounded text-[10px] text-blue-300 hover:bg-blue-900/50 hover:border-blue-400 transition-colors font-medium uppercase tracking-wider">
+                      MCP Registry
+                    </a>
+                  )}
+                  {project.pypiUrl && (
+                    <a href={project.pypiUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 p-2 bg-yellow-900/30 border border-yellow-500/40 rounded text-[10px] text-yellow-300 hover:bg-yellow-900/50 hover:border-yellow-400 transition-colors font-medium uppercase tracking-wider">
+                      PyPI
+                    </a>
+                  )}
                 </div>
 
-                <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity text-purple-400">
+                <a href={project.url} target="_blank" rel="noreferrer" className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity text-purple-400">
                   ↗
-                </div>
-              </a>
+                </a>
+              </div>
             ))}
           </div>
         </section>

@@ -130,6 +130,10 @@ def _render_resume_markdown(data):
         url = proj.get('url', '')
         name_part = f"[{proj['name']}]({url})" if url else proj['name']
         lines.append(f"**{name_part}** — {proj['description']}")
+        if proj.get('registryUrl'):
+            lines.append(f"*Listed on the official MCP Registry.*")
+        if proj.get('pypiUrl'):
+            lines.append(f"*Published on PyPI as agent-lint-cli.*")
         lines.append("")
 
     if data.get('certifications'):

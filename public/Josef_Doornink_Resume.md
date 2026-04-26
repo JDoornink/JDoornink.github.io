@@ -24,9 +24,13 @@ A creative problem-solver who creates solutions where none exist, I build the in
 
 ## KEY TECHNICAL PROJECTS
 
-**[K8gentS](https://github.com/JDoornink/K8gentS)** — What happens when you deploy a non-deterministic reasoning engine in a system that requires guarantees? K8gentS is an autonomous Kubernetes RCA agent built around that question. It routes cluster failures through Gemini-powered analysis, gates remediation behind both a human approval and an OPA Gatekeeper admission policy, and exposes diagnostics as an MCP server. The hard problems — confidence calibration, LLM vs deterministic routing, evaluating for unanticipated failures — are openly documented in the README.
+**[K8gentS](https://github.com/JDoornink/K8gentS)** — What happens when you deploy a non-deterministic reasoning engine in a system that requires guarantees? K8gentS is an autonomous Kubernetes RCA agent built around that question. It routes cluster failures through Gemini-powered analysis, gates remediation behind both a human approval and an OPA Gatekeeper admission policy, and exposes diagnostics via an MCP server published on the official MCP Registry as io.github.JDoornink/k8gents. The hard problems — confidence calibration, LLM vs deterministic routing, evaluating for unanticipated failures — are openly documented in the README.
+*Listed on the official MCP Registry.*
 
 **[OmniSight-Core](https://github.com/JDoornink/OmniSight-Core)** — A production-grade video search engine capable of understanding semantic queries (e.g., "Find a red truck at night"). Demonstrates self-healing infrastructure that automatically detects model performance decay and triggers retraining.
+
+**[agent-lint-cli](https://github.com/JDoornink/agent-lint)** — ESLint for agents. A published Python CLI tool that validates MCP servers and scans AI agent implementations for security vulnerabilities. Supports configurable security levels, CI/CD integration with threshold-based failure conditions, and multiple output formats including SARIF.
+*Published on PyPI as agent-lint-cli.*
 
 **[Agentic SRE Pipeline & Portfolio](https://github.com/JDoornink/JDoornink.github.io)** — The source code driving this exact platform. A Next.js (React) infrastructure executing a Python/RAG Agent pipeline that strictly parses unstructured Job Descriptions and outputs statically generated, targeted frontend bundles dynamically.
 
