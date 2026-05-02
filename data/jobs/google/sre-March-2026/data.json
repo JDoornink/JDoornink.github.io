@@ -142,7 +142,7 @@
   "projects": [
     {
       "name": "K8gentS",
-      "description": "What happens when you deploy a non-deterministic reasoning engine in a system that requires guarantees? K8gentS is an autonomous Kubernetes RCA agent built around that question. It routes cluster failures through Gemini-powered analysis, gates remediation behind both a human approval and an OPA Gatekeeper admission policy, and exposes diagnostics as an MCP server. The hard problems \u2014 confidence calibration, LLM vs deterministic routing, evaluating for unanticipated failures \u2014 are openly documented in the README.",
+      "description": "What happens when you deploy a non-deterministic reasoning engine in a system that requires guarantees? K8gentS is an autonomous Kubernetes RCA agent built around that question. It routes cluster failures through Gemini-powered analysis, gates remediation behind both a human approval and an OPA Gatekeeper admission policy, and exposes diagnostics as an MCP server.",
       "url": "https://github.com/JDoornink/K8gentS",
       "keywords": [
         "AI Safety",
