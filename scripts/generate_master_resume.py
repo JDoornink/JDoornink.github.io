@@ -14,7 +14,7 @@ def main():
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    md_content = _render_resume_markdown(data)
+    md_content = _render_resume_markdown(data, compact=True)
     with open(md_path, 'w', encoding='utf-8') as f:
         f.write(md_content)
     print(f"[+] Resume markdown: {md_path}")

@@ -8,7 +8,7 @@ Portland, OR | jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josef
 
 ## PROFESSIONAL SUMMARY
 
-A creative problem-solver who creates solutions where none exist, I build the infrastructure that scales research into reality. Few production engineers have published 10 peer-reviewed papers, earned 2 US patents, won a major design award, and shipped FDA-cleared hardware. That discipline now drives 10+ years of SRE and AI infrastructure work (CKS/CKA certified), bridging mathematical rigor and system integrity at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.
+A creative problem-solver who loves building the infrastructure that brings ideas into reality. An engineer with 10+ years experience, 10 peer-reviewed papers, 2 US patents, a major design award and FDA-cleared hardware. That foundation now drives deep SRE and AI infrastructure work (CKS/CKA certified), delivering systems with integrity and observability at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.
 
 ---
 
@@ -18,7 +18,7 @@ A creative problem-solver who creates solutions where none exist, I build the in
 
 **Languages:** Python | Go/Golang | Bash | PowerShell | C# | SQL
 
-**ML/AI Engineering:** LLM Model Serving | ML Pipeline Development | Model Training Infrastructure | Azure Machine Learning | Distributed Training Systems | RLHF Infrastructure | Model Finetuning Systems
+**ML/AI Engineering:** LLM Model Serving | ML Pipeline Development | Model Training Infrastructure | Azure Machine Learning | Distributed Training Systems | Model Finetuning Systems
 
 **Distributed Systems & Orchestration:** Kubernetes (AKS, Production-Scale) | Docker | Helm | Kafka | Redis | ElasticSearch | SQL Databases | Service Mesh
 
@@ -33,7 +33,7 @@ A creative problem-solver who creates solutions where none exist, I build the in
 ## PROFESSIONAL EXPERIENCE - STARTUP
 
 ### Lead MLOps Engineer
-**REASON BENEFIT AI CORPORATION** | Remote | October 2025 - Present
+**Reason Benefit AI Corporation** | Remote | October 2025 - Present
 
 - Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale
 - Build Python-based automation tools for ML pipeline orchestration, reducing manual overhead by 70% and accelerating model deployment velocity
@@ -44,7 +44,7 @@ A creative problem-solver who creates solutions where none exist, I build the in
 ## PROFESSIONAL EXPERIENCE
 
 ### Lead Site Reliability Engineer (SRE) I -> II -> III
-**Trimble/Viewpoint** | Portland, OR | January 2019 - Present
+**Trimble** | Portland, OR | January 2019 - Present
 
 - Architected and maintained large-scale Azure Kubernetes Service (AKS) production environments handling 10M+ requests/day across 30+ microservices with 99.9% uptime SLA
 - Developed high-performance automation tools using **Python** and **Go** that eliminated 80+ hours/month of operational toil, accelerating deployment velocity by 3x across engineering teams
@@ -86,14 +86,14 @@ A creative problem-solver who creates solutions where none exist, I build the in
 - Improved delivery confidence by building automated validation for training pipeline health
 
 ### Kubernetes Security Hardening Initiative (2024)
-**Trimble/Viewpoint**
+**Trimble**
 
 - Reduced security vulnerabilities by 85% through systematic Kubernetes hardening and continuous monitoring
 - Applied CKS best practices across production clusters to support SOC2 compliance requirements
 - Improved response speed by automating security scanning and remediation workflows
 
 ### High-Performance CLI Tooling (2023)
-**Trimble/Viewpoint**
+**Trimble**
 
 - Increased engineering productivity by delivering production-grade Go CLI tools for infrastructure operations
 - Added service discovery, log aggregation, and deployment automation capabilities used in daily workflows

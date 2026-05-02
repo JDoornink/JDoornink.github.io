@@ -5,7 +5,7 @@
     "email": "jdoorarg@gmail.com",
     "phone": "",
     "url": "https://jdoornink.github.io/",
-    "summary": "A creative problem-solver who creates solutions where none exist, I build the infrastructure that scales research into reality. Few production engineers have published 10 peer-reviewed papers, earned 2 US patents, won a major design award, and shipped FDA-cleared hardware. That discipline now drives 10+ years of SRE and AI infrastructure work (CKS/CKA certified), bridging mathematical rigor and system integrity at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.",
+    "summary": "A creative problem-solver who loves building the infrastructure that brings ideas into reality. An engineer with 10+ years experience, 10 peer-reviewed papers, 2 US patents, a major design award and FDA-cleared hardware. That foundation now drives deep SRE and AI infrastructure work (CKS/CKA certified), delivering systems with integrity and observability at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -21,7 +21,7 @@
   },
   "work": [
     {
-      "company": "REASON BENEFIT AI CORPORATION",
+      "company": "Reason Benefit AI Corporation",
       "position": "Lead MLOps Engineer",
       "startDate": "October 2025",
       "endDate": "Present",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "company": "Trimble/Viewpoint",
+      "company": "Trimble",
       "position": "Lead Site Reliability Engineer (SRE) I -> II -> III",
       "startDate": "January 2019",
       "endDate": "Present",
@@ -44,16 +44,11 @@
         "Built and maintained Human Resources Information management system, responsible for over $8.3M+ in ARR and 43% YoY growth rate.",
         "Architected AKS production environments handling 14K+ requests/day across 30+ microservices at 99.9% uptime SLA.",
         "Built automation tooling in Python and Go eliminating 80+ hours/month of toil and accelerating deployment velocity 3x.",
-        "Developed YAML-based orchestration pipelines, reducing manual overhead by 70%.",
         "Reduced P99 latency 45% and improved throughput 60% through systematic profiling of distributed systems.",
-        "Developed Go CLI tooling (Cobra) adopted by 50+ engineers for streamlined infrastructure workflows in the organization.",
         "Implemented New Relic observability stack with distributed tracing, cutting MTTR by 50%.",
-        "Led Kubernetes capacity planning and auto-scaling strategies supporting 200% traffic growth.",
+        "Led Kubernetes capacity planning and strategies supporting 200% traffic growth.",
         "Built CI/CD pipelines (GitHub Actions, Azure DevOps) with automated testing and rollback mechanisms.",
-        "Managed 100+ cloud resources via Terraform IaC; implemented CKS security controls for SOC2 compliance.",
-        "Integrated services with event-driven architecture using Kafka and Redis, improving system decoupling and scalability.",
-        "Mentored junior engineers and led knowledge-sharing sessions on Kubernetes best practices and SRE principles.",
-        "Maintained pipelines across multiple teams and Cloud platforms (Azure, AWS) for consistency across products in the organization."
+        "Managed 100+ cloud resources via Terraform IaC; implemented CKS security controls for SOC2 compliance."
       ]
     },
     {
@@ -120,7 +115,6 @@
         "LLM Model Serving",
         "ML Pipelines",
         "Distributed Training Systems",
-        "RLHF Infrastructure",
         "Azure Machine Learning",
         "Vertex AI",
         "Drift Detection",

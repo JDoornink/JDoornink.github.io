@@ -1,246 +1,282 @@
-import ClientNav from './ClientNav';
+import CollapsibleSection from './CollapsibleSection'
+import SideNav from './SideNav'
+import data from '../../data/master_resume.json'
 
-import data from '../../data/master_resume.json';
+const SECTIONS = [
+  { id: 'projects', label: 'Featured Projects' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'certifications', label: 'Certifications' },
+  { id: 'education', label: 'Education & Patents' },
+  { id: 'publications', label: 'Publications' },
+]
 
 export default function Home() {
-
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-gray-200 font-mono p-8 md:p-16 relative">
+    <div className="min-h-screen bg-[#0a0a0a] text-neutral-200 font-mono">
+      <div className="max-w-3xl mx-auto px-8 md:px-16">
 
-      {/* Generic Telemetry Overlay - Command Center style */}
-      <div className="absolute top-4 right-4 bg-gray-900 border border-neutral-800 rounded-lg p-4 text-xs shadow-xl hidden md:block z-10 w-64">
-        <div className="flex items-center space-x-2 text-blue-400 mb-2 font-bold">
-          <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
-          <span>Global Infrastructure Health</span>
-        </div>
-        <div className="grid grid-cols-2 gap-x-2 gap-y-2 text-gray-400">
-          <div>System State:</div><div className="text-emerald-400 text-right">NOMINAL</div>
-          <div>Uptime:</div><div className="text-white text-right">99.999%</div>
-          <div>Deploy Method:</div><div className="text-white text-right">GitOps SSG</div>
-        </div>
-      </div>
-
-      {/* Main Content */}
-      <div className="max-w-4xl mx-auto space-y-12 pt-8">
-        <header className="space-y-4 border-b border-gray-800 pb-8">
-          <div className="text-sm font-bold text-emerald-400 tracking-widest uppercase mb-2">
-            [ Master Profile / Non-Targeted ]
-          </div>
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">{data.basics.name}</h1>
-          </div>
-          <h2 className="text-xl md:text-2xl text-blue-400 font-semibold">{data.basics.label}</h2>
-
-          <p className="w-full text-gray-300 leading-relaxed pt-4 font-sans text-lg text-justify">
+        {/* HEADER */}
+        <header className="pt-20 md:pt-28 pb-8">
+<h1 className="text-6xl md:text-7xl font-black tracking-tight text-white mb-3 leading-none">
+            {data.basics.name}
+          </h1>
+          <p className="text-xs tracking-widest uppercase text-neutral-300 mb-10">
+            {data.basics.label}
+          </p>
+          <p className="text-neutral-300 font-sans leading-relaxed max-w-2xl mb-10 text-[15px]">
             {data.basics.summary}
           </p>
-
-          <div className="grid grid-cols-3 gap-2 pt-4 text-[13px] md:text-sm pb-2 w-full">
-            <a href="/Josef_Doornink_Resume.pdf" target="_blank" className="inline-flex items-center justify-center gap-2 px-3 py-2 bg-white/5 border border-neutral-600 text-gray-200 rounded hover:bg-white/10 hover:border-neutral-400 transition-colors font-medium">📄 Resume PDF</a>
-            <a href="https://github.com/JDoornink" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center whitespace-nowrap px-3 py-2 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded hover:bg-neutral-700 transition-colors">GitHub</a>
-            <a href="https://www.linkedin.com/in/josefdoornink/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center whitespace-nowrap px-3 py-2 bg-[#0a66c2]/20 border border-[#0a66c2]/50 text-blue-300 rounded hover:bg-[#0a66c2]/40 transition-colors">LinkedIn</a>
-            <ClientNav />
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="/Josef_Doornink_Resume.pdf"
+              target="_blank"
+              className="text-[9px] tracking-[0.2em] uppercase text-neutral-300 hover:text-white border border-neutral-500 hover:border-neutral-500 px-4 py-2.5 transition-all duration-200"
+            >
+              Resume PDF
+            </a>
+            <a
+              href="https://github.com/JDoornink"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[9px] tracking-[0.2em] uppercase text-neutral-300 hover:text-white border border-neutral-500 hover:border-neutral-500 px-4 py-2.5 transition-all duration-200"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/josefdoornink/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[9px] tracking-[0.2em] uppercase text-neutral-300 hover:text-white border border-neutral-500 hover:border-neutral-500 px-4 py-2.5 transition-all duration-200"
+            >
+              LinkedIn
+            </a>
           </div>
         </header>
 
-        {/* ===== PROJECTS (purple) ===== */}
-        <section id="projects" className="space-y-6 pt-2">
-          <h3 className="text-2xl font-bold border-l-4 border-purple-500 pl-4 text-white">Featured Projects</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
-            {data.projects?.map((project: any, i: number) => (
-              <div key={i} className={`bg-gray-900 border border-neutral-800 p-6 rounded-lg hover:border-purple-500/30 transition-colors group relative flex flex-col h-full ${i === 0 ? 'lg:col-span-3' : ''}`}>
-                <a href={project.url} target="_blank" rel="noreferrer" className="block mb-2">
-                  <h4 className="text-white font-bold leading-tight group-hover:text-purple-400 transition-colors underline decoration-purple-500/30 underline-offset-4">{project.name}</h4>
-                </a>
-                <p className="text-gray-400 font-sans text-sm leading-relaxed mb-3 flex-grow text-justify">{project.description}</p>
+        {/* SECTIONS */}
+        <SideNav sections={SECTIONS} />
+        <div>
 
-                <div className="flex flex-wrap gap-2">
-                  {project.keywords?.map((kw: string, j: number) => (
-                    <span key={j} className="p-2 bg-neutral-950 border border-neutral-700/50 rounded text-[10px] uppercase tracking-wider text-gray-300 group-hover:border-purple-900 transition-colors">{kw}</span>
-                  ))}
+        {/* PROJECTS */}
+        <CollapsibleSection id="projects" label="Featured Projects" defaultOpen={true}>
+          <div className="space-y-10">
+            {data.projects?.map((project: any, i: number) => (
+              <div key={i}>
+                <div className="flex items-center gap-2 mb-2 flex-wrap">
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white font-bold hover:text-sky-400 transition-colors duration-200"
+                  >
+                    {project.name} <span className="text-neutral-300">↗</span>
+                  </a>
                   {project.registryUrl && (
-                    <a href={project.registryUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 p-2 bg-blue-900/30 border border-blue-500/40 rounded text-[10px] text-blue-300 hover:bg-blue-900/50 hover:border-blue-400 transition-colors font-medium uppercase tracking-wider">
+                    <a
+                      href={project.registryUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[9px] tracking-widest uppercase text-sky-800 border border-sky-900/40 px-1.5 py-0.5 hover:text-sky-400 hover:border-sky-700 transition-colors"
+                    >
                       MCP Registry
                     </a>
                   )}
                   {project.pypiUrl && (
-                    <a href={project.pypiUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 p-2 bg-yellow-900/30 border border-yellow-500/40 rounded text-[10px] text-yellow-300 hover:bg-yellow-900/50 hover:border-yellow-400 transition-colors font-medium uppercase tracking-wider">
+                    <a
+                      href={project.pypiUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[9px] tracking-widest uppercase text-amber-800 border border-amber-900/40 px-1.5 py-0.5 hover:text-amber-400 hover:border-amber-700 transition-colors"
+                    >
                       PyPI
                     </a>
                   )}
                 </div>
-
-                <a href={project.url} target="_blank" rel="noreferrer" className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity text-purple-400">
-                  ↗
-                </a>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ===== CERTIFICATIONS (emerald) ===== */}
-        <section id="certifications" className="space-y-6 pt-2">
-          <h3 className="text-2xl font-bold border-l-4 border-emerald-500 pl-4 text-white">Certifications & Courses</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {data.certifications?.map((cert: any, i: number) => (
-              <div key={i} className="bg-gray-900 border border-neutral-800 p-4 rounded-lg hover:border-emerald-500/30 transition-colors flex items-center space-x-6">
-                {cert.badge && (
-                  <div className="w-16 h-16 flex-shrink-0 flex items-center justify-center">
-                    <img src={cert.badge} alt={cert.name} className="max-w-full max-h-full object-contain filter drop-shadow-lg" />
-                  </div>
-                )}
-                <div>
-                  {cert.url ? (
-                    <a href={cert.url} target="_blank" rel="noreferrer" className="text-white font-bold leading-tight hover:text-emerald-400 hover:underline decoration-emerald-500/50 underline-offset-4 transition-colors outline-none block mb-1">
-                      {cert.name}
-                    </a>
-                  ) : (
-                    <h4 className="text-white font-bold leading-tight mb-1">{cert.name}</h4>
-                  )}
-                  <div className="text-gray-400 text-sm">{cert.issuer} • {cert.date}</div>
+                <p className="text-neutral-300 font-sans text-sm leading-relaxed mb-3 text-justify">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {project.keywords?.map((kw: string, j: number) => (
+                    <span
+                      key={j}
+                      className="text-[9px] tracking-widest uppercase text-neutral-300 border border-neutral-500 px-2 py-0.5"
+                    >
+                      {kw}
+                    </span>
+                  ))}
                 </div>
               </div>
             ))}
           </div>
-        </section>
+        </CollapsibleSection>
 
-        {/* ===== SKILLS (blue) ===== */}
-        <section id="skills" className="grid grid-cols-1 gap-8 pt-4">
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold border-l-4 border-blue-500 pl-4 text-white">Skills</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {data.skills.map((skill: any, i: number) => (
-                <div key={i} className="bg-gray-900 border border-neutral-800 p-4 rounded-lg hover:border-blue-500/30 transition-colors">
-                  <div className="text-sm text-blue-400 mb-2 font-bold uppercase tracking-wider">{skill.name}</div>
-                  <div className="flex flex-wrap gap-2 cursor-default">
-                    {skill.keywords.map((kw: string, j: number) => (
-                      <span key={j} className="px-2 py-1 bg-black border border-neutral-700 rounded text-xs text-gray-300 hover:border-neutral-500 transition-colors">{kw}</span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ===== EXPERIENCE (amber) — unified, startup gets badge ===== */}
-        <section id="experience" className="space-y-6">
-          <h3 className="text-2xl font-bold border-l-4 border-amber-500 pl-4 text-white">Professional Experience</h3>
-          {[...data.work].sort((a: any, b: any) => (b.isStartup ? 1 : 0) - (a.isStartup ? 1 : 0)).map((job: any, i: number) => (
-            <div key={i} className="bg-gray-900 border border-neutral-800 p-6 rounded-lg relative overflow-hidden group">
-              <div className="absolute top-0 left-0 w-1 h-full bg-amber-500/50 group-hover:bg-amber-400 transition-colors"></div>
-              <div className="flex flex-col md:flex-row justify-between md:items-start mb-4 gap-2">
-                <div>
-                  <div className="flex items-center gap-3">
-                    <h4 className="text-xl font-bold text-white">{job.company}</h4>
-                    {job.isStartup && (
-                      <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-900/40 text-amber-300 text-[10px] uppercase tracking-widest rounded border border-amber-500/30 font-bold">
-                        🚀 Startup
-                      </span>
-                    )}
-                  </div>
-                  <div className="text-amber-400 font-semibold">{job.position}</div>
-                </div>
-                <div className="text-gray-500 text-sm whitespace-nowrap">{job.startDate} — {job.endDate}</div>
-              </div>
-              <ul className="list-disc list-outside ml-4 space-y-2 text-gray-300 font-sans">
-                {job.highlights.map((hlt: string, j: number) => (
-                  <li key={j} className="hover:text-gray-100 transition-colors leading-relaxed text-justify">{hlt}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </section>
-
-        {/* ===== PUBLICATIONS (rose) ===== */}
-        <section id="publications" className="grid grid-cols-1 gap-8">
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold border-l-4 border-rose-500 pl-4 text-white">Publications</h3>
-            <div className="bg-gray-900 border border-neutral-800 rounded-lg p-6 space-y-6">
-              {data.publications?.map((pub: any, i: number) => (
-                <div key={i} className={`relative flex flex-col justify-between ${i !== data.publications.length - 1 ? 'border-b border-neutral-800 pb-6' : 'pb-0'}`}>
-
-                  <div>
-                    <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-2">
-                      {pub.url ? (
-                        <a href={pub.url} target="_blank" rel="noreferrer" className="text-white font-bold text-sm leading-snug hover:text-rose-400 hover:underline decoration-rose-500/50 underline-offset-4 transition-colors">{pub.title}</a>
-                      ) : (
-                        <h4 className="text-white font-bold text-sm leading-snug">{pub.title}</h4>
-                      )}
-
-                      {/* Citation Badge */}
-                      <div className="flex-shrink-0 bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded border border-gray-700 flex items-center space-x-1 cursor-default whitespace-nowrap" title="Google Scholar Citations">
-                        <span>Cited by:</span>
-                        <span className="font-bold text-rose-400">{pub["cited by"]}</span>
+        {/* EXPERIENCE */}
+        <CollapsibleSection id="experience" label="Experience" defaultOpen={true}>
+          <div className="space-y-10">
+            {[...data.work]
+              .sort((a: any, b: any) => (b.isStartup ? 1 : 0) - (a.isStartup ? 1 : 0))
+              .map((job: any, i: number) => (
+                <div key={i}>
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1 mb-4">
+                    <div>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="text-white font-bold">{job.company}</span>
+                        {job.isStartup && (
+                          <span className="text-[9px] tracking-widest uppercase text-amber-800 border border-amber-900/40 px-1.5 py-0.5">
+                            Startup
+                          </span>
+                        )}
                       </div>
+                      <div className="text-neutral-300 text-xs tracking-wide mt-0.5">{job.position}</div>
                     </div>
-
-                    <div className="text-rose-400 font-semibold text-xs mb-2">{pub.journal} {pub.date && `• ${pub.date}`}</div>
-                    <p
-                      className="text-gray-500 font-sans italic text-xs mb-4"
-                      dangerouslySetInnerHTML={{ __html: pub.authors.replace('J Doornink', '<strong class="text-white font-bold underline decoration-rose-500/50 underline-offset-2">J Doornink</strong>') }}
-                    />
+                    <div className="text-neutral-300 text-xs whitespace-nowrap">{job.startDate} — {job.endDate}</div>
                   </div>
-
-                  {pub.isFirstAuthor && (
-                    <div className="self-start inline-block bg-rose-900/40 text-rose-300 text-[10px] px-2 py-1 uppercase tracking-widest rounded border border-rose-500/30">
-                      ★ First Author
-                    </div>
-                  )}
+                  <ul className="space-y-2">
+                    {job.highlights.map((h: string, j: number) => (
+                      <li key={j} className="flex gap-3 font-sans text-sm text-neutral-300 leading-relaxed">
+                        <span className="text-neutral-600 mt-0.5 flex-shrink-0">—</span>
+                        <span>{h}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
-            </div>
           </div>
-        </section>
+        </CollapsibleSection>
 
-        {/* ===== EDUCATION & PATENTS (yellow) ===== */}
-        <section id="credentials" className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
+        {/* SKILLS */}
+        <CollapsibleSection id="skills" label="Skills" defaultOpen={false}>
+          <div className="space-y-5">
+            {data.skills.map((skill: any, i: number) => (
+              <div key={i}>
+                <div className="text-[9px] tracking-[0.2em] uppercase text-neutral-300 mb-2">{skill.name}</div>
+                <div className="flex flex-wrap gap-1.5">
+                  {skill.keywords.map((kw: string, j: number) => (
+                    <span
+                      key={j}
+                      className="text-[10px] text-neutral-300 border border-neutral-500 px-2 py-0.5"
+                    >
+                      {kw}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </CollapsibleSection>
 
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold border-l-4 border-yellow-500 pl-4 text-white">Education</h3>
+        {/* CERTIFICATIONS */}
+        <CollapsibleSection id="certifications" label="Certifications" defaultOpen={false}>
+          <div className="space-y-4">
+            {data.certifications?.map((cert: any, i: number) => (
+              <div key={i} className="flex items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  {cert.badge && (
+                    <img src={cert.badge} alt="" className="w-7 h-7 object-contain opacity-70" />
+                  )}
+                  <div>
+                    {cert.url ? (
+                      <a
+                        href={cert.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-sm text-neutral-300 hover:text-white transition-colors"
+                      >
+                        {cert.name}
+                      </a>
+                    ) : (
+                      <span className="text-sm text-neutral-300">{cert.name}</span>
+                    )}
+                    <div className="text-[10px] text-neutral-300 mt-0.5">{cert.issuer}</div>
+                  </div>
+                </div>
+                <span className="text-[10px] text-neutral-300 whitespace-nowrap">{cert.date}</span>
+              </div>
+            ))}
+          </div>
+        </CollapsibleSection>
+
+        {/* EDUCATION & PATENTS */}
+        <CollapsibleSection id="education" label="Education & Patents" defaultOpen={false}>
+          <div className="space-y-8">
             <div className="space-y-4">
               {data.education?.map((edu: any, i: number) => (
-                <div key={i} className="bg-gray-900 border border-neutral-800 p-4 rounded-lg hover:border-yellow-500/30 transition-colors">
-                  <h4 className="text-white font-bold">{edu.institution}</h4>
-                  <div className="text-yellow-400 font-semibold text-sm mt-1">{edu.degree}</div>
-                  <div className="text-gray-500 text-xs mt-1 uppercase tracking-wider">Class of {edu.date}</div>
+                <div key={i}>
+                  <div className="text-white font-bold text-sm">{edu.institution}</div>
+                  <div className="text-neutral-300 text-xs mt-0.5">{edu.degree} · {edu.date}</div>
                 </div>
               ))}
             </div>
-          </div>
-
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold border-l-4 border-yellow-500 pl-4 text-white">Patents & Awards</h3>
-            <div className="space-y-4">
-              {data.patents.map((patent: any, i: number) => (
-                <div key={i} className="bg-gray-900 border border-neutral-800 p-6 rounded-lg hover:border-yellow-500/30 transition-colors relative group">
+            <div className="space-y-4 border-t border-neutral-500/50 pt-6">
+              {data.patents?.map((patent: any, i: number) => (
+                <div key={i}>
                   {patent.url ? (
-                    <a href={patent.url} target="_blank" rel="noreferrer" className="block outline-none">
-                      <h4 className="text-white font-bold mb-2 group-hover:text-yellow-400 transition-colors underline decoration-yellow-500/30 underline-offset-4">{patent.title}</h4>
-                      <p className="text-gray-400 text-xs mb-3 uppercase tracking-wider">{patent.date}</p>
-                      <p className="text-gray-300 font-sans leading-relaxed text-justify text-sm">{patent.description}</p>
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity text-yellow-400">
-                        ↗
-                      </div>
+                    <a
+                      href={patent.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-sm text-neutral-300 hover:text-white transition-colors leading-relaxed block"
+                    >
+                      {patent.title} <span className="text-neutral-300">↗</span>
                     </a>
                   ) : (
-                    <div className="block outline-none">
-                      <div className="flex items-center space-x-2 mb-2">
-                        <span className="text-yellow-400 text-lg">🏆</span>
-                        <h4 className="text-white font-bold group-hover:text-yellow-400 transition-colors">{patent.title}</h4>
-                      </div>
-                      <p className="text-gray-400 text-xs mb-3 uppercase tracking-wider">{patent.date}</p>
-                      <p className="text-gray-300 font-sans leading-relaxed text-justify text-sm">{patent.description}</p>
-                    </div>
+                    <div className="text-sm text-neutral-300 leading-relaxed">{patent.title}</div>
+                  )}
+                  <div className="text-[10px] text-neutral-300 mt-0.5">{patent.date}</div>
+                  {patent.description && (
+                    <p className="text-xs text-neutral-300 font-sans mt-1 leading-relaxed">{patent.description}</p>
                   )}
                 </div>
               ))}
             </div>
           </div>
+        </CollapsibleSection>
 
-        </section>
+        {/* PUBLICATIONS */}
+        <CollapsibleSection id="publications" label="Publications" defaultOpen={false}>
+          <div className="space-y-5">
+            {data.publications?.map((pub: any, i: number) => (
+              <div key={i} className="flex justify-between items-start gap-6">
+                <div className="flex-1">
+                  {pub.url ? (
+                    <a
+                      href={pub.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-sm text-neutral-300 hover:text-white transition-colors leading-snug font-sans italic block"
+                    >
+                      {pub.title}
+                    </a>
+                  ) : (
+                    <span className="text-sm text-neutral-300 leading-snug font-sans italic">{pub.title}</span>
+                  )}
+                  <p
+                    className="text-[10px] text-neutral-300 mt-1 font-sans"
+                    dangerouslySetInnerHTML={{
+                      __html: pub.authors.replace(
+                        'J Doornink',
+                        '<strong class="text-neutral-300">J Doornink</strong>'
+                      ),
+                    }}
+                  />
+                  <div className="text-[10px] text-neutral-300 mt-0.5">{pub.journal} · {pub.date}</div>
+                </div>
+                <div className="text-[10px] text-neutral-300 whitespace-nowrap flex-shrink-0">
+                  {pub['cited by']} citations
+                </div>
+              </div>
+            ))}
+          </div>
+        </CollapsibleSection>
+
+        <div className="border-t border-neutral-500 py-10 text-center text-[9px] tracking-[0.3em] uppercase text-neutral-800">
+          jdoornink.github.io
+        </div>
+
+        </div>
 
       </div>
     </div>
-  );
+  )
 }

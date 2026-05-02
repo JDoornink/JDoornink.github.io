@@ -21,7 +21,7 @@
   },
   "work": [
     {
-      "company": "REASON BENEFIT AI CORPORATION",
+      "company": "Reason Benefit AI Corporation",
       "position": "Lead MLOps Engineer",
       "startDate": "October 2025",
       "endDate": "Present",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "company": "Trimble/Viewpoint",
+      "company": "Trimble",
       "position": "Lead Site Reliability Engineer (SRE) I -> II -> III",
       "startDate": "January 2019",
       "endDate": "Present",
@@ -44,7 +44,7 @@
         "Built automation tooling in Python and Go eliminating 80+ hours/month of toil and accelerating deployment velocity 3x, directly enabling shift-left operational programs.",
         "Implemented New Relic observability stack with distributed tracing, cutting MTTR by 50% and enabling correlated, proactive monitoring across systems and applications.",
         "Architected AKS production environments handling 10M+ requests/day across 30+ microservices at 99.9% uptime SLA.",
-        "Led Kubernetes capacity planning and auto-scaling strategies supporting 200% traffic growth.",
+        "Led Kubernetes capacity planning and strategies supporting 200% traffic growth.",
         "Reduced P99 latency 45% and improved throughput 60% through systematic profiling of distributed systems.",
         "Developed Go CLI tooling (Cobra) adopted by 50+ engineers for streamlined infrastructure workflows.",
         "Built CI/CD pipelines (GitHub Actions, Azure DevOps) with automated testing and rollback mechanisms.",
@@ -154,7 +154,6 @@
         "Distributed Training Systems",
         "Azure Machine Learning",
         "Vertex AI",
-        "RLHF Infrastructure",
         "Drift Detection",
         "Model Finetuning Systems"
       ]
