@@ -5,7 +5,7 @@
     "email": "jdoorarg@gmail.com",
     "phone": "",
     "url": "https://jdoornink.github.io/",
-    "summary": "A creative problem-solver who creates solutions where none exist, I build the infrastructure that scales research into reality. Few production engineers have published 10 peer-reviewed papers, earned 2 US patents, won a major design award, and shipped FDA-cleared hardware. That discipline now drives 10+ years of SRE and AI infrastructure work (CKS/CKA certified), bridging mathematical rigor and system integrity at scale \u00e2\u20ac\u201d currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.",
+    "summary": "A creative problem-solver who loves building the infrastructure that brings ideas into reality. An engineer with 10+ years experience, 10 peer-reviewed papers, 2 US patents, a major design award and FDA-cleared hardware. That foundation now drives deep SRE and AI infrastructure work (CKS/CKA certified), delivering systems with integrity and observability at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -21,7 +21,7 @@
   },
   "work": [
     {
-      "company": "REASON BENEFIT AI CORPORATION",
+      "company": "Reason Benefit AI Corporation",
       "position": "Lead MLOps Engineer",
       "startDate": "October 2025",
       "endDate": "Present",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "company": "Trimble/Viewpoint",
+      "company": "Trimble",
       "position": "Lead Site Reliability Engineer (SRE) I -> II -> III",
       "startDate": "January 2019",
       "endDate": "Present",
@@ -116,7 +116,6 @@
         "LLM Model Serving",
         "ML Pipelines",
         "Distributed Training Systems",
-        "RLHF Infrastructure",
         "Azure Machine Learning",
         "Vertex AI",
         "Drift Detection",

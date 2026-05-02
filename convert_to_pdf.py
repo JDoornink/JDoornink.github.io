@@ -9,7 +9,7 @@ from reportlab.lib.enums import TA_CENTER
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
-from reportlab.platypus import HRFlowable, PageBreak, Paragraph, SimpleDocTemplate, Spacer
+from reportlab.platypus import HRFlowable, Paragraph, SimpleDocTemplate, Spacer
 
 
 def clean_text(text):
@@ -47,10 +47,10 @@ def convert_md_to_pdf(md_file, pdf_file):
     doc = SimpleDocTemplate(
         str(pdf_file),
         pagesize=letter,
-        leftMargin=0.5 * inch,
-        rightMargin=0.5 * inch,
-        topMargin=0.5 * inch,
-        bottomMargin=0.5 * inch,
+        leftMargin=0.45 * inch,
+        rightMargin=0.45 * inch,
+        topMargin=0.4 * inch,
+        bottomMargin=0.4 * inch,
     )
 
     styles = getSampleStyleSheet()
@@ -58,68 +58,68 @@ def convert_md_to_pdf(md_file, pdf_file):
         'ResumeNormal',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=10.5,
-        leading=14,
+        fontSize=9,
+        leading=12,
         textColor=colors.HexColor('#333333'),
         wordWrap='CJK',
-        spaceAfter=3,
+        spaceAfter=1,
     )
     h1 = ParagraphStyle(
         'ResumeH1',
         parent=styles['Heading1'],
         fontName='Helvetica-Bold',
-        fontSize=22,
-        leading=24,
+        fontSize=18,
+        leading=20,
         textColor=colors.HexColor('#1a1a1a'),
         alignment=TA_CENTER,
-        spaceAfter=4,
+        spaceAfter=2,
     )
     subtitle = ParagraphStyle(
         'ResumeSubtitle',
         parent=styles['Normal'],
         fontName='Helvetica-Bold',
-        fontSize=11,
-        leading=14,
+        fontSize=9.5,
+        leading=12,
         textColor=colors.HexColor('#2C3E50'),
         alignment=TA_CENTER,
-        spaceAfter=2,
+        spaceAfter=1,
     )
     contact = ParagraphStyle(
         'ResumeContact',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=9.5,
-        leading=12,
+        fontSize=8.5,
+        leading=11,
         textColor=colors.HexColor('#4a4a4a'),
         alignment=TA_CENTER,
-        spaceAfter=4,
+        spaceAfter=2,
     )
     h2 = ParagraphStyle(
         'ResumeH2',
         parent=styles['Heading2'],
         fontName='Helvetica-Bold',
-        fontSize=12.5,
-        leading=15,
-        textColor=colors.HexColor('#18BC9C'),
-        spaceBefore=10,
-        spaceAfter=4,
+        fontSize=10,
+        leading=12,
+        textColor=colors.HexColor('#1a1a1a'),
+        spaceBefore=6,
+        spaceAfter=2,
     )
     h3 = ParagraphStyle(
         'ResumeH3',
         parent=styles['Heading3'],
         fontName='Helvetica-Bold',
-        fontSize=11,
-        leading=14,
-        textColor=colors.HexColor('#2C3E50'),
-        spaceBefore=7,
-        spaceAfter=2,
+        fontSize=9,
+        leading=11,
+        textColor=colors.HexColor('#1a1a1a'),
+        spaceBefore=4,
+        spaceAfter=1,
     )
     bullet = ParagraphStyle(
         'ResumeBullet',
         parent=normal,
-        leftIndent=12,
-        firstLineIndent=-8,
-        spaceAfter=2,
+        leftIndent=9,
+        firstLineIndent=-6,
+        spaceAfter=1,
     )
 
     story = []
@@ -127,12 +127,12 @@ def convert_md_to_pdf(md_file, pdf_file):
 
     for line in lines:
         if not line:
-            story.append(Spacer(1, 4))
+            story.append(Spacer(1, 2))
             continue
 
         if line == '---':
-            story.append(HRFlowable(width='100%', thickness=0.6, color=colors.HexColor('#d7d7d7')))
-            story.append(Spacer(1, 5))
+            story.append(HRFlowable(width='100%', thickness=0.5, color=colors.HexColor('#d7d7d7')))
+            story.append(Spacer(1, 3))
             in_header_block = False
             continue
 
@@ -149,16 +149,12 @@ def convert_md_to_pdf(md_file, pdf_file):
             continue
 
         if line.startswith('## '):
-            if line[3:].strip() in ('CERTS/COURSES', 'PUBLICATIONS'):
-                story.append(PageBreak())
             story.append(Paragraph(inline_markdown_to_html(line[3:]), h2))
-            story.append(HRFlowable(width='100%', thickness=0.5, color=colors.HexColor('#e8e8e8')))
-            story.append(Spacer(1, 2))
+            story.append(HRFlowable(width='100%', thickness=0.4, color=colors.HexColor('#e8e8e8')))
+            story.append(Spacer(1, 1))
             continue
 
         if line.startswith('### '):
-            if line[4:].strip().startswith('Software Developer | Viewpoint'):
-                story.append(PageBreak())
             story.append(Paragraph(inline_markdown_to_html(line[4:]), h3))
             continue
 

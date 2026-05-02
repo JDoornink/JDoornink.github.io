@@ -8,7 +8,7 @@ Portland, OR | jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josef
 
 ## PROFESSIONAL SUMMARY
 
-A creative problem-solver who creates solutions where none exist, I build the infrastructure that scales research into reality. Few production engineers have published 10 peer-reviewed papers, earned 2 US patents, won a major design award, and shipped FDA-cleared hardware. That discipline now drives 10+ years of SRE and AI infrastructure work (CKS/CKA certified), bridging mathematical rigor and system integrity at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.
+A creative problem-solver who loves building the infrastructure that brings ideas into reality. An engineer with 10+ years experience, 10 peer-reviewed papers, 2 US patents, a major design award and FDA-cleared hardware. That foundation now drives deep SRE and AI infrastructure work (CKS/CKA certified), delivering systems with integrity and observability at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.
 
 ---
 
@@ -16,7 +16,7 @@ A creative problem-solver who creates solutions where none exist, I build the in
 
 **Core Technologies:** Kubernetes (AKS) | Docker | Terraform | Azure | AWS | GCP | Helm | YAML | Python | Go/Golang | Bash | C# | SQL | Kafka | Redis | ElasticSearch
 
-**AI/ML Engineering:** LLM Model Serving | ML Pipelines | Distributed Training Systems | RLHF Infrastructure | Azure Machine Learning | Vertex AI | Drift Detection | Model Finetuning Systems
+**AI/ML Engineering:** LLM Model Serving | ML Pipelines | Distributed Training Systems | Azure Machine Learning | Vertex AI | Drift Detection | Model Finetuning Systems
 
 **Observability & SRE:** New Relic | Azure Monitor | Distributed Tracing | CI/CD Pipelines | GitHub Actions | Performance Profiling | Incident Response | Prometheus | Grafana | Azure DevOps
 
@@ -25,7 +25,7 @@ A creative problem-solver who creates solutions where none exist, I build the in
 ## PROFESSIONAL EXPERIENCE - STARTUP
 
 ### Lead MLOps Engineer
-**REASON BENEFIT AI CORPORATION** | Remote | October 2025 - Present
+**Reason Benefit AI Corporation** | Remote | October 2025 - Present
 
 - Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.
 - Integrate with observability frameworks for model performance tracking, latency monitoring, and resource utilization across distributed training systems.
@@ -35,7 +35,7 @@ A creative problem-solver who creates solutions where none exist, I build the in
 ## PROFESSIONAL EXPERIENCE
 
 ### Lead Site Reliability Engineer (SRE) I -> II -> III
-**Trimble/Viewpoint** | Remote | January 2019 - Present
+**Trimble** | Remote | January 2019 - Present
 
 - Architected AKS production environments handling 10M+ requests/day across 30+ microservices at 99.9% uptime SLA.
 - Built automation tooling in Python and Go eliminating 80+ hours/month of toil and accelerating deployment velocity 3x.
@@ -43,7 +43,7 @@ A creative problem-solver who creates solutions where none exist, I build the in
 - Reduced P99 latency 45% and improved throughput 60% through systematic profiling of distributed systems.
 - Developed Go CLI tooling (Cobra) adopted by 50+ engineers for streamlined infrastructure workflows.
 - Implemented New Relic observability stack with distributed tracing, cutting MTTR by 50%.
-- Led Kubernetes capacity planning and auto-scaling strategies supporting 200% traffic growth.
+- Led Kubernetes capacity planning and strategies supporting 200% traffic growth.
 - Built CI/CD pipelines (GitHub Actions, Azure DevOps) with automated testing and rollback mechanisms.
 - Managed 500+ cloud resources via Terraform IaC; implemented CKS security controls for SOC2 compliance.
 

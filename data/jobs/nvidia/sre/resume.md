@@ -1,16 +1,16 @@
 # Josef Doornink - Site Reliability Engineer | AI Infrastructure & MLOps
 
-A creative problem-solver who creates solutions where none exist, I build the infrastructure that scales research into reality. Few production engineers have published 10 peer-reviewed papers, earned 2 US patents, won a major design award, and shipped FDA-cleared hardware. That discipline now drives 10+ years of SRE and AI infrastructure work (CKS/CKA certified), bridging mathematical rigor and system integrity at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.
+A creative problem-solver who loves building the infrastructure that brings ideas into reality. An engineer with 10+ years experience, 10 peer-reviewed papers, 2 US patents, a major design award and FDA-cleared hardware. That foundation now drives deep SRE and AI infrastructure work (CKS/CKA certified), delivering systems with integrity and observability at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.
 
 ## Experience
-**REASON BENEFIT AI CORPORATION** - Lead MLOps Engineer
+**Reason Benefit AI Corporation** - Lead MLOps Engineer
 - Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.
 - Build Python-based automation tools for ML pipeline orchestration, reducing manual overhead by 70% and accelerating model deployment velocity.
 - Integrate with observability frameworks for model performance tracking, latency monitoring, and resource utilization across distributed training systems.
 - Collaborate with research teams to translate experimental model architectures into production-ready systems with focus on reliability and scalability.
 - Implement automated testing frameworks for ML pipelines to quickly detect regressions and ensure model quality in production.
 
-**Trimble/Viewpoint** - Lead Site Reliability Engineer (SRE) I -> II -> III
+**Trimble** - Lead Site Reliability Engineer (SRE) I -> II -> III
 - Architected and maintained large-scale Azure Kubernetes Service (AKS) production environments handling 10M+ requests/day across 30+ microservices with 99.9% uptime SLA.
 - Developed high-performance automation tools using Python and Go that eliminated 80+ hours/month of operational toil, accelerating deployment velocity by 3x across engineering teams.
 - Led performance optimization initiatives through systematic profiling and instrumentation, reducing P99 latency by 45% and improving throughput by 60% for distributed systems.

@@ -100,7 +100,16 @@ Rules:
     print(f"    Preview: http://localhost:3000/t/{company}/{role}")
 
 
-def _render_resume_markdown(data):
+COMPACT_HIGHLIGHT_LIMITS = {
+    'Reason Benefit AI Corporation': 4,
+    'Trimble': 6,
+    'Viewpoint': 2,
+    'Onfulfillment': 2,
+    'Legacy Biomechanics Research Lab': 1,
+}
+
+
+def _render_resume_markdown(data, compact=False):
     basics = data['basics']
     profiles = {p['network']: p['url'] for p in basics.get('profiles', [])}
 
@@ -155,9 +164,14 @@ def _render_resume_markdown(data):
         elif not is_startup and not professional_written:
             lines += ["## PROFESSIONAL EXPERIENCE", ""]
             professional_written = True
-        lines.append(f"### {job['position']} | {job['company']} | {job['startDate']} - {job['endDate']}")
+        lines.append(f"### {job['position']}")
+        lines.append(f"{job['company']} | {job['startDate']} - {job['endDate']}")
         lines.append("")
-        for h in job.get('highlights', []):
+        highlights = job.get('highlights', [])
+        if compact:
+            limit = COMPACT_HIGHLIGHT_LIMITS.get(job['company'], 3)
+            highlights = highlights[:limit]
+        for h in highlights:
             lines.append(f"- {h}")
         lines.append("")
 
@@ -169,20 +183,39 @@ def _render_resume_markdown(data):
 
     if data.get('patents'):
         lines += ["---", "", "## PATENTS & AWARDS", ""]
-        for pat in data['patents']:
+        if compact:
+            pat = data['patents'][0]
             url = pat.get('url', '')
             title_part = f"[{pat['title']}]({url})" if url else pat['title']
             lines.append(f"**{title_part}**")
-            if pat.get('description'):
-                lines.append(f"- {pat['description']}")
             lines.append("")
+            remaining = len(data['patents']) - 1
+            if remaining > 0:
+                lines.append(f"*Plus {remaining} additional patents. Full list at jdoornink.github.io.*")
+                lines.append("")
+        else:
+            for pat in data['patents']:
+                url = pat.get('url', '')
+                title_part = f"[{pat['title']}]({url})" if url else pat['title']
+                lines.append(f"**{title_part}**")
+                if pat.get('description'):
+                    lines.append(f"- {pat['description']}")
+                lines.append("")
 
     if data.get('publications'):
         lines += ["---", "", "## PUBLICATIONS", ""]
-        for pub in data['publications']:
-            authors = pub['authors'].replace('J Doornink', '**J Doornink**')
-            lines.append(f"- {authors}. *{pub['title']}.* {pub['journal']}, {pub['date']}")
-        lines.append("")
+        if compact:
+            count = len(data['publications'])
+            for pub in data['publications'][:3]:
+                authors = pub['authors'].replace('J Doornink', '**J Doornink**')
+                lines.append(f"- {authors}. *{pub['title']}.* {pub['journal']}, {pub['date']}")
+            lines.append(f"- *...and {count - 3} additional publications. Full list at jdoornink.github.io.*")
+            lines.append("")
+        else:
+            for pub in data['publications']:
+                authors = pub['authors'].replace('J Doornink', '**J Doornink**')
+                lines.append(f"- {authors}. *{pub['title']}.* {pub['journal']}, {pub['date']}")
+            lines.append("")
 
     return "\n".join(lines)
 

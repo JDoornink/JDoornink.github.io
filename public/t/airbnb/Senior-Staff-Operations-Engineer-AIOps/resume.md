@@ -20,13 +20,13 @@ Senior Staff-level engineer with 10+ years of SRE and AI infrastructure experien
 
 **SRE & DevOps:** CI/CD Pipelines | GitHub Actions | Azure DevOps | Infrastructure as Code | Configuration Management | Distributed Version Control | Automation & Toil Elimination | Postmortem & RCA | SLO/SLA Management | On-Call Incident Command
 
-**AI/ML Engineering:** ML Pipelines | LLM Model Serving | Distributed Training Systems | Azure Machine Learning | Vertex AI | RLHF Infrastructure | Drift Detection | Model Finetuning Systems
+**AI/ML Engineering:** ML Pipelines | LLM Model Serving | Distributed Training Systems | Azure Machine Learning | Vertex AI | Drift Detection | Model Finetuning Systems
 
 ---
 
 ## PROFESSIONAL EXPERIENCE - STARTUP
 
-### Lead MLOps Engineer | REASON BENEFIT AI CORPORATION | October 2025 - Present
+### Lead MLOps Engineer | Reason Benefit AI Corporation | October 2025 - Present
 
 - Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.
 - Led Distributed Training Pipeline Creation by automating pipeline bottlenecks through automated pipeline scripts and validations to improve training cycle time.
@@ -35,12 +35,12 @@ Senior Staff-level engineer with 10+ years of SRE and AI infrastructure experien
 
 ## PROFESSIONAL EXPERIENCE
 
-### Lead Site Reliability Engineer (SRE) I -> II -> III | Trimble/Viewpoint | January 2019 - Present
+### Lead Site Reliability Engineer (SRE) I -> II -> III | Trimble | January 2019 - Present
 
 - Built automation tooling in Python and Go eliminating 80+ hours/month of toil and accelerating deployment velocity 3x, directly enabling shift-left operational programs.
 - Implemented New Relic observability stack with distributed tracing, cutting MTTR by 50% and enabling correlated, proactive monitoring across systems and applications.
 - Architected AKS production environments handling 10M+ requests/day across 30+ microservices at 99.9% uptime SLA.
-- Led Kubernetes capacity planning and auto-scaling strategies supporting 200% traffic growth.
+- Led Kubernetes capacity planning and strategies supporting 200% traffic growth.
 - Reduced P99 latency 45% and improved throughput 60% through systematic profiling of distributed systems.
 - Developed Go CLI tooling (Cobra) adopted by 50+ engineers for streamlined infrastructure workflows.
 - Built CI/CD pipelines (GitHub Actions, Azure DevOps) with automated testing and rollback mechanisms.
