@@ -102,7 +102,7 @@ Rules:
 
 COMPACT_HIGHLIGHT_LIMITS = {
     'Reason Benefit AI Corporation': 4,
-    'Trimble': 6,
+    'Trimble': 8,
     'Viewpoint': 2,
     'Onfulfillment': 2,
     'Legacy Biomechanics Research Lab': 1,
@@ -134,20 +134,22 @@ def _render_resume_markdown(data, compact=False):
         lines.append(f"**{skill['name']}:** {' | '.join(skill['keywords'])}")
         lines.append("")
 
-    lines += ["---", "", "## KEY TECHNICAL PROJECTS", ""]
-    for proj in data.get('projects', []):
+    lines += ["---", "", "## PROJECTS", ""]
+    projects = data.get('projects', [])
+    for proj in projects:
         url = proj.get('url', '')
         name_part = f"[{proj['name']}]({url})" if url else proj['name']
         lines.append(f"**{name_part}** — {proj['description']}")
         if proj.get('registryUrl'):
             lines.append(f"*Listed on the official MCP Registry.*")
         if proj.get('pypiUrl'):
-            lines.append(f"*Published on PyPI as agent-lint-cli.*")
+            lines.append(f"*Published on PyPI as Agent-Lint-CLI.*")
         lines.append("")
 
     if data.get('certifications'):
         lines += ["---", "", "## CERTS/COURSES", ""]
-        for cert in data['certifications']:
+        certs = data['certifications']
+        for cert in certs:
             lines.append(f"- **{cert['name']}** | {cert['issuer']} | {cert['date']}")
         lines.append("")
 

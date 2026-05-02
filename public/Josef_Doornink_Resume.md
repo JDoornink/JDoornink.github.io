@@ -22,15 +22,15 @@ A creative problem-solver who loves building the infrastructure that brings idea
 
 ---
 
-## KEY TECHNICAL PROJECTS
+## PROJECTS
 
-**[K8gentS](https://github.com/JDoornink/K8gentS)** — What happens when you deploy a non-deterministic reasoning engine in a system that requires guarantees? K8gentS is an autonomous Kubernetes RCA agent built around that question. It routes cluster failures through Gemini-powered analysis, gates remediation behind both a human approval and an OPA Gatekeeper admission policy, and exposes diagnostics via an MCP server published on the official MCP Registry as io.github.JDoornink/k8gents. The hard problems — confidence calibration, LLM vs deterministic routing, evaluating for unanticipated failures — are openly documented in the README.
+**[K8gentS](https://github.com/JDoornink/K8gentS)** — What happens when you deploy a non-deterministic reasoning engine in a system that requires guarantees? K8gentS is an autonomous Kubernetes RCA agent built around that question. It routes cluster failures through Gemini-powered analysis, gates remediation behind both a human approval and an OPA Gatekeeper admission policy, and exposes diagnostics via an MCP server published on the official MCP Registry as io.github.JDoornink/k8gents.
 *Listed on the official MCP Registry.*
 
 **[OmniSight-Core](https://github.com/JDoornink/OmniSight-Core)** — A production-grade video search engine capable of understanding semantic queries (e.g., "Find a red truck at night"). Demonstrates self-healing infrastructure that automatically detects model performance decay and triggers retraining.
 
-**[agent-lint-cli](https://github.com/JDoornink/agent-lint)** — ESLint for agents. A published Python CLI tool that validates MCP servers and scans AI agent implementations for security vulnerabilities. Supports configurable security levels, CI/CD integration with threshold-based failure conditions, and multiple output formats including SARIF.
-*Published on PyPI as agent-lint-cli.*
+**[Agent-Lint-CLI](https://github.com/JDoornink/agent-lint)** — ESLint for agents. A published Python CLI tool that validates MCP servers and scans AI agent implementations for security vulnerabilities. Supports configurable security levels, CI/CD integration with threshold-based failure conditions, and multiple output formats including SARIF.
+*Published on PyPI as Agent-Lint-CLI.*
 
 **[Agentic SRE Pipeline & Portfolio](https://github.com/JDoornink/JDoornink.github.io)** — The source code driving this exact platform. A Next.js (React) infrastructure executing a Python/RAG Agent pipeline that strictly parses unstructured Job Descriptions and outputs statically generated, targeted frontend bundles dynamically.
 
@@ -68,6 +68,8 @@ Trimble | January 2019 - Present
 - Reduced P99 latency 45% and improved throughput 60% through systematic profiling of distributed systems.
 - Implemented New Relic observability stack with distributed tracing, cutting MTTR by 50%.
 - Led Kubernetes capacity planning and strategies supporting 200% traffic growth.
+- Built CI/CD pipelines (GitHub Actions, Azure DevOps) with automated testing and rollback mechanisms.
+- Managed 100+ cloud resources via Terraform IaC; implemented CKS security controls for SOC2 compliance.
 
 ### Software Developer
 Viewpoint | March 2018 - January 2019
