@@ -118,7 +118,7 @@ def _render_resume_markdown(data, compact=False):
         "",
         f"**{basics['label']}**",
         "",
-        f"Portland, OR | {basics['email']}"
+        f"{basics['email']}"
         + (f" | [LinkedIn]({profiles['LinkedIn']})" if 'LinkedIn' in profiles else "")
         + (f" | [GitHub]({profiles['GitHub']})" if 'GitHub' in profiles else "")
         + (f" | [Portfolio]({basics.get('url', '')})" if basics.get('url') else ""),
