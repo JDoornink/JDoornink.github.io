@@ -1,6 +1,6 @@
 # JOSEF DOORNINK
 
-**Site Reliability Engineer | AI Infrastructure & MLOps**
+**AI Infrastructure & Reliability Engineer**
 
 jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josefdoornink/) | [GitHub](https://github.com/JDoornink) | [Portfolio](https://jdoornink.github.io/)
 
@@ -8,31 +8,33 @@ jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josefdoornink/) | [G
 
 ## PROFESSIONAL SUMMARY
 
-A creative problem-solver who loves building the infrastructure that brings ideas into reality. An engineer with 10+ years experience, 10 peer-reviewed papers, 2 US patents, a major design award and FDA-cleared hardware. That foundation now drives deep SRE and AI infrastructure work (CKS/CKA certified), delivering systems with integrity and observability at scale — currently designing autonomous Agentic SRE pipelines that leverage LLMs for root-cause analysis.
+Infrastructure engineer building the safety and reliability layer for autonomous AI systems. Currently designing Agentic SRE pipelines that route Kubernetes failures through LLM analysis, gated behind human approval and OPA admission policies — exploring what it takes to deploy non-deterministic reasoning in systems that require guarantees. 10+ years SRE/MLOps (CKS/CKA certified), preceded by a decade building FDA-cleared medical hardware where reliability meant patient safety. 10 peer-reviewed papers, 2 US patents.
 
 ---
 
 ## TECHNICAL SKILLS
 
+**AI Safety & Agent Infrastructure:** MCP Servers | OPA Gatekeeper | Human-in-the-Loop Gating | Agentic Workflows | LLM-Powered RCA | Eval Infrastructure | Drift Detection
+
+**MLOps & Distributed Training:** LLM Model Serving | ML Pipelines | Distributed Training Systems | Azure Machine Learning | Vertex AI | Model Finetuning Systems
+
+**Observability & Reliability:** New Relic | Azure Monitor | Distributed Tracing | CI/CD Pipelines | GitHub Actions | Performance Profiling | Incident Response | Prometheus | Grafana | Azure DevOps
+
 **Core Technologies:** Kubernetes (AKS) | Docker | Terraform | Azure | AWS | GCP | Helm | YAML | Python | Go/Golang | Bash | C# | SQL | Kafka | Redis | ElasticSearch
-
-**AI/ML Engineering:** LLM Model Serving | ML Pipelines | Distributed Training Systems | Azure Machine Learning | Vertex AI | Drift Detection | Model Finetuning Systems
-
-**Observability & SRE:** New Relic | Azure Monitor | Distributed Tracing | CI/CD Pipelines | GitHub Actions | Performance Profiling | Incident Response | Prometheus | Grafana | Azure DevOps
 
 ---
 
 ## PROJECTS
 
-**[K8gentS](https://github.com/JDoornink/K8gentS)** — What happens when you deploy a non-deterministic reasoning engine in a system that requires guarantees? K8gentS is an autonomous Kubernetes RCA agent built around that question. It routes cluster failures through Gemini-powered analysis, gates remediation behind both a human approval and an OPA Gatekeeper admission policy, and exposes diagnostics via an MCP server published on the official MCP Registry as io.github.JDoornink/k8gents.
+**[K8gentS](https://github.com/JDoornink/K8gentS)** — What happens when you deploy a non-deterministic reasoning engine in a system that requires guarantees? K8gentS is an autonomous Kubernetes RCA agent built around that question. It routes cluster failures through Gemini-powered analysis, gates remediation behind both a human approval and an OPA Gatekeeper admission policy, and exposes diagnostics via an MCP server published on the official MCP Registry as io.github.JDoornink/k8gents. See the README for an open discussion of failure modes and confidence calibration tradeoffs.
 *Listed on the official MCP Registry.*
 
-**[OmniSight-Core](https://github.com/JDoornink/OmniSight-Core)** — A production-grade video search engine capable of understanding semantic queries (e.g., "Find a red truck at night"). Demonstrates self-healing infrastructure that automatically detects model performance decay and triggers retraining.
+**[OmniSight-Core](https://github.com/JDoornink/OmniSight-Core)** — A self-healing multimodal search engine demonstrating the agent-in-the-reliability-loop pattern applied to ML systems. CLIP embeddings + Qdrant power semantic video search ("find a red truck at night"); Prometheus and Evidently AI surface drift; an LLM agent reasons about drift signals and triggers automated retraining via GitHub Actions. Companion to K8gentS — same thesis (LLM as decision-maker inside a reliability contract), different domain.
 
-**[Agent-Lint-CLI](https://github.com/JDoornink/agent-lint)** — ESLint for agents. A published Python CLI tool that validates MCP servers and scans AI agent implementations for security vulnerabilities. Supports configurable security levels, CI/CD integration with threshold-based failure conditions, and multiple output formats including SARIF.
+**[Agent-Lint-CLI](https://github.com/JDoornink/agent-lint)** — Static analysis for the agent supply chain. A published Python CLI tool that validates MCP servers and scans AI agent implementations for security vulnerabilities — configurable security levels, CI/CD integration with threshold-based failure conditions, and SARIF output for integration with existing security tooling.
 *Published on PyPI as Agent-Lint-CLI.*
 
-**[Agentic SRE Pipeline & Portfolio](https://github.com/JDoornink/JDoornink.github.io)** — The source code driving this exact platform. A Next.js (React) infrastructure executing a Python/RAG Agent pipeline that strictly parses unstructured Job Descriptions and outputs statically generated, targeted frontend bundles dynamically.
+**[Agentic SRE Pipeline & Portfolio](https://github.com/JDoornink/JDoornink.github.io)** — The source code driving this exact platform. A Python pipeline that uses Claude to parse unstructured job descriptions and output statically generated, tailored frontend bundles via Next.js — the dogfood project for the Agentic SRE thesis.
 
 ---
 
@@ -52,21 +54,20 @@ A creative problem-solver who loves building the infrastructure that brings idea
 ### Lead MLOps Engineer
 Reason Benefit AI Corporation | October 2025 - Present
 
-- Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.
-- Integrate with Azure offerings for resource utilization across distributed training systems.
-- Collaborate with research teams to translate desired microservice architectures into cloud-based systems with focus on reliability and scalability.
-- Drive distributed training pipeline creation by introducing automated pipeline scripts and validations to reduce training cycle time.
+- Designing and building the AKS-based ML training and inference platform — making the foundational architecture decisions for an early-stage AI company before production traffic.
+- Establishing patterns for distributed training resource management on Azure, balancing cost and iteration speed for research workloads.
+- Translating research-team requirements into cloud architectures, working iteratively as the platform and the model strategy co-evolve.
+- Standing up the distributed training pipeline from scratch — automated pipeline scripts, validation steps, and the reliability scaffolding research teams need to move fast.
 
 ## PROFESSIONAL EXPERIENCE
 
 ### Lead Site Reliability Engineer (SRE) I -> II -> III
 Trimble | January 2019 - Present
 
-- Built and maintained Human Resources Information management system, responsible for over $8.3M+ in ARR and 43% YoY growth rate.
-- Architected AKS production environments handling 14K+ requests/day across 30+ microservices at 99.9% uptime SLA.
-- Built automation tooling in Python and Go eliminating 80+ hours/month of toil and accelerating deployment velocity 3x.
-- Reduced P99 latency 45% and improved throughput 60% through systematic profiling of distributed systems.
 - Implemented New Relic observability stack with distributed tracing, cutting MTTR by 50%.
+- Built automation tooling in Python and Go eliminating 80+ hours/month of toil and accelerating deployment velocity 3x.
+- Architected AKS production environments handling 14K+ requests/day across 30+ microservices at 99.9% uptime SLA.
+- Built and maintained Human Resources Information management system, responsible for over $8.3M+ in ARR and 43% YoY growth rate.
 - Led Kubernetes capacity planning and strategies supporting 200% traffic growth.
 - Built CI/CD pipelines (GitHub Actions, Azure DevOps) with automated testing and rollback mechanisms.
 - Managed 100+ cloud resources via Terraform IaC; implemented CKS security controls for SOC2 compliance.
