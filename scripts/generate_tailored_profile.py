@@ -102,7 +102,7 @@ Rules:
 
 COMPACT_HIGHLIGHT_LIMITS = {
     'Reason Benefit AI Corporation': 4,
-    'Trimble': 8,
+    'Trimble': 7,
     'Viewpoint': 2,
     'Onfulfillment': 2,
     'Legacy Biomechanics Research Lab': 1,
