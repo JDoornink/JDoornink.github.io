@@ -25,7 +25,7 @@ A creative problem-solver who loves building the infrastructure that brings idea
 ## PROFESSIONAL EXPERIENCE - STARTUP
 
 ### Lead MLOps Engineer
-**Reason Benefit AI Corporation** | Remote | October 2025 - Present
+**Reason Benefit AI Corporation** | Remote | October 2025 - February 2026
 
 - Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.
 - Integrate with observability frameworks for model performance tracking, latency monitoring, and resource utilization across distributed training systems.

@@ -26,7 +26,7 @@ Senior Staff-level engineer with 10+ years of SRE and AI infrastructure experien
 
 ## PROFESSIONAL EXPERIENCE - STARTUP
 
-### Lead MLOps Engineer | Reason Benefit AI Corporation | October 2025 - Present
+### Lead MLOps Engineer | Reason Benefit AI Corporation | October 2025 - February 2026
 
 - Architect and maintain large-scale Azure Kubernetes Service (AKS) production environment for ML model training and serving, supporting distributed model inference at scale.
 - Led Distributed Training Pipeline Creation by automating pipeline bottlenecks through automated pipeline scripts and validations to improve training cycle time.
