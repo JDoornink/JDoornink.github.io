@@ -24,7 +24,7 @@ A creative problem-solver who loves building the infrastructure that brings idea
 
 ## PROFESSIONAL EXPERIENCE - STARTUP
 
-### Lead MLOps Engineer | Reason Benefit AI Corporation | Remote | Oct 2025 - Present
+### Lead MLOps Engineer | Reason Benefit AI Corporation | Remote | Oct 2025 - Feb 2026
 
 - Architected and maintained large-scale AKS production environments for ML model training, supporting distributed model inference at scale
 - Improved inference throughput by 40% by optimizing model serving infrastructure through systematic performance profiling and tuning

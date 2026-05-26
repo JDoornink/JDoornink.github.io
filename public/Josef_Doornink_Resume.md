@@ -52,7 +52,7 @@ Infrastructure engineer building the safety and reliability layer for autonomous
 ## PROFESSIONAL EXPERIENCE - STARTUP
 
 ### Lead MLOps Engineer
-Reason Benefit AI Corporation | October 2025 - Present
+Reason Benefit AI Corporation | October 2025 - February 2026
 
 - Designing and building the AKS-based ML training and inference platform — making the foundational architecture decisions for an early-stage AI company before production traffic.
 - Establishing patterns for distributed training resource management on Azure, balancing cost and iteration speed for research workloads.
