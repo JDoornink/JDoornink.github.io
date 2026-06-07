@@ -180,17 +180,6 @@
         "GKE",
         "Python"
       ]
-    },
-    {
-      "name": "Agentic SRE Pipeline & Portfolio",
-      "description": "The source code driving this exact platform. A Next.js (React) infrastructure executing a Python/RAG Agent pipeline that strictly parses unstructured Job Descriptions and outputs statically generated, targeted frontend bundles dynamically.",
-      "url": "https://github.com/JDoornink/JDoornink.github.io",
-      "keywords": [
-        "Next.js",
-        "Python RAG",
-        "TailwindCSS",
-        "GitOps"
-      ]
     }
   ],
   "certifications": [

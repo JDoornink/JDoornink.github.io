@@ -63,8 +63,6 @@ A creative problem-solver who loves building the infrastructure that brings idea
 
 **OmniSight-Core (2026)** - Engineered a centralized observability platform and video search engine capable of understanding semantic queries, utilizing self-healing infrastructure to automatically detect model performance decay.
 
-**Agentic SRE Pipeline (2026)** - Built the foundational Next.js infrastructure executing a Python/RAG Agent pipeline that programmatically parses unstructured Job Descriptions to statically generate tailored frontend bundles dynamically.
-
 **Distributed Training Pipeline Optimization (2025)** - Improved training cycle time by profiling RL pipeline bottlenecks, reducing Python GIL contention, and introducing automated pipeline validation.
 
 **Kubernetes Security Hardening (2024)** - Reduced security risk by implementing CKS controls and automation that supported SOC2 compliance.

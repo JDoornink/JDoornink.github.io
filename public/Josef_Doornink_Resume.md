@@ -8,7 +8,7 @@ jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josefdoornink/) | [G
 
 ## PROFESSIONAL SUMMARY
 
-Infrastructure engineer with 7 years in SRE and MLOps, now building safety and reliability tooling for autonomous AI systems. CKS/CKA certified, preceded by a decade in FDA-cleared medical hardware where reliability meant patient safety, which produced 10 peer-reviewed papers and 2 US patents. Focused on the hard problem of providing guarantees in non-deterministic systems.
+Infrastructure engineer with 7 years in SRE and MLOps, now building safety and reliability tooling for autonomous AI systems. CKS/CKA certified, preceded by a decade in FDA-cleared medical hardware where reliability meant patient safety, which produced 10 peer-reviewed papers and 2 US patents. Focused on providing visibility and reliability in non-deterministic systems.
 
 ---
 

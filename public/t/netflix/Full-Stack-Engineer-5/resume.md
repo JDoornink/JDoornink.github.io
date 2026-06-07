@@ -75,9 +75,6 @@ A creative problem-solver who loves building the infrastructure that brings idea
 ### OmniSight-Core (2025)
 - A production-grade video search engine capable of understanding semantic queries (e.g., "Find a red truck at night"). Demonstrates self-healing infrastructure that automatically detects model performance decay and triggers retraining.
 
-### Agentic SRE Pipeline & Portfolio (2025)
-- The source code driving this exact platform. A Next.js (React) infrastructure executing a Python/RAG Agent pipeline that strictly parses unstructured Job Descriptions and outputs statically generated, targeted frontend bundles dynamically.
-
 ---
 
 ## CERTS/COURSES

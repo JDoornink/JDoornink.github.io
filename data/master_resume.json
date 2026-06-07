@@ -5,7 +5,7 @@
     "email": "jdoorarg@gmail.com",
     "phone": "",
     "url": "https://jdoornink.github.io/",
-    "summary": "Infrastructure engineer with 7 years in SRE and MLOps, now building safety and reliability tooling for autonomous AI systems. CKS/CKA certified, preceded by a decade in FDA-cleared medical hardware where reliability meant patient safety, which produced 10 peer-reviewed papers and 2 US patents. Focused on the hard problem of providing guarantees in non-deterministic systems.",
+    "summary": "Infrastructure engineer with 7 years in SRE and MLOps, now building safety and reliability tooling for autonomous AI systems. CKS/CKA certified, preceded by a decade in FDA-cleared medical hardware where reliability meant patient safety, which produced 10 peer-reviewed papers and 2 US patents. Focused on providing visibility and reliability in non-deterministic systems.",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -192,17 +192,6 @@
         "CLI",
         "Security",
         "CI/CD"
-      ]
-    },
-    {
-      "name": "Agentic SRE Pipeline & Portfolio",
-      "description": "The source code driving this exact platform. A Python pipeline that uses Claude to parse unstructured job descriptions and output statically generated, tailored frontend bundles via Next.js — the dogfood project for the Agentic SRE thesis.",
-      "url": "https://github.com/JDoornink/JDoornink.github.io",
-      "keywords": [
-        "Next.js",
-        "Python RAG",
-        "TailwindCSS",
-        "GitOps"
       ]
     }
   ],
