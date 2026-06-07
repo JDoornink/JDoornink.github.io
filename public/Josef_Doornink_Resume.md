@@ -8,7 +8,7 @@ jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josefdoornink/) | [G
 
 ## PROFESSIONAL SUMMARY
 
-Infrastructure engineer building the safety and reliability layer for autonomous AI systems. Currently designing Agentic SRE pipelines that route Kubernetes failures through LLM analysis, gated behind human approval and OPA admission policies — exploring what it takes to deploy non-deterministic reasoning in systems that require guarantees. 10+ years SRE/MLOps (CKS/CKA certified), preceded by a decade building FDA-cleared medical hardware where reliability meant patient safety. 10 peer-reviewed papers, 2 US patents.
+Infrastructure engineer with 7 years in SRE and MLOps, now building safety and reliability tooling for autonomous AI systems. CKS/CKA certified, preceded by a decade in FDA-cleared medical hardware where reliability meant patient safety, which produced 10 peer-reviewed papers and 2 US patents. Focused on the hard problem of providing guarantees in non-deterministic systems.
 
 ---
 
