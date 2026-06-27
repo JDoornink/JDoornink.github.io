@@ -26,15 +26,13 @@ Infrastructure engineer with 7 years in SRE and MLOps, now building safety and r
 
 ## PROJECTS
 
-**[K8gentS](https://github.com/JDoornink/K8gentS)** — What happens when you deploy a non-deterministic reasoning engine in a system that requires guarantees? K8gentS is an autonomous Kubernetes RCA agent built around that question. It routes cluster failures through Gemini-powered analysis, gates remediation behind both a human approval and an OPA Gatekeeper admission policy, and exposes diagnostics via an MCP server published on the official MCP Registry as io.github.JDoornink/k8gents. See the README for an open discussion of failure modes and confidence calibration tradeoffs.
+**[K8gentS](https://github.com/JDoornink/K8gentS)** — How to implement a non-deterministic reasoning engine in a system that requires guarantees? K8gents answers through guardrails-as-code: an autonomous Kubernetes root cause analysis (RCA) agent that routes cluster failures through Gemini-powered analysis, but constrains remediation with code-enforced policies—human approval gates paired with OPA Gatekeeper rules create hard boundaries around AI decisions. Diagnostics are exposed via an MCP server (io.github.JDoornink/k8gents on the official registry); see the README for a discussion of failure modes and confidence calibration tradeoffs.
 *Listed on the official MCP Registry.*
 
 **[OmniSight-Core](https://github.com/JDoornink/OmniSight-Core)** — A self-healing multimodal search engine demonstrating the agent-in-the-reliability-loop pattern applied to ML systems. CLIP embeddings + Qdrant power semantic video search ("find a red truck at night"); Prometheus and Evidently AI surface drift; an LLM agent reasons about drift signals and triggers automated retraining via GitHub Actions. Companion to K8gentS — same thesis (LLM as decision-maker inside a reliability contract), different domain.
 
 **[Agent-Lint-CLI](https://github.com/JDoornink/agent-lint)** — Static analysis for the agent supply chain. A published Python CLI tool that validates MCP servers and scans AI agent implementations for security vulnerabilities — configurable security levels, CI/CD integration with threshold-based failure conditions, and SARIF output for integration with existing security tooling.
 *Published on PyPI as Agent-Lint-CLI.*
-
-**[Agentic SRE Pipeline & Portfolio](https://github.com/JDoornink/JDoornink.github.io)** — The source code driving this exact platform. A Python pipeline that uses Claude to parse unstructured job descriptions and output statically generated, tailored frontend bundles via Next.js — the dogfood project for the Agentic SRE thesis.
 
 ---
 
@@ -49,7 +47,7 @@ Infrastructure engineer with 7 years in SRE and MLOps, now building safety and r
 
 ---
 
-## PROFESSIONAL EXPERIENCE - STARTUP
+## PROFESSIONAL EXPERIENCE - STARTUP (Nights & Weekends)
 
 ### Lead MLOps Engineer
 Reason Benefit AI Corporation | October 2025 - February 2026

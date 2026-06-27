@@ -161,7 +161,7 @@ def _render_resume_markdown(data, compact=False):
     for job in sorted(data.get('work', []), key=lambda j: (0 if j.get('isStartup') else 1)):
         is_startup = job.get('isStartup', False)
         if is_startup and not startup_written:
-            lines += ["## PROFESSIONAL EXPERIENCE - STARTUP", ""]
+            lines += ["## PROFESSIONAL EXPERIENCE - STARTUP (Nights & Weekends)", ""]
             startup_written = True
         elif not is_startup and not professional_written:
             lines += ["## PROFESSIONAL EXPERIENCE", ""]
