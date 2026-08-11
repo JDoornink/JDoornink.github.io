@@ -5,7 +5,7 @@
     "email": "jdoorarg@gmail.com",
     "phone": "",
     "url": "https://jdoornink.github.io/",
-    "summary": "Infrastructure engineer with 7 years in SRE and MLOps, now building safety and reliability tooling for autonomous AI systems. CKS/CKA certified, preceded by a decade in FDA-cleared medical hardware where reliability meant patient safety, which produced 10 peer-reviewed papers and 2 US patents. Focused on providing visibility and reliability in non-deterministic systems.",
+    "summary": "Infrastructure engineer with 7+ years in SRE and MLOps, now building safety and reliability tooling for autonomous AI systems. CKS/CKA certified, preceded by a decade in FDA-cleared medical hardware where reliability meant patient safety, 10 peer-reviewed papers and 2 US patents. Focused on providing visibility and reliability in non-deterministic systems.",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -51,8 +51,8 @@
       ]
     },
     {
-      "company": "Viewpoint",
-      "position": "Software Developer",
+      "company": "Trimble",
+      "position": "Software Developer I -> II",
       "startDate": "March 2018",
       "endDate": "January 2019",
       "summary": "",
@@ -69,7 +69,7 @@
       "summary": "",
       "highlights": [
         "Engineered multi-tenant e-commerce platform using Microsoft Stack (.NET, C#, SQL Server) integrated with third-party SaaS APIs.",
-        "Led 'uplift' initiative migrating legacy codebase to modern greenfield platform, improving response times by 40% measured through New Relic APM."
+        " Led 'uplift' initiative migrating legacy codebase to modern greenfield platform, improving response times by 40% measured through New Relic APM."
       ]
     },
     {
@@ -96,6 +96,19 @@
         "LLM-Powered RCA",
         "Eval Infrastructure",
         "Drift Detection"
+      ]
+    },
+    {
+      "name": "GPU Infrastructure & LLM Serving",
+      "level": "Advanced",
+      "keywords": [
+        "vLLM",
+        "GPU Sizing & Capacity Planning",
+        "KV Cache Tuning",
+        "Model Quantization (AWQ)",
+        "KEDA / HPA Autoscaling",
+        "Inference Load Testing",
+        "GPU Node Pools (AKS)"
       ]
     },
     {
@@ -144,12 +157,28 @@
         "C#",
         "SQL",
         "Kafka",
-        "Redis",
-        "ElasticSearch"
+        "Redis"
       ]
     }
   ],
   "projects": [
+    {
+      "name": "vLLM on Kubernetes: GPU Sizing & Autoscaling",
+      "description": "A 3-part guide to serving LLMs on a GPU-accelerated Kubernetes cluster in the cloud using KEDA for auto-scaling and Prometheus/Grafana for visibility. Describes how to: (1) correctly choose a GPU from first principles (weight memory vs. KV cache headroom, derived to concurrent-request capacity), (2) step-by-step guide on how to deploy an inference model on GPU chips in the cloud, and (3) handle unexpected flapping behavior associated with event-driven autoscaling with vLLM. An article series backed by a reproducible deployment of Qwen2.5-7B-Instruct-AWQ on vLLM across A10 nodes.",
+      "url": "https://github.com/JDoornink/vLLM_on_K8s",
+      "articleUrl": "https://dev.to/josef_doornink_930b2caf1c/your-vllm-autoscaler-is-flapping-because-you-picked-the-wrong-signal-not-the-wrong-number-24lf",
+      "keywords": [
+        "vLLM",
+        "LLM Inference",
+        "GPU",
+        "KV Cache",
+        "AKS",
+        "KEDA Autoscaling",
+        "Quantization (AWQ)",
+        "Prometheus",
+        "Grafana"
+      ]
+    },
     {
       "name": "K8gentS",
       "description": "How to implement a non-deterministic reasoning engine in a system that requires guarantees? K8gents answers through guardrails-as-code: an autonomous Kubernetes root cause analysis (RCA) agent that routes cluster failures through Gemini-powered analysis, but constrains remediation with code-enforced policies—human approval gates paired with OPA Gatekeeper rules create hard boundaries around AI decisions. Diagnostics are exposed via an MCP server (io.github.JDoornink/k8gents on the official registry); see the README for a discussion of failure modes and confidence calibration tradeoffs.",

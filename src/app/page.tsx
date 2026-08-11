@@ -82,6 +82,16 @@ export default function Home() {
                       MCP Registry
                     </a>
                   )}
+                  {project.articleUrl && (
+                    <a
+                      href={project.articleUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[9px] tracking-widest uppercase text-emerald-800 border border-emerald-900/40 px-1.5 py-0.5 hover:text-emerald-400 hover:border-emerald-700 transition-colors"
+                    >
+                      Dev.to
+                    </a>
+                  )}
                   {project.pypiUrl && (
                     <a
                       href={project.pypiUrl}
@@ -122,9 +132,13 @@ export default function Home() {
                     <div>
                       <div className="flex items-center gap-2 flex-wrap">
                         <span className="text-white font-bold">{job.company}</span>
-                        {job.isStartup && (
-                          <span className="text-[9px] tracking-widest uppercase text-amber-800 border border-amber-900/40 px-1.5 py-0.5">
+                        {job.isStartup ? (
+                          <span className="text-[9px] tracking-widest uppercase text-orange-500 border border-orange-500/50 px-1.5 py-0.5">
                             Startup
+                          </span>
+                        ) : (
+                          <span className="text-[9px] tracking-widest uppercase text-neutral-400 border border-neutral-600 px-1.5 py-0.5">
+                            Traditional
                           </span>
                         )}
                       </div>

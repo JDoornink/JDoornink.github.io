@@ -14,7 +14,9 @@ A creative problem-solver who loves building the infrastructure that brings idea
 
 ## TECHNICAL SKILLS
 
-**Core Technologies:** Kubernetes (AKS) | Docker | Terraform | Azure | AWS | GCP | Helm | YAML | Python | Go/Golang | Bash | C# | SQL | Kafka | Redis | ElasticSearch
+**Core Technologies:** Kubernetes (AKS) | Docker | Terraform | Azure | AWS | GCP | Helm | YAML | Python | Go/Golang | Bash | C# | SQL | Kafka | Redis
+
+**GPU & LLM Serving:** vLLM | GPU Sizing & Capacity Planning | KV Cache Tuning | Model Quantization (AWQ) | KEDA / HPA Autoscaling | GPU Node Pools (AKS)
 
 **AI/ML Engineering:** LLM Model Serving | ML Pipelines | Distributed Training Systems | Azure Machine Learning | Vertex AI | Drift Detection | Model Finetuning Systems
 
@@ -58,6 +60,8 @@ A creative problem-solver who loves building the infrastructure that brings idea
 ---
 
 ## KEY TECHNICAL PROJECTS
+
+**[vLLM on Kubernetes: GPU Sizing & Autoscaling](https://github.com/JDoornink/vLLM_on_K8s) (2026)** - Served a quantized Qwen2.5-7B model on vLLM across A10 GPU nodes in AKS. Derived GPU sizing from first principles (weight memory vs. KV cache headroom) and eliminated autoscaler flapping by scaling KEDA on a leading KV-cache-utilization signal instead of lagging queue depth. Published as an article series on [Dev.to](https://dev.to/josef_doornink_930b2caf1c/your-vllm-autoscaler-is-flapping-because-you-picked-the-wrong-signal-not-the-wrong-number-24lf).
 
 **K8gentS (Kubernetes RCA Agent) (2026)** - Created an autonomous Root Cause Analysis tool bridging SRE and AI. Leverages LLM reasoning and system telemetry to automatically diagnose pod failures, drastically reducing MTTR footprint.
 

@@ -103,8 +103,7 @@ Rules:
 COMPACT_HIGHLIGHT_LIMITS = {
     'Reason Benefit AI Corporation': 4,
     'Trimble': 7,
-    'Viewpoint': 2,
-    'Onfulfillment': 2,
+    'Viewpoint | Onfulfillment': 3,
     'Legacy Biomechanics Research Lab': 1,
 }
 
@@ -141,9 +140,11 @@ def _render_resume_markdown(data, compact=False):
         name_part = f"[{proj['name']}]({url})" if url else proj['name']
         lines.append(f"**{name_part}** — {proj['description']}")
         if proj.get('registryUrl'):
-            lines.append(f"*Listed on the official MCP Registry.*")
+            lines.append(f"*Listed on the official [MCP Registry]({proj['registryUrl']}).*")
         if proj.get('pypiUrl'):
-            lines.append(f"*Published on PyPI as Agent-Lint-CLI.*")
+            lines.append(f"*Published on [PyPI]({proj['pypiUrl']}) as Agent-Lint-CLI.*")
+        if proj.get('articleUrl'):
+            lines.append(f"*Article series published on [Dev.to]({proj['articleUrl']}).*")
         lines.append("")
 
     if data.get('certifications'):
@@ -164,7 +165,7 @@ def _render_resume_markdown(data, compact=False):
             lines += ["## PROFESSIONAL EXPERIENCE - STARTUP (Nights & Weekends)", ""]
             startup_written = True
         elif not is_startup and not professional_written:
-            lines += ["## PROFESSIONAL EXPERIENCE", ""]
+            lines += ["## PROFESSIONAL EXPERIENCE - TRADITIONAL", ""]
             professional_written = True
         lines.append(f"### {job['position']}")
         lines.append(f"{job['company']} | {job['startDate']} - {job['endDate']}")
@@ -184,18 +185,19 @@ def _render_resume_markdown(data, compact=False):
             lines.append("")
 
     if data.get('patents'):
-        lines += ["---", "", "## PATENTS & AWARDS", ""]
         if compact:
+            remaining = len(data['patents']) - 1
+            heading = "## PATENTS & AWARDS"
+            if remaining > 0:
+                heading += f" *(Plus {remaining} additional patents. Full list at jdoornink.github.io.)*"
+            lines += ["---", "", heading, ""]
             pat = data['patents'][0]
             url = pat.get('url', '')
             title_part = f"[{pat['title']}]({url})" if url else pat['title']
             lines.append(f"**{title_part}**")
             lines.append("")
-            remaining = len(data['patents']) - 1
-            if remaining > 0:
-                lines.append(f"*Plus {remaining} additional patents. Full list at jdoornink.github.io.*")
-                lines.append("")
         else:
+            lines += ["---", "", "## PATENTS & AWARDS", ""]
             for pat in data['patents']:
                 url = pat.get('url', '')
                 title_part = f"[{pat['title']}]({url})" if url else pat['title']
@@ -205,15 +207,19 @@ def _render_resume_markdown(data, compact=False):
                 lines.append("")
 
     if data.get('publications'):
-        lines += ["---", "", "## PUBLICATIONS", ""]
         if compact:
             count = len(data['publications'])
+            lines += [
+                "---", "",
+                f"## PUBLICATIONS *({count - 3} additional publications. Full list at jdoornink.github.io.)*",
+                "",
+            ]
             for pub in data['publications'][:3]:
                 authors = pub['authors'].replace('J Doornink', '**J Doornink**')
                 lines.append(f"- {authors}. *{pub['title']}.* {pub['journal']}, {pub['date']}")
-            lines.append(f"- *...and {count - 3} additional publications. Full list at jdoornink.github.io.*")
             lines.append("")
         else:
+            lines += ["---", "", "## PUBLICATIONS", ""]
             for pub in data['publications']:
                 authors = pub['authors'].replace('J Doornink', '**J Doornink**')
                 lines.append(f"- {authors}. *{pub['title']}.* {pub['journal']}, {pub['date']}")

@@ -150,7 +150,7 @@ def convert_md_to_pdf(md_file, pdf_file):
 
         if line.startswith('## '):
             text = line[3:]
-            if text.strip() == 'PROFESSIONAL EXPERIENCE':
+            if text.strip().startswith('PROFESSIONAL EXPERIENCE'):
                 story.append(CondPageBreak(4 * inch))
             story.append(Paragraph(inline_markdown_to_html(text), h2))
             story.append(HRFlowable(width='100%', thickness=0.4, color=colors.HexColor('#e8e8e8')))

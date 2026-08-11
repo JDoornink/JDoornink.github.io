@@ -18,9 +18,11 @@ A creative problem-solver who loves building the infrastructure that brings idea
 
 **Languages:** Python | Go/Golang | Bash | PowerShell | C# | SQL
 
+**GPU Infrastructure & LLM Serving:** vLLM | GPU Sizing & Capacity Planning | KV Cache Tuning | Model Quantization (AWQ) | KEDA / HPA Autoscaling | Inference Load Testing | GPU Node Pools (AKS)
+
 **ML/AI Engineering:** LLM Model Serving | ML Pipeline Development | Model Training Infrastructure | Azure Machine Learning | Distributed Training Systems | Model Finetuning Systems
 
-**Distributed Systems & Orchestration:** Kubernetes (AKS, Production-Scale) | Docker | Helm | Kafka | Redis | ElasticSearch | SQL Databases | Service Mesh
+**Distributed Systems & Orchestration:** Kubernetes (AKS, Production-Scale) | Docker | Helm | Kafka | Redis | SQL Databases | Service Mesh
 
 **Cloud & Infrastructure:** Azure (Expert) | AWS | Terraform (IaC) | Infrastructure as Code | Configuration as Code | ARM Templates
 
@@ -77,6 +79,14 @@ A creative problem-solver who loves building the infrastructure that brings idea
 ---
 
 ## KEY TECHNICAL PROJECTS
+
+### vLLM on Kubernetes: GPU Sizing & Autoscaling (2026)
+**[Repository](https://github.com/JDoornink/vLLM_on_K8s) | [Article on Dev.to](https://dev.to/josef_doornink_930b2caf1c/your-vllm-autoscaler-is-flapping-because-you-picked-the-wrong-signal-not-the-wrong-number-24lf)**
+
+- Served a quantized Qwen2.5-7B-Instruct-AWQ model on vLLM across A10 GPU node pools in AKS, published as an engineering article series with a reproducible deployment
+- Derived a first-principles GPU sizing method - weight memory vs. KV cache headroom converted to concurrent-request capacity - so GPU selection is a calculation rather than a guess
+- Eliminated autoscaler flapping by replacing lagging queue-depth triggers with a leading KV-cache-utilization signal: KEDA scaling on sum(vllm:kv_cache_usage_perc) at 0.80 with 120s scale-down damping, whose fixed point is invariant to replica count
+- Built an async load generator and Grafana instrumentation to characterize inference saturation and validate stable vs. flapping scaling behavior
 
 ### Distributed Training Pipeline Optimization (2025)
 **Reason Benefit AI Corporation**
