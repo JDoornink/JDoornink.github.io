@@ -1,9 +1,10 @@
 {
   "basics": {
     "name": "Josef Doornink",
-    "label": "AI Infrastructure & Reliability Engineer",
+    "label": "Senior SRE & Growing AI Infrastructure Engineer",
+    "resumeLabel": "Senior SRE and AI Infrastructure Engineer",
     "email": "jdoorarg@gmail.com",
-    "phone": "",
+    "phone": "1.503.927.0358",
     "url": "https://jdoornink.github.io/",
     "summary": "Infrastructure engineer with 7+ years in SRE and MLOps, now building safety and reliability tooling for autonomous AI systems. CKS/CKA certified, preceded by a decade in FDA-cleared medical hardware where reliability meant patient safety, 10 peer-reviewed papers and 2 US patents. Focused on providing visibility and reliability in non-deterministic systems.",
     "profiles": [
@@ -81,6 +82,16 @@
       "highlights": [
         "Lead Test and Development Engineer for NIH-funded multimillion-dollar research project focused on bone fixation solutions.",
         "Managed successful implant creation, delivery, and test methodology producing multiple US FDA-approved implants."
+      ]
+    },
+    {
+      "company": "Google",
+      "position": "Quality Assurance Associate",
+      "startDate": "September 2006",
+      "endDate": "November 2007",
+      "summary": "",
+      "highlights": [
+        "Evaluated search result accuracy and web layout effectiveness for web advertising, working remotely with interdisciplinary web development teams."
       ]
     }
   ],
@@ -195,7 +206,7 @@
     },
     {
       "name": "OmniSight-Core",
-      "description": "A self-healing multimodal search engine demonstrating the agent-in-the-reliability-loop pattern applied to ML systems. CLIP embeddings + Qdrant power semantic video search (\"find a red truck at night\"); Prometheus and Evidently AI surface drift; an LLM agent reasons about drift signals and triggers automated retraining via GitHub Actions. Companion to K8gentS — same thesis (LLM as decision-maker inside a reliability contract), different domain.",
+      "description": "A self-healing multimodal search engine putting an agent in the reliability loop of an ML system. CLIP embeddings and Qdrant power semantic video search (\"find a red truck at night\"); Prometheus and Evidently AI surface drift; an LLM agent reads those signals and triggers retraining via GitHub Actions. Companion to K8gentS - same thesis, different domain.",
       "url": "https://github.com/JDoornink/OmniSight-Core",
       "keywords": [
         "LLM Agent",

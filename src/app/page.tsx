@@ -21,9 +21,25 @@ export default function Home() {
 <h1 className="text-6xl md:text-7xl font-black tracking-tight text-white mb-3 leading-none">
             {data.basics.name}
           </h1>
-          <p className="text-xs tracking-widest uppercase text-neutral-300 mb-10">
+          <p className="text-xs tracking-widest uppercase text-neutral-300 mb-2">
             {data.basics.label}
           </p>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-8 text-xs tracking-widest text-neutral-300">
+            <a
+              href={`mailto:${data.basics.email}`}
+              className="hover:text-white transition-colors duration-200"
+            >
+              {data.basics.email}
+            </a>
+            {data.basics.phone && (
+              <a
+                href={`tel:${data.basics.phone.replace(/[^\d+]/g, '')}`}
+                className="hover:text-white transition-colors duration-200"
+              >
+                {data.basics.phone}
+              </a>
+            )}
+          </div>
           <p className="text-neutral-300 font-sans leading-relaxed max-w-2xl mb-10 text-[15px]">
             {data.basics.summary}
           </p>

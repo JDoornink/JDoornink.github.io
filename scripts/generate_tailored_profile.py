@@ -105,6 +105,7 @@ COMPACT_HIGHLIGHT_LIMITS = {
     'Trimble': 7,
     'Viewpoint | Onfulfillment': 3,
     'Legacy Biomechanics Research Lab': 1,
+    'Google': 1,
 }
 
 
@@ -115,9 +116,10 @@ def _render_resume_markdown(data, compact=False):
     lines = [
         f"# {basics['name'].upper()}",
         "",
-        f"**{basics['label']}**",
+        f"**{basics.get('resumeLabel') or basics['label']}**",
         "",
         f"{basics['email']}"
+        + (f" | {basics['phone']}" if basics.get('phone') else "")
         + (f" | [LinkedIn]({profiles['LinkedIn']})" if 'LinkedIn' in profiles else "")
         + (f" | [GitHub]({profiles['GitHub']})" if 'GitHub' in profiles else "")
         + (f" | [Portfolio]({basics.get('url', '')})" if basics.get('url') else ""),

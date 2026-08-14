@@ -1,8 +1,8 @@
 # JOSEF DOORNINK
 
-**AI Infrastructure & Reliability Engineer**
+**Senior SRE and AI Infrastructure Engineer**
 
-jdoorarg@gmail.com | [LinkedIn](https://www.linkedin.com/in/josefdoornink/) | [GitHub](https://github.com/JDoornink) | [Portfolio](https://jdoornink.github.io/)
+jdoorarg@gmail.com | 1.503.927.0358 | [LinkedIn](https://www.linkedin.com/in/josefdoornink/) | [GitHub](https://github.com/JDoornink) | [Portfolio](https://jdoornink.github.io/)
 
 ---
 
@@ -34,7 +34,7 @@ Infrastructure engineer with 7+ years in SRE and MLOps, now building safety and 
 **[K8gentS](https://github.com/JDoornink/K8gentS)** — How to implement a non-deterministic reasoning engine in a system that requires guarantees? K8gents answers through guardrails-as-code: an autonomous Kubernetes root cause analysis (RCA) agent that routes cluster failures through Gemini-powered analysis, but constrains remediation with code-enforced policies—human approval gates paired with OPA Gatekeeper rules create hard boundaries around AI decisions. Diagnostics are exposed via an MCP server (io.github.JDoornink/k8gents on the official registry); see the README for a discussion of failure modes and confidence calibration tradeoffs.
 *Listed on the official [MCP Registry](https://registry.modelcontextprotocol.io/?search=k8gents).*
 
-**[OmniSight-Core](https://github.com/JDoornink/OmniSight-Core)** — A self-healing multimodal search engine demonstrating the agent-in-the-reliability-loop pattern applied to ML systems. CLIP embeddings + Qdrant power semantic video search ("find a red truck at night"); Prometheus and Evidently AI surface drift; an LLM agent reasons about drift signals and triggers automated retraining via GitHub Actions. Companion to K8gentS — same thesis (LLM as decision-maker inside a reliability contract), different domain.
+**[OmniSight-Core](https://github.com/JDoornink/OmniSight-Core)** — A self-healing multimodal search engine putting an agent in the reliability loop of an ML system. CLIP embeddings and Qdrant power semantic video search ("find a red truck at night"); Prometheus and Evidently AI surface drift; an LLM agent reads those signals and triggers retraining via GitHub Actions. Companion to K8gentS - same thesis, different domain.
 
 **[Agent-Lint-CLI](https://github.com/JDoornink/agent-lint)** — Static analysis for the agent supply chain. A published Python CLI tool that validates MCP servers and scans AI agent implementations for security vulnerabilities — configurable security levels, CI/CD integration with threshold-based failure conditions, and SARIF output for integration with existing security tooling.
 *Published on [PyPI](https://pypi.org/project/agent-lint-cli/) as Agent-Lint-CLI.*
@@ -91,6 +91,11 @@ Onfulfillment | March 2014 - March 2018
 Legacy Biomechanics Research Lab | 2007 - 2013
 
 - Lead Test and Development Engineer for NIH-funded multimillion-dollar research project focused on bone fixation solutions.
+
+### Quality Assurance Associate
+Google | September 2006 - November 2007
+
+- Evaluated search result accuracy and web layout effectiveness for web advertising, working remotely with interdisciplinary web development teams.
 
 ---
 

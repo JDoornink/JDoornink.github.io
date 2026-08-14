@@ -59,7 +59,7 @@ def convert_md_to_pdf(md_file, pdf_file):
         parent=styles['Normal'],
         fontName='Helvetica',
         fontSize=9,
-        leading=12,
+        leading=11,
         textColor=colors.HexColor('#333333'),
         wordWrap='CJK',
         spaceAfter=1,
@@ -151,7 +151,7 @@ def convert_md_to_pdf(md_file, pdf_file):
         if line.startswith('## '):
             text = line[3:]
             if text.strip().startswith('PROFESSIONAL EXPERIENCE'):
-                story.append(CondPageBreak(4 * inch))
+                story.append(CondPageBreak(1 * inch))
             story.append(Paragraph(inline_markdown_to_html(text), h2))
             story.append(HRFlowable(width='100%', thickness=0.4, color=colors.HexColor('#e8e8e8')))
             story.append(Spacer(1, 1))
